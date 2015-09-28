@@ -6,6 +6,8 @@ Everything is organized into folders, starting with [`episode0`](https://github.
 
 The shortened URL for this repository is http://bitly.com/goin5minutes.
 
+The screencasts on are on YouTube at http://bitly.com/goin5minutesyt.
+
 # Requests For New Screencasts
 
 I have some ideas for topics to cover, but if you want to see some topics covered in a future screencast, I can't guarantee I'll cover it, but I will consider it.
