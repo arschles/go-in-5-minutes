@@ -8,7 +8,11 @@ The shortened URL for this repository is http://bitly.com/goin5minutes.
 
 # Requests For New Screencasts
 
-I have some ideas for topics to cover, but if you want to see some topics covered in a future screencast, I can't guarantee I'll cover it, but I will consider it. Please [submit an issue](https://github.com/arschles/go-in-5-minutes/issues) with the `request a screencast` label and make sure to include a good description on what you want to see!
+I have some ideas for topics to cover, but if you want to see some topics covered in a future screencast, I can't guarantee I'll cover it, but I will consider it.
+
+Please [submit an issue](https://github.com/arschles/go-in-5-minutes/issues) with the `request a screencast` label and make sure to include a good description on what you want to see!
+
+Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels/request%20a%20screencast.
 
 # Issues With Code, Documentation, etc...
 
