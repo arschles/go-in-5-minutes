@@ -4,9 +4,7 @@ This repository has code and outlines for [Go In 5 Minutes Screencasts](htttp://
 
 Everything is organized into folders, starting with [`episode0`](https://github.com/arschles/go-in-5-minutes/tree/master/episode0) and going from there.
 
-The shortened URL for this repository is http://bitly.com/goin5minutes.
-
-The screencasts on are on YouTube at http://bitly.com/goin5minutesyt.
+Shortened URL for this repository: http://bitly.com/goin5minutes. Shortened URL for screencasts: http://bitly.com/goin5minutesyt.
 
 # Requests For New Screencasts
 
