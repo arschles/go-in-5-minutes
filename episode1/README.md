@@ -1,9 +1,9 @@
-# An HTTP Server With Substance
+# Building a RESTful API with Gorilla Mux
 
 Go in 5 Minutes, episode 1.
 
-This screencast shows how to write a full featured RESTful HTTP server. We'll build
-a simple key/value store behind an HTTP API.
+This screencast shows off some of the features of Gorilla Mux by implementing a key/value store
+behind a RESTful API.
 
 ## Administrivia
 
@@ -15,7 +15,6 @@ a simple key/value store behind an HTTP API.
 
 ## Outline
 
-1. [`http.ServeMux`](https://godoc.org/net/http#ServeMux) & [Gorilla Mux Routers](https://godoc.org/github.com/gorilla/mux#Router)
-2. [`http.Handler`](https://godoc.org/net/http#Handler) / [`http.HandlerFunc`](https://godoc.org/net/http#HandlerFunc)
-3. [`http.Handle`](https://godoc.org/net/http#Handle) (or [`http.HandleFunc`](https://godoc.org/net/http#HandleFunc))
-4. Handler dependencies
+1. Using [Routers](https://godoc.org/github.com/gorilla/mux#Router) to register paths
+2. Getting [path vars](https://godoc.org/github.com/gorilla/mux#Vars)
+3. Serving your router
