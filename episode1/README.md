@@ -1,8 +1,8 @@
-# Building a RESTful API with Gorilla Mux
+# Building a RESTful API with net/http
 
 Go in 5 Minutes, episode 1.
 
-This screencast shows off some of the features of [Gorilla Mux](https://godoc.org/github.com/gorilla/mux) by implementing a key/value store behind a RESTful API.
+This screencast shows how to build a non-trivial HTTP API using nothing but [`net/http`](https://godoc.org/net/http).
 
 ## Administrivia
 
@@ -18,6 +18,5 @@ This screencast shows off some of the features of [Gorilla Mux](https://godoc.or
   - Routes
   - Handlers
   - Server
-2. Using [Routers](https://godoc.org/github.com/gorilla/mux#Router) to register paths
-3. [Path variables](https://godoc.org/github.com/gorilla/mux#Vars)
-4. Serving
+2. Using [ServeMux](https://godoc.org/net/http#ServeMux) to register paths
+3. Writing handlers

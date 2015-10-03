@@ -5,15 +5,14 @@ import (
 	"net/http"
 
 	"github.com/arschles/go-in-5-minutes/episode1/storage"
-	"github.com/gorilla/mux"
 )
 
 // PutKey returns an http.Handler that can set a value for the key registered by Gorilla
 // mux as "key" in the path. It expects the value to be in the body of the PUT request
 func PutKey(db storage.DB) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		key, ok := mux.Vars(r)["key"]
-		if !ok {
+		key := r.URL.Query().Get("key")
+		if key == "" {
 			http.Error(w, "missing key name in path", http.StatusBadRequest)
 			return
 		}

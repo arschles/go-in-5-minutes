@@ -5,16 +5,15 @@ import (
 	"net/http"
 
 	"github.com/arschles/go-in-5-minutes/episode1/storage"
-	"github.com/gorilla/mux"
 )
 
 // GetKey returns an http.Handler that can get a key registered by Gorilla mux
 // as "key" in the path. It gets the value of the key from db
 func GetKey(db storage.DB) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		key, ok := mux.Vars(r)["key"]
-		if !ok {
-			http.Error(w, "missing key name in path", http.StatusBadRequest)
+		key := r.URL.Query().Get("key")
+		if key == "" {
+			http.Error(w, "missing key name in query string", http.StatusBadRequest)
 			return
 		}
 		val, err := db.Get(key)
