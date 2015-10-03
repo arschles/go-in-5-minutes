@@ -1,5 +1,5 @@
 # set a value
-curl -XPUT -d 'thanks for watching, gophers!' localhost:8080/set?key=greeting
+curl -v -XPUT -d 'thanks for watching, gophers!' localhost:8080/set?key=greeting
 
 # get a value
-curl -XGET localhost:8080/get?key=greeting
+curl -v -XGET localhost:8080/get?key=greeting
