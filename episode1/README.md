@@ -9,7 +9,7 @@ a simple key/value store behind an HTTP API.
 
 1. [Request a Screencast](https://github.com/arschles/go-in-5-minutes#request-a-screencast)
 2. Around the web
-  1. [The Changelog](https://github.com/thechangelog/ping/issues/288)
+  1. [The Changelog](http://email.changelog.com/t/ViewEmail/t/D4E0966AA0002771)
   2. [Reddit](https://www.reddit.com/r/golang/comments/3mpbyh/weekly_5_minute_screencast_for_gophers/)
   3. [Golang Bridge](https://forum.golangbridge.org/t/new-screencast-for-gophers/124)
 
