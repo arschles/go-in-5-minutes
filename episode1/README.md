@@ -2,8 +2,7 @@
 
 Go in 5 Minutes, episode 1.
 
-This screencast shows off some of the features of Gorilla Mux by implementing a key/value store
-behind a RESTful API.
+This screencast shows off some of the features of [Gorilla Mux](https://godoc.org/github.com/gorilla/mux) by implementing a key/value store behind a RESTful API.
 
 ## Administrivia
 
