@@ -6,7 +6,7 @@ Shortened URL for this repository: http://bitly.com/goin5minutes. Shortened URL 
 
 # Request A Screencast
 
-I have some ideas for topics to cover, but if you want to see some topics covered in a future screencast, I can't guarantee I'll cover it, but I will consider it.
+I have some ideas for topics to cover, but if you want to see some topics covered in a future screencast, I'd like to hear from you.
 
 Please [submit an issue](https://github.com/arschles/go-in-5-minutes/issues) with the `request a screencast` label and make sure to include a good description on what you want to see!
 
