@@ -15,6 +15,10 @@ behind a RESTful API.
 
 ## Outline
 
-1. Using [Routers](https://godoc.org/github.com/gorilla/mux#Router) to register paths
-2. Getting [path vars](https://godoc.org/github.com/gorilla/mux#Vars)
-3. Serving your router
+1. Intro: orthogonal concerns
+  - ServeMux
+  - Handlers
+  - Server
+2. Using [Routers](https://godoc.org/github.com/gorilla/mux#Router) to register paths
+3. Getting [path vars](https://godoc.org/github.com/gorilla/mux#Vars)
+4. Serving

@@ -12,11 +12,13 @@ import (
 func main() {
 	// this creates the backend storage system
 	db := storage.NewInMemoryDB()
-	// this creates a new http.ServeMux, but it provides convenience functionality
-	// for building a proper RESTful HTTP server
+	// this creates a new Gorilla router. Use this router to build all the routes for your server,
+	// similar to how a routes table would work in other systems.
 	router := mux.NewRouter()
-	router.Handle("/{key}", handlers.GetKey(db)).Methods("GET") // get the value of a key
-	router.Handle("/{key}", handlers.PutKey(db)).Methods("PUT") // set the value of a key
+	// get the value of a key
+	router.Handle("/{key}", handlers.GetKey(db)).Methods("GET").Schemes("http")
+	// set the value of a key
+	router.Handle("/{key}", handlers.PutKey(db)).Methods("PUT").Schemes("http")
 
 	log.Printf("serving on port 8080")
 
