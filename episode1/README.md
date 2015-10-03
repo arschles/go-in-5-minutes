@@ -15,7 +15,6 @@ by building a RESTful HTTP server that provides a key/value store.
 
 ## Outline
 
-1.
 1. `http.ServeMux` & routes
 2. `http.Handler`
 3. `http.Handle` and `http.HandleFunc`
