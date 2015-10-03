@@ -2,8 +2,8 @@
 
 Go in 5 Minutes, episode 1.
 
-This screencast shows how to write a full featured RESTful HTTP server. We'll focus on concepts
-by building a RESTful HTTP server that provides a key/value store.
+This screencast shows how to write a full featured RESTful HTTP server. We'll build
+a simple key/value store behind an HTTP API.
 
 ## Administrivia
 
