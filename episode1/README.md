@@ -15,7 +15,7 @@ by building a RESTful HTTP server that provides a key/value store.
 
 ## Outline
 
-1. `http.ServeMux` & [Gorilla Mux Routers](https://godoc.org/github.com/gorilla/mux#Router)
-2. `http.Handler` / `http.HandlerFunc`
-3. `http.Handle` (or `http.HandleFunc`)
+1. [`http.ServeMux`](https://godoc.org/net/http#ServeMux) & [Gorilla Mux Routers](https://godoc.org/github.com/gorilla/mux#Router)
+2. [`http.Handler`](https://godoc.org/net/http#Handler) / [`http.HandlerFunc`](https://godoc.org/net/http#HandlerFunc)
+3. [`http.Handle`](https://godoc.org/net/http#Handle) (or [`http.HandleFunc`](https://godoc.org/net/http#HandleFunc))
 4. Handler dependencies
