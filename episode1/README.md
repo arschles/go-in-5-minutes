@@ -20,5 +20,5 @@ behind a RESTful API.
   - Handlers
   - Server
 2. Using [Routers](https://godoc.org/github.com/gorilla/mux#Router) to register paths
-3. Getting [path vars](https://godoc.org/github.com/gorilla/mux#Vars)
+3. [Path variables](https://godoc.org/github.com/gorilla/mux#Vars)
 4. Serving
