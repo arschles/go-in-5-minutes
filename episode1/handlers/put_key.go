@@ -8,6 +8,8 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// PutKey returns an http.Handler that can set a value for the key registered by Gorilla
+// mux as "key" in the path. It expects the value to be in the body of the PUT request
 func PutKey(db storage.DB) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		key, ok := mux.Vars(r)["key"]

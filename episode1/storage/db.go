@@ -6,6 +6,7 @@ var (
 	ErrNotFound = errors.New("not found")
 )
 
+// DB is the interface to a simple key/value store
 type DB interface {
 	// Get returns the value for the given key, ErrNotFound if the key doesn't exist,
 	// or another error if the get failed
