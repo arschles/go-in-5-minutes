@@ -16,7 +16,7 @@ behind a RESTful API.
 ## Outline
 
 1. Intro: orthogonal concerns
-  - ServeMux
+  - Routes
   - Handlers
   - Server
 2. Using [Routers](https://godoc.org/github.com/gorilla/mux#Router) to register paths
