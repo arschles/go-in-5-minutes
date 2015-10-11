@@ -36,7 +36,8 @@ func main() {
 		wg.Add(1)
 		// like any program, the 'go' keyword tells the go runtime scheduler to run getter in the background.
 		// godebug will not stop it from running the code concurrently, but since there's a breakpoint
-		// in the getter func, we'll be able to inspect that function's context
+		// in the getter func, we'll still be able to inspect that function's context, but it may have actually executed
+		// by then.
 		go getter(url, &wg)
 	}
 	wg.Wait() // block until all goroutines are done
