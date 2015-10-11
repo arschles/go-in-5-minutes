@@ -7,7 +7,7 @@ programs. I'll show an example of debugging a concurrent program.
 
 ## Reminder
 
-Submit or vote on issues you want covered: https://github.com/arschles/go-in-5-minutes/issues
+Submit or vote on topics you want covered: https://github.com/arschles/go-in-5-minutes/issues
 
 ## Outline
 
