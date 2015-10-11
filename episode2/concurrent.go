@@ -7,7 +7,8 @@ import (
 	"time"
 )
 
-func getter(url string, wg sync.WaitGroup) {
+func getter(url string, wg *sync.WaitGroup) {
+	_ = "breakpoint"
 	defer wg.Done()
 	start := time.Now()
 	if _, err := http.Get(url); err != nil {
@@ -20,9 +21,11 @@ func getter(url string, wg sync.WaitGroup) {
 func main() {
 	urls := []string{"https://google.com", "https://yahoo.com", "https://bing.com", "https://duckduckgo.com"}
 	var wg sync.WaitGroup
-	wg.Add(len(urls))
 	for _, url := range urls {
-		go getter(url, wg)
+		_ = "breakpoint"
+		wg.Add(1)
+		go getter(url, &wg)
 	}
 	wg.Wait()
+	fmt.Println("done")
 }
