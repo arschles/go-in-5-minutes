@@ -4,6 +4,8 @@ Go in 5 Minutes, episode 1.
 
 This screencast shows how to build a non-trivial HTTP API using nothing but [`net/http`](https://godoc.org/net/http).
 
+You can see it here: https://www.youtube.com/watch?v=eTjNtNnVOGY
+
 ## Administrivia
 
 1. [Request a Screencast](https://github.com/arschles/go-in-5-minutes#request-a-screencast)
