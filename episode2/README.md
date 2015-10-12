@@ -5,6 +5,8 @@ Go in 5 Minutes, episode 2.
 This screencast shows how to use [godebug](https://github.com/mailgun/godebug) to debug
 programs. I'll show an example of debugging a concurrent program.
 
+Find the screencast at https://www.youtube.com/watch?v=LQi0N0nA5RA.
+
 ## Reminder
 
 Submit or vote on topics you want covered: https://github.com/arschles/go-in-5-minutes/issues
