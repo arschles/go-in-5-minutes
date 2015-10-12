@@ -5,8 +5,13 @@ import (
 	"testing"
 )
 
+//Test our BusinessLogic using our RedisClientWrapper
+//You need to have a redis-server running to pass this test.
+//(Note that it is way better to use the in_memory_hashtable to test our BusinessLogic.)
+//command: cd episode0 && go test *.go
 func TestBusinessLogicWithRedis(t *testing.T) {
-	//in memory hash table is a mock
+	//we create our RedisClientWrapper that match the hashtable interface
+
 	ht := RedisClientWrapper{redis.NewClient(&redis.Options{
 		Addr:     "localhost:6379",
 		Password: "", // no password set
