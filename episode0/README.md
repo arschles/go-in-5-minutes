@@ -5,7 +5,7 @@ Go in 5 Minutes, episode 0.
 This screencast focuses on mocking external dependencies so you can write fast,
 focused unit tests for your code.
 
-Find this screencast at https://www.youtube.com/watch?v=mk4BCLimksY&feature=youtu.be.
+You can see it here: https://www.youtube.com/watch?v=mk4BCLimksY
 
 ## Outline
 
