@@ -18,8 +18,9 @@ func main() {
 	tpl := template.Must(template.ParseFiles("index.html"))
 	h := newHub()
 	go h.run()
-	http.Handle("/", homeHandler(tpl))
-	http.Handle("/ws", wsHandler{h: h})
+	router := http.NewServeMux()
+	router.Handle("/", homeHandler(tpl))
+	router.Handle("/ws", wsHandler{h: h})
 	log.Printf("serving on port 8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8080", router))
 }

@@ -2,9 +2,7 @@
 <html>
 <head>
     <title>Chat Example</title>
-    <script src=
-    "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type=
-    "text/javascript">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type= "text/javascript">
     </script>
     <script type="text/javascript">
     $(function() {
@@ -35,7 +33,7 @@
     });
 
     if (window["WebSocket"]) {
-        conn = new WebSocket("ws://{{$}}/ws");
+        conn = new WebSocket("ws://localhost:8080/ws");
         conn.onclose = function(evt) {
             appendLog($("<div><b>Connection closed.<\/b><\/div>"))
         }
