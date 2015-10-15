@@ -41,12 +41,16 @@ func main() {
 	})
 
 	// create a subrouter just for standard API calls. subrouters are convenient ways to
-	// group similar functionality together.
+	// group similar functionality together. this subrouter also verifies that the Content-Type
+	// header is correct for a JSON API.
 	apiRouter := router.Headers("Content-Type", "application/json").Subrouter()
 	apiRouter.HandleFunc("/api/{name}", getServer).Methods("GET")
 	apiRouter.HandleFunc("/api/{name}", reserveServer).Methods("POST")
 	apiRouter.HandleFunc("/api/{name}", releaseServer).Methods("DELETE")
 
+	// create a subrouter just for admin API calls. this router not only verifies the Content-Type
+	// header as above, it also looks up and validates the admin token. if the token is invalid,
+	// the server will 404, just as if the path didn't match.
 	adminAPIRouter := router.Headers("Content-Type", "application/json").MatcherFunc(func(r *http.Request, rm *mux.RouteMatch) bool {
 		adminToken := r.Header.Get("X-ADMIN-TOKEN")
 		if adminToken == "" {
