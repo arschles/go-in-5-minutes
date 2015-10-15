@@ -11,8 +11,8 @@ You can see it here: (TODO yt link).
 ## Outline
 
 1. Extends [Building a RESTful API with net/http](https://github.com/arschles/go-in-5-minutes/tree/master/episode1)
-1. Why mux?
+2. Why mux?
   - `http.Handler` compatible
   - complex request handling
   - other Gorilla libraries
-2. Example
+3. Example

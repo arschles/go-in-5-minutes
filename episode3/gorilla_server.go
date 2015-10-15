@@ -1,7 +1,8 @@
 package main
 
 import (
-	"encoding/json"
+	"fmt"
+	"log"
 	"net/http"
 	"sync"
 
@@ -28,51 +29,21 @@ var servers = map[string]*ServerStatus{
 // the mutex to protect against concurrent access to servers
 var mx sync.RWMutex
 
-func reserveServer(w http.ResponseWriter, r *http.Request) {
-	name, ok := mux.Vars(r)
-	if !ok {
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
-	mx.Lock()
-	defer mx.Unlock()
-
-}
-
-func releaseServer(w http.ResponseWriter, r *http.Request) {
-	name, ok := mux.Vars(r)
-	if !ok {
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
-	mx.Lock()
-	defer mx.Unlock()
-}
-
-func releaseAllServers(w http.ResponseWriter, r *http.Request) {
-	mx.Lock()
-	defer mx.Unlock()
-	for _, status := range servers {
-		status.Reserved = false
-	}
-	w.Write(http.StatusNoContent)
-}
-
-func getAllServers(w http.ResponseWriter, r *http.Request) {
-	mx.RLock()
-	defer mx.RUnlock()
-	if err := json.Encoder(w).Encode(servers); err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-	}
-}
-
 func main() {
-	const adminToken = "SuperAdmin"
-
 	router := mux.NewRouter()
-	router.HandleFunc("/server/{name}", reserveServer).Methods("POST")
-	router.HandleFunc("/server/{name}", releaseServer).Methods("DELETE")
-	router.HandleFunc("/servers", getAllServers).Methods("GET").Headers("X-ADMIN-TOKEN", adminToken)
-	router.HandleFunc("/servers", releaseAllServers).Methods("DELETE").Headers("X-ADMIN-TOKEN", adminToken)
+	router.NotFoundHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte(fmt.Sprintf("%s not found\n", r.URL)))
+	})
+
+	router.HandleFunc("/api/{name}", getServer).Methods("GET")
+	router.HandleFunc("/api/{name}", reserveServer).Methods("POST")
+	router.HandleFunc("/api/{name}", releaseServer).Methods("DELETE")
+
+	adminAPIRouter := router.Headers("X-ADMIN-TOKEN", "SuperAdmin").Subrouter()
+	adminAPIRouter.HandleFunc("/api/admin/servers", getAllServers).Methods("GET")
+	adminAPIRouter.HandleFunc("/api/admin/servers", releaseAllServers).Methods("DELETE")
+
+	log.Printf("serving on port 8080")
 	http.ListenAndServe(":8080", router)
 }
