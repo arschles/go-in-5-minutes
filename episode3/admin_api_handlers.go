@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// releaseAllServers is the handler to release the lock on all servers. it's an admin-only handler
 func releaseAllServers(w http.ResponseWriter, r *http.Request) {
 	mx.Lock()
 	defer mx.Unlock()
@@ -18,6 +19,7 @@ func releaseAllServers(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// getAllServers is the handler to get the status of all servers. it's admin-only
 func getAllServers(w http.ResponseWriter, r *http.Request) {
 	mx.RLock()
 	defer mx.RUnlock()
