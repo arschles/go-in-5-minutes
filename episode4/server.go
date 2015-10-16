@@ -17,7 +17,6 @@ func main() {
 	flag.Parse()
 	tpl := template.Must(template.ParseFiles("index.html"))
 	h := newHub()
-	go h.run()
 	router := http.NewServeMux()
 	router.Handle("/", homeHandler(tpl))
 	router.Handle("/ws", wsHandler{h: h})
