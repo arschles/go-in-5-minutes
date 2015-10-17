@@ -6,8 +6,6 @@ This screencast shows how to take advantage of [Gorilla Mux](https://github.com/
 
 This screencast was requested in https://github.com/arschles/go-in-5-minutes/issues/18.
 
-You can see it here: (TODO yt link).
-
 ## Outline
 
 1. Extends [Building a RESTful API with net/http](https://github.com/arschles/go-in-5-minutes/tree/master/episode1)
