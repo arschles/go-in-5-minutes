@@ -21,7 +21,7 @@ Thanks Gary!
 
 1. Server -> browser communication
   - previous approaches
-  - websocket basics
+  - websocket basics (more details: https://www.websocket.org/aboutwebsocket.html)
   - efficiency gains
 2. Uses
   - chat
