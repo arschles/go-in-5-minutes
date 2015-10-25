@@ -5,6 +5,8 @@ Go in 5 Minutes, episode 4.
 This screencast explains some of the concepts around Websockets and presents an example
 that shows how to build a websocket server.
 
+You can see it here: https://youtu.be/DJiOrGRsIKo
+
 ## Thanks
 
 ... to everybody who has suggested new screencasts or giving a :+1: on an existing
