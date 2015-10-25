@@ -7,8 +7,8 @@ that shows how to build a websocket server.
 
 ## Thanks
 
-... to everybody who has suggested new screencasts or given a :+1: on an existing
-issue. I'm listening, so keep them coming!
+... to everybody who has suggested new screencasts or giving a :+1: on an existing
+issue. I'm listening, so keep them coming! https://github.com/arschles/go-in-5-minutes/issues
 
 ## Note
 
