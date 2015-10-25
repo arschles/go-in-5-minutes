@@ -19,11 +19,12 @@ Thanks Gary!
 
 ## Outline
 
-1. Websocket basics
-  - duplex
-  - client side
+1. Server -> browser communication
+  - previous approaches
+  - websocket basics
+  - efficiency gains
 2. Uses
   - chat
-  - streaming data
+  - streaming data from server
   - ...
 3. Example
