@@ -5,7 +5,10 @@ Go in 5 Minutes, episode 4.
 This screencast explains some of the concepts around Websockets and presents an example
 that shows how to build a websocket server.
 
-You can see it here: (TODO: yt link).
+## Thanks
+
+... to everybody who has suggested new screencasts or given a :+1: on an existing
+issue. I'm listening, so keep them coming!
 
 ## Note
 
@@ -22,4 +25,5 @@ Thanks Gary!
 2. Uses
   - chat
   - streaming data
+  - ...
 3. Example
