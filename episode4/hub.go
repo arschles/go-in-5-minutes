@@ -33,8 +33,8 @@ func newHub() *hub {
 			for c := range h.connections {
 				select {
 				case c.send <- msg:
-				// bail after trying to send for 1 second. that would mean a reader died,
-				// so remove the connection also
+				// stop trying to send to this connection after trying for 1 second.
+				// if we have to stop, it means that a reader died so remove the connection also.
 				case <-time.After(1 * time.Second):
 					log.Printf("shutting down connection %s", c)
 					h.removeConnection(c)
