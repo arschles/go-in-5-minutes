@@ -30,6 +30,7 @@ func newHub() *hub {
 	go func() {
 		for {
 			msg := <-h.broadcast
+			h.connectionsMx.RLock()
 			for c := range h.connections {
 				select {
 				case c.send <- msg:
@@ -40,6 +41,7 @@ func newHub() *hub {
 					h.removeConnection(c)
 				}
 			}
+			h.connectionsMx.RUnlock()
 		}
 	}()
 	return h
