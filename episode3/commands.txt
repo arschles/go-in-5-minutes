@@ -1,0 +1,14 @@
+# get unreserved server
+curl -v -XGET -H "Content-Type: application/json" localhost:8080/api/alice
+
+# reserve server
+curl -v -XPOST -H "Content-Type: application/json" localhost:8080/api/alice
+
+# release server
+curl -v -XDELETE -H "Content-Type: application/json" localhost:8080/api/alice
+
+# (admin) get all servers
+curl -v -XGET -H "Content-Type: application/json" -H "X-ADMIN-TOKEN: SuperAdmin" localhost:8080/api/admin/servers
+
+# (admin) release all servers
+curl -v -XDELETE -H "Content-Type: application/json" -H "X-ADMIN-TOKEN: SuperAdmin" localhost:8080/api/admin/servers
