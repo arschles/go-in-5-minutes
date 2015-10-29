@@ -5,3 +5,8 @@ body {
 img.aaron-headshot {
   max-height: 20em;
 }
+
+div.start-button-row {
+  margin-top:2em;
+  margin-bottom:2em;
+}
