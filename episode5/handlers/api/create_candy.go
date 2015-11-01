@@ -17,11 +17,11 @@ func CreateCandy(db models.DB) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		in := jsonInput{}
 		if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
-			// TODO: better error message
 			jsonErr(w, http.StatusBadRequest, err)
 			return
 		}
-		if _, err := db.Upsert(bson.NewObjectId().String(), models.Candy{Name: in.Name}); err != nil {
+		candy := models.Candy{Name: in.Name}
+		if _, err := db.Upsert(bson.NewObjectId().String(), candy); err != nil {
 			jsonErr(w, http.StatusInternalServerError, err)
 			return
 		}

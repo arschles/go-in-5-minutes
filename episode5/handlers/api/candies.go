@@ -2,6 +2,7 @@ package api
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 
 	"github.com/arschles/go-in-5-minutes/episode5/models"
@@ -22,11 +23,12 @@ func Candies(db models.DB) http.Handler {
 		// several improvements could be made:
 		// - paginate the results, to provide an upper bound on amount of work in a single request
 		// - send only the keys down to the browser, and have the browser do a GET on only the keys it needs
-		candies := make([]string, len(keys))
-		for i, key := range keys {
-			candy := models.Candy{}
-			db.Get(key, &candy)
-			candies[i] = candy.Name
+		candies := []string{}
+		for _, key := range keys {
+			candy := new(models.Candy)
+			db.Get(key, candy)
+			log.Printf("candy = %s", candy.Name)
+			candies = append(candies, candy.Name)
 		}
 		if err := json.NewEncoder(w).Encode(ret{Candies: candies}); err != nil {
 			jsonErr(w, http.StatusInternalServerError, err)

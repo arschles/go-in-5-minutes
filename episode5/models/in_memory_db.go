@@ -1,16 +1,19 @@
 package models
 
-import "sync"
+import (
+	"encoding/json"
+	"sync"
+)
 
 type inMemDB struct {
 	rwm *sync.RWMutex
-	m   map[string]Model
+	m   map[string][]byte
 }
 
 func NewInMemoryDB() DB {
 	return &inMemDB{
 		rwm: &sync.RWMutex{},
-		m:   make(map[string]Model),
+		m:   make(map[string][]byte),
 	}
 }
 
@@ -29,12 +32,11 @@ func (db *inMemDB) GetAllKeys() ([]string, error) {
 func (db *inMemDB) Get(key string, val Model) error {
 	db.rwm.RLock()
 	defer db.rwm.RUnlock()
-	v, ok := db.m[key]
+	b, ok := db.m[key]
 	if !ok {
 		return ErrNotFound
 	}
-	val = v
-	return nil
+	return json.Unmarshal(b, val)
 }
 
 func (db *inMemDB) Set(key string, val Model) error {
@@ -44,7 +46,11 @@ func (db *inMemDB) Set(key string, val Model) error {
 	if !ok {
 		return ErrNotFound
 	}
-	db.m[key] = val
+	b, err := val.MarshalJSON()
+	if err != nil {
+		return err
+	}
+	db.m[key] = b
 	return nil
 }
 
@@ -52,6 +58,10 @@ func (db *inMemDB) Upsert(key string, val Model) (bool, error) {
 	db.rwm.Lock()
 	defer db.rwm.Unlock()
 	_, ok := db.m[key]
-	db.m[key] = val
+	b, err := val.MarshalJSON()
+	if err != nil {
+		return false, err
+	}
+	db.m[key] = b
 	return !ok, nil
 }
