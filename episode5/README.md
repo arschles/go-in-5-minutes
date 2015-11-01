@@ -22,7 +22,7 @@ Your votes, stars, subscriptions and feedback all motivate me a lot!
 1. What kind of server
 2. Extensibility
 3. Concerns
-  - Startup config
+  - Database communication
   - Template rendering
   - APIs
 4. Example
