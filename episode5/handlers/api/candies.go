@@ -2,7 +2,6 @@ package api
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
 
 	"github.com/arschles/go-in-5-minutes/episode5/models"
@@ -27,7 +26,6 @@ func Candies(db models.DB) http.Handler {
 		for _, key := range keys {
 			candy := new(models.Candy)
 			db.Get(key, candy)
-			log.Printf("candy = %s", candy.Name)
 			candies = append(candies, candy.Name)
 		}
 		if err := json.NewEncoder(w).Encode(ret{Candies: candies}); err != nil {
