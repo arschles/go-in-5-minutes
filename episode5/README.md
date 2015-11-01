@@ -1,4 +1,4 @@
-# Using Websockets
+# The Structure and Layout of a Web Application
 
 Go in 5 Minutes, episode 5.
 
