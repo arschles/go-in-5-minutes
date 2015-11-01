@@ -25,5 +25,4 @@ Your votes, stars, subscriptions and feedback all motivate me a lot!
   - Startup config
   - Template rendering
   - APIs
-  - Sessions
 4. Example
