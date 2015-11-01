@@ -4,5 +4,4 @@ import "encoding/json"
 
 type Model interface {
 	json.Marshaler
-	Key() string
 }

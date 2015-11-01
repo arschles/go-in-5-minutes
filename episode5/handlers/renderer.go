@@ -26,9 +26,10 @@ type RenderRenderer struct {
 // NewRenderRenderer returns a new RenderRenderer, where the underlying render.Render
 // serves templates out of dir with the given func map. it's configured in dev mode
 // according to the dev boolean
-func NewRenderRenderer(dir string, funcs []template.FuncMap, dev bool) *RenderRenderer {
+func NewRenderRenderer(dir string, extensions []string, funcs []template.FuncMap, dev bool) *RenderRenderer {
 	opts := render.Options{
 		Directory:     dir,
+		Extensions:    extensions,
 		Funcs:         funcs,
 		IsDevelopment: dev,
 	}

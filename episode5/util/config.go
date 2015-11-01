@@ -16,7 +16,8 @@ const (
 
 type Config struct {
 	Port        int    `envconfig:"port"`
-	Environment string `envconfig:"env"`
+	Environment string `envconfig:"environment"`
+	MongoURL    string `envconfig:"mongo_url"`
 }
 
 func (c Config) Env() (Env, error) {
