@@ -45,7 +45,7 @@ func main() {
 	r.Handle("/", handlers.Index(renderer)).Methods("GET")
 	r.Handle("/candies", handlers.Candies(renderer)).Methods("GET")
 
-	r.Handle("/api/candy_keys", api.CandyKeysList(db)).Methods("GET")
+	r.Handle("/api/candies", api.Candies(db)).Methods("GET")
 	r.Handle("/api/candy", api.CreateCandy(db)).Methods("PUT")
 
 	r.NotFoundHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

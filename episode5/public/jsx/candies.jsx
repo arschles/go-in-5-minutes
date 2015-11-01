@@ -1,17 +1,17 @@
-var CandiesList = React.createClass({
+var Root = React.createClass({
   getInitialState: function() {
-    return {keys: []}
+    return {candy_names: []};
   },
   componentDidMount: function() {
-    $.getJSON("/api/candy_keys", function(data) {
-      this.setState({keys: data["keys"]});
+    $.getJSON("/api/candies", function(data) {
+      this.setState({candy_names: data["candies"]});
     }.bind(this));
   },
   render: function() {
     return (
       <div className="container candies">
         <div className="row">
-          <CandiesList keys={this.state.keys}/>
+          <CandiesList names={this.state.candy_names}/>
         </div>
         <div className="row">
           <h3>Create New Candy</h3>
@@ -22,7 +22,19 @@ var CandiesList = React.createClass({
   }
 });
 
-var CandiesList = React.createClass({});
+var CandiesList = React.createClass({
+  render: function() {
+    var listElts = [];
+    for(var i = 0; i < this.props.names.length; i++) {
+      listElts.push(<li className="list-group-item">{this.props.names[i]}</li>);
+    }
+    return (
+      <ul className="list-group">
+        {listElts}
+      </ul>
+    );
+  }
+});
 
 var CandyCreateForm = React.createClass({
   render: function() {
@@ -38,4 +50,4 @@ var CandyCreateForm = React.createClass({
   }
 })
 
-ReactDOM.render(<CandiesList />, document.getElementById("page-content"));
+ReactDOM.render(<Root />, document.getElementById("page-content"));
