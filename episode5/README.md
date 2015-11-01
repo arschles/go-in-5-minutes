@@ -25,4 +25,4 @@ Your votes, stars, subscriptions and feedback all motivate me a lot!
   - Database communication
   - Template rendering
   - APIs
-4. Example
+4. Example - simulating a candy jar for [trick-or-treating](https://en.wikipedia.org/wiki/Trick-or-treating)
