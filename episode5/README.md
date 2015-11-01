@@ -1,4 +1,4 @@
-# The Structure and Layout of a Web Application
+# Building Web Applications in Go
 
 Go in 5 Minutes, episode 5.
 
