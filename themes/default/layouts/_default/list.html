@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+{{partial "head.html"}}
+<body class="container">
+  {{partial "nav.html"}}
+  <div class="row">
+    <h1>{{ .Title }}</h1>
+    {{range .Data.Pages}}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{end}}
+  </div>
+  {{partial "js.html"}}
+</body>
+</html>
