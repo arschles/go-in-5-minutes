@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   {{partial "head.html"}}
+  {{range $i, $css := .Params.extra_css}}
+  <link href="{{$css}}" rel="stylesheet"/>
+  {{end}}
 </head>
-<body class="container-fluid text-center">
+<body class="container-fluid">
   {{partial "nav.html"}}
   <div class="container">
     {{ .Content }}
