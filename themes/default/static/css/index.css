@@ -10,3 +10,39 @@ div.start-button-row {
   margin-top:2em;
   margin-bottom:2em;
 }
+
+.top-sm-1 {
+  margin-top:1em;
+}
+
+.gifm-subtitle {
+  text-transform:uppercase;
+  font-family: 'Cousine';
+  font-weight:700;
+  color: #92A1B9;
+}
+
+.gifm-title {
+  color: #EEEEEE !important;
+}
+
+.gifm-border-bot {
+  border-bottom: 3px solid black;
+}
+
+.gifm-row {
+  min-height: 100px;
+  padding:1em 0 1em 0;
+}
+
+.gifm-row-1 {
+  background-color: #03132D;
+}
+
+.gifm-row-2 {
+  background-color: #FFDCC4;
+}
+
+.gifm-row-3 {
+  background-color: #77380E;
+}

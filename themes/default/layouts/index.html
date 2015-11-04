@@ -1,81 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-{{partial "head.html"}}
-<body class="container">
-  {{partial "nav.html"}}
-
-  <div class="container">
-    <div class="jumbotron col-sm-10 col-sm-offset-1">
-      <h1>Bite Sized Go</h1>
-      <p>
-        Go In 5 Minutes is a weekly series with the most concise, practical <a href="http://golang.org">Go</a> screencasts on the web.
+<head>
+  {{partial "head.html"}}
+  <link rel="stylesheet" href="/css/animate.css"/>
+  <link rel="stylesheet" href="/css/morphtext.css"/>
+  <link rel="stylesheet" href="/css/index.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Cousine:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="container-fluid">
+  <div class="row text-center gifm-banner gifm-border-bot gifm-row-1 gifm-row" id="gifm-row-1">
+    <div class="jumbotron gifm-header gifm-row-1">
+      <p class="gifm-subtitle">
+        Short Screencasts for Busy Gophers
       </p>
+      <h1 class="gifm-title">
+        <span id="rotating-topics">
+          Testing, Debugging, HTTP Servers, Websockets, Gorilla Mux, Benchmarking
+        </span>
+      </h2>
       <p>
-        <a class="btn btn-success btn-lg" href="https://bitly.com/goin5minutesyt" role="button">Start Watching Now</a>
-      </p>
-      <p>
-        <iframe src="https://ghbtns.com/github-btn.html?user=arschles&repo=go-in-5-minutes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+        <a class="btn btn-default btn-lg gifm-start-button" href="https://bitly.com/goin5minutesyt" role="button">Start Watching Now</a>
       </p>
     </div>
-
+  </div>
+  <div class="row text-center gifm-row-2 gifm-row">
+    <p class="lead">
+      Go In 5 Minutes is a weekly screencast with the most concise, practical <a href="http://golang.org">Go</a> screencasts on the web.
+    </p>
+  </div>
+  <div class="row text-center gifm-row-2 gifm-row">
+    <iframe src="https://ghbtns.com/github-btn.html?user=arschles&repo=go-in-5-minutes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
     <div class="row">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-4 text-center">
-            <h2>Concise Lessons</h2>
-            <p>
-              You're a busy professional. Instead of reading entire books on the language, use
-              these screencasts to quickly learn focused, relevant topics.
-            </p>
-          </div>
-          <div class="col-sm-4 text-center">
-            <h2>Real, Working Code</h2>
-            <p>
-              Each screencast explains and runs real, working code. And everything
-              is open source <a href="https://github.com/arschles/go-in-5-minutes">on Github</a>.
-            </p>
-          </div>
-          <div class="col-sm-4 text-center">
-            <h2>You're Involved</h2>
-            <p>
-              I use Github to get your feedback. Simply
-              <a href="https://github.com/arschles/go-in-5-minutes/issues">create an issue</a> to request
-              topics for future screencasts, ask questions or start a discussion.
-            </p>
-          </div>
-        </div>
-        <div class="row text-center start-button-row">
-          <a class="btn btn-primary btn-large" role="button" href="https://bitly.com/goin5minutesyt">
-            Get Started Now
-          </a>
-        </div>
-        <div class="row text-center">
-          <h2>No Go Experience?</h2>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <p>
-                  I aim the content in these screencasts at intermediate Go developers, but I talk to developers
-                  of all experience levels that learn from Go In 5 Minutes. If you're unsure, spend 5 minutes
-                  <a href="https://www.youtube.com/watch?v=mk4BCLimksY">watching the first screencast</a>
-                  to see if it's right for you.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="row">
-          <h3>About Me</h3>
-          <div class="col-sm-4">
-            <img src="./img/aaron-headshot.jpg" class="img-responsive aaron-headshot"/>
-          </div>
-          <div class="col-sm-8">
-            I'm Aaron Schlesinger, creator of Go In 5 Minutes.
-          </div>
-        </div> -->
+      <div class="col-sm-3 col-sm-offset-3 text-right">
+        <a class="btn btn-link" href="/about">Learn More</a>
+      </div>
+      <div class="col-sm-3 text-left">
+        <a class="btn btn-link" href="https://github.com/arschles/go-in-5-minutes">See The Code</a>
       </div>
     </div>
   </div>
+  <div class="row text-center top-sm-1">
+
+  </div>
+
+
+  {{partial "footer.html"}}
   {{partial "js.html"}}
+  <script type="text/javascript" src="/js/morphtext.min.js"></script>
+  <script type="text/javascript" src="/js/index.js"></script>
 </body>
 </html>
