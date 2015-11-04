@@ -5,6 +5,10 @@ branches:
 install:
   - go get -v github.com/spf13/hugo
   - hugo
+after_success:
+  - ls | grep -v public | xargs rm -rf
+  - mv public/* .
+  - rm -rf public
 deploy:
   provider: gcs
   access_key_id: GOOGGIBGT6V7DZJU6Q6F
