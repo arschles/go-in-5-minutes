@@ -19,11 +19,11 @@ div.start-button-row {
   text-transform:uppercase;
   font-family: 'Cousine';
   font-weight:700;
-  color: #92A1B9;
+  /*color: #92A1B9;*/
 }
 
 .gifm-title {
-  color: #EEEEEE !important;
+  /*color: #EEEEEE !important;*/
 }
 
 .gifm-border-bot {

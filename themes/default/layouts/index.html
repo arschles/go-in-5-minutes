@@ -8,8 +8,9 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Cousine:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body class="container-fluid">
-  <div class="row text-center gifm-banner gifm-border-bot gifm-row-1 gifm-row" id="gifm-row-1">
-    <div class="jumbotron gifm-header gifm-row-1">
+  {{partial "nav.html"}}
+  <div class="row text-center">
+    <div class="jumbotron">
       <p class="gifm-subtitle">
         Short Screencasts for Busy Gophers
       </p>
@@ -19,30 +20,22 @@
         </span>
       </h2>
       <p>
-        <a class="btn btn-default btn-lg gifm-start-button" href="https://bitly.com/goin5minutesyt" role="button">Start Watching Now</a>
+        <a class="btn btn-success btn-lg gifm-start-button" href="https://bitly.com/goin5minutesyt" role="button">Start Watching Now</a>
       </p>
     </div>
   </div>
-  <div class="row text-center gifm-row-2 gifm-row">
+  <div class="row text-center">
     <p class="lead">
       Go In 5 Minutes is a weekly screencast with the most concise, practical <a href="http://golang.org">Go</a> screencasts on the web.
     </p>
   </div>
-  <div class="row text-center gifm-row-2 gifm-row">
+  <div class="row text-center">
     <iframe src="https://ghbtns.com/github-btn.html?user=arschles&repo=go-in-5-minutes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-    <div class="row">
-      <div class="col-sm-3 col-sm-offset-3 text-right">
-        <a class="btn btn-link" href="/about">Learn More</a>
-      </div>
-      <div class="col-sm-3 text-left">
-        <a class="btn btn-link" href="https://github.com/arschles/go-in-5-minutes">See The Code</a>
-      </div>
-    </div>
   </div>
-  <div class="row text-center top-sm-1">
-
+  <div class="row text-center">
+    <a class="btn btn-link" href="/about">Learn More</a>
+    <a class="btn btn-link" href="https://github.com/arschles/go-in-5-minutes">See The Code</a>
   </div>
-
 
   {{partial "footer.html"}}
   {{partial "js.html"}}
