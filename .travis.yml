@@ -1,3 +1,4 @@
+language: go
 branches:
   only:
     - www
@@ -10,3 +11,5 @@ deploy:
   on:
     repo: arschles/go-in-5-minutes
     branch: www
+  acl: public-read
+  detect_encoding: true
