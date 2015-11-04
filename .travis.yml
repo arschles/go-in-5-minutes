@@ -2,6 +2,9 @@ language: go
 branches:
   only:
     - www
+install:
+  - go get -v github.com/spf13/hugo
+  - hugo
 deploy:
   provider: gcs
   access_key_id: GOOGGIBGT6V7DZJU6Q6F
