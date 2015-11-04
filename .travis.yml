@@ -1,0 +1,15 @@
+language: go
+branches:
+  only:
+    - www
+deploy:
+  provider: gcs
+  access_key_id: GOOGGIBGT6V7DZJU6Q6F
+  secret_access_key:
+    secure: hbtQXp5ITArK94+YKnTc2CWcLh76ES/m+/LB7OQtJNzcCefURdtNspskSzBWJfui5MeeK9mD38dvOwyJm7xDW62ZIbN6YqXeAqnRjWSGJndyQ4r6fAWSSGnTEBADOVahGldGILAzrCMUyMDzadP7EQsx6YvLwSL+Rznk1Pe9diwaI9AXZ9gZn96CZXnSSJJyJP1U0UQU0aew25ZNOUibhbtUSvricaLjGOA8GGjJ+OfAjicf13nQWDYw88ydFA86uzxpuGhPeoQF+R+CEt6MVNUpp068Nvx/vDLAwklQs9Nss80zdMxSnDHiwWfVKDffbN3XcQ9IAJVf5cqi1c/4Sy8aqJTT7FKCxYda7GDEmrm0JYsmOcZ9Z2FnZh7+PX59iP8kZe/slATf7cYcx5LE8b6eJ/tJOmIrV+f8OgydjDIxYd1lLxS0Kd/o6wj545qsh16MgKB1+l9O1SQXYA827JIuSKvyBLCiaapl8NvixnLzC7ey8iFi03RLoOUi2TEnMVl6MDCOqbTF9dV31ibqz32hSrkAlo/x8W2dYkaB6ITHM27s4UvQJNB6sgw7gN/dvHr+S7FZ8bwz230l87aUA6b+1FlF+E+ML6OAzHUCCnrfvG3gBlQKpTM9PDyQqi90NGFARMahsEav9IDs9ZX+cE+QZFgT0UyMHZHqZQ0QO3E=
+  bucket: www.goin5minutes.com
+  on:
+    repo: arschles/go-in-5-minutes
+    branch: www
+  acl: public-read
+  detect_encoding: true
