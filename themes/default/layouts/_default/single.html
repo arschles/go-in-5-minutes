@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   {{partial "head.html"}}
+  <link rel="stylesheet" href="/css/common.css"/>
   {{range $i, $css := .Params.extra_css}}
   <link href="{{$css}}" rel="stylesheet"/>
   {{end}}
