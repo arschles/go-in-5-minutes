@@ -6,6 +6,7 @@ date = "2015-11-02T16:58:32-08:00"
 menu = "main"
 title = "Why We're Here"
 extra_css = ["/css/about.css"]
+type = "page"
 
 +++
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{partial "head.html"}}
+</head>
+<body class="container">
+  {{partial "nav.html"}}
+  <div class="row">
+    <h1>All Screencasts</h1>
+  </div>
+
+  <div class="row">
+  <!-- <div class="list-group row col-sm-8"> -->
+    {{range $p := (where .Site.Pages "Type" "screencast")}}
+    <div class="col-sm-4">
+      <h4 class="list-group-item-heading page-header">
+        {{$p.Title}}
+        <small>{{dateFormat "Monday, Jan 2, 2006" $p.Date}}</small>
+      </h4>
+      <div>
+        {{$p.Summary}}
+      </div>
+
+      {{if $p.Truncated}}
+      <div>
+        <a class="btn btn-default" href="{{$p.RelPermalink}}">Read More</a>
+      </div>
+      {{end}}
+    </div>
+    {{end}}
+  </div>
+
+  {{partial "js.html"}}
+</body>
+</html>

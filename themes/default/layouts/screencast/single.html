@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{partial "head.html"}}
+  <link rel="stylesheet" href="/css/common.css"/>
+  {{range $i, $css := .Params.extra_css}}
+  <link href="{{$css}}" rel="stylesheet"/>
+  {{end}}
+</head>
+<body class="container-fluid">
+  {{partial "nav.html"}}
+  <div class="container">
+    <div class="row">
+      <h1>{{.Title}}</h1>
+    </div>
+    <div class="row col-sm-8">
+      {{ .Content }}
+    </div>
+  </div>
+
+  {{partial "js.html"}}
+</body>
+</html>

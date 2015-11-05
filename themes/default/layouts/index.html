@@ -21,7 +21,7 @@
         </span>
       </h2>
       <p>
-        <a class="btn btn-success btn-lg gifm-start-button" href="https://bitly.com/goin5minutesyt" role="button">Start Watching Now</a>
+        <a class="btn btn-success btn-lg gifm-start-button" href="/screencasts" role="button">Start Watching Now</a>
       </p>
     </div>
   </div>
@@ -31,7 +31,12 @@
     </p>
   </div>
   <div class="row text-center">
-    <iframe src="https://ghbtns.com/github-btn.html?user=arschles&repo=go-in-5-minutes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    <div class="col-sm-6 text-right">
+      <iframe src="https://ghbtns.com/github-btn.html?user=arschles&repo=go-in-5-minutes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    </div>
+    <div class="col-sm-6 text-left">
+      <div class="g-ytsubscribe" data-channelid="UC2GHqYE3fVJMncbrRd8AqcA" data-layout="full" data-count="default"></div>
+    </div>
   </div>
   <div class="row text-center">
     <a class="btn btn-link" href="/about">Learn More</a>
@@ -39,8 +44,10 @@
   </div>
 
   {{partial "footer.html"}}
+
   {{partial "js.html"}}
   <script type="text/javascript" src="/js/morphtext.min.js"></script>
   <script type="text/javascript" src="/js/index.js"></script>
+  <script src="https://apis.google.com/js/platform.js"></script>
 </body>
 </html>
