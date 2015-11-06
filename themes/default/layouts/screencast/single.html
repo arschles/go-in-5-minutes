@@ -11,11 +11,25 @@
   {{partial "nav.html"}}
   <div class="container">
     <div class="row">
+      <a href="/screencasts">
+        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        All Screencasts
+      </a>
+    </div>
+    <div class="row">
       <h1>{{.Title}}</h1>
     </div>
     <div class="row col-sm-8">
       {{ .Content }}
     </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <a class="btn btn-sm btn-default" href="{{.Prev.RelPermalink}}" data-toggle="tooltip" title="{{.Prev.Title}}">Previous Screencast</a>
+    </div>
+  </div>
+  <div class="row text-center footer">
+    {{partial "footer.html"}}
   </div>
 
   {{partial "js.html"}}

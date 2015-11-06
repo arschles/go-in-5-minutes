@@ -1,8 +1,9 @@
 +++
+date = "2015-11-01T15:37:02-08:00"
+title = "Building Full Stack Web Applications in Go"
 type = "screencast"
-+++
 
-<b>Episode 0</b>
++++
 
 Stuff to show in the <a href="/screencasts">full list of screencasts</a>
 <!--more-->
@@ -18,6 +19,6 @@ _note: Change the last path element (after `/embed`) to be the new YouTube video
   frameborder="0"
 ></iframe>
 
-_note: change this GH link to the actual code_
+`note: change this GH link to the actual code`.
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode0)

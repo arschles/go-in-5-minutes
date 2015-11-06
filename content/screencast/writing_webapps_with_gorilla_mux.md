@@ -1,13 +1,14 @@
 +++
+date = "2015-11-05T15:35:53-08:00"
+title = "Writing Webapps With Gorilla Mux"
 type = "screencast"
-+++
 
-<b>Episode 0</b>
++++
 
 Stuff to show in the <a href="/screencasts">full list of screencasts</a>
 <!--more-->
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
+`note: Change the last path element (after `/embed`) to be the new YouTube video ID`
 
 <iframe
   class="ytplayer"
@@ -18,6 +19,6 @@ _note: Change the last path element (after `/embed`) to be the new YouTube video
   frameborder="0"
 ></iframe>
 
-_note: change this GH link to the actual code_
+`note: change this GH link to the actual code`.
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode0)

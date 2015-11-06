@@ -5,3 +5,7 @@ body {
 .top-sm-1 {
   margin-top:1em;
 }
+
+.footer {
+  font-size:80%;
+}
