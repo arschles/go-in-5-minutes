@@ -10,10 +10,22 @@
   {{partial "nav.html"}}
   <div class="container">
     <div class="row">
-      <a href="/screencasts">
-        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-        All Screencasts
+      {{if eq .Next.Type "screencast"}}
+      <a class="btn btn-sm btn-link" href="{{.Next.RelPermalink}}" data-toggle="tooltip" title="{{.Next.Title}}">
+        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+        Prev
       </a>
+      {{end}}
+      <a class="btn btn-sm btn-link" href="/screencasts">
+        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+        All
+      </a>
+      {{if eq .Prev.Type "screencast"}}
+      <a class="btn btn-sm btn-link" href="{{.Prev.RelPermalink}}" data-toggle="tooltip" title="{{.Prev.Title}}">
+        Next
+        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+      </a>
+      {{end}}
     </div>
     <div class="row">
       <h1>{{.Title}}</h1>
@@ -24,7 +36,7 @@
   </div>
   <div class="row">
     <div class="col-sm-2">
-      <a class="btn btn-sm btn-default" href="{{.Prev.RelPermalink}}" data-toggle="tooltip" title="{{.Prev.Title}}">Previous Screencast</a>
+
     </div>
   </div>
   <div class="row text-center footer">
