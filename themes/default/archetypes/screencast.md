@@ -2,7 +2,7 @@
 type = "screencast"
 +++
 
-<b>Episode 0</b>
+_Episode 0_
 
 Stuff to show in the <a href="/screencasts">full list of screencasts</a>
 <!--more-->

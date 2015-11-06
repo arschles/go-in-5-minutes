@@ -1,21 +1,23 @@
 +++
-date = "2015-11-01T15:37:02-08:00"
-title = "Building Full Stack Web Applications in Go"
+date = "2015-10-17T15:34:49-08:00"
+title = "Debugging Go Programs with godebug"
 type = "screencast"
 
 +++
 
+_Episode 2_
+
 Stuff to show in the <a href="/screencasts">full list of screencasts</a>
 <!--more-->
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
+`note: Change the last path element (after `/embed`) to be the new YouTube video ID`
 
 <iframe
   class="ytplayer"
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/LQi0N0nA5RA?autoplay=0&origin=http://example.com"
   frameborder="0"
 ></iframe>
 
