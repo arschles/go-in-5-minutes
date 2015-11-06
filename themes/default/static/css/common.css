@@ -1,6 +1,7 @@
 body {
   margin-bottom:10px;
   font-size:18px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .top-sm-1 {
@@ -13,4 +14,9 @@ body {
 
 p {
   color: #747474;
+}
+
+.gifm-logo {
+  font-size:120%;
+  font-family: 'Cousine', ;
 }

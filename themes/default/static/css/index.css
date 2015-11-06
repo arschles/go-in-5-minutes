@@ -8,33 +8,20 @@ div.start-button-row {
 }
 
 .gifm-subtitle {
-  text-transform:uppercase;
-  font-family: 'Cousine';
-  font-weight:700;
+  text-transform: uppercase;
+  font-weight:900;
   /*color: #92A1B9;*/
 }
 
-.gifm-title {
-  /*color: #EEEEEE !important;*/
+#gifm-rotating-topics {
+  font-family: 'Varela Round', sans-serif;
 }
 
-.gifm-border-bot {
-  border-bottom: 3px solid black;
+#gifm-elaboration {
+  font-family: 'Cousine', ;
 }
 
-.gifm-row {
-  min-height: 100px;
-  padding:1em 0 1em 0;
-}
-
-.gifm-row-1 {
-  background-color: #03132D;
-}
-
-.gifm-row-2 {
-  background-color: #FFDCC4;
-}
-
-.gifm-row-3 {
-  background-color: #77380E;
+#gifm-landing-jumbotron p.gifm-subtitle {
+  /*color:black;*/
+  color:#03132D;
 }
