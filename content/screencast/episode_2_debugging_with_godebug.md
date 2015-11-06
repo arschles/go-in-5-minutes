@@ -7,10 +7,10 @@ type = "screencast"
 
 _Episode 2_
 
-Stuff to show in the <a href="/screencasts">full list of screencasts</a>
-<!--more-->
+We show a semi-complex concurrent program with a bug in it, and then use [godebug](https://github.com/mailgun/godebug) to find, diagnose and fix it.
 
-`note: Change the last path element (after `/embed`) to be the new YouTube video ID`
+We also show a few other examples of bugs and show how to find and fix those.
+<!--more-->
 
 <iframe
   class="ytplayer"
@@ -21,6 +21,4 @@ Stuff to show in the <a href="/screencasts">full list of screencasts</a>
   frameborder="0"
 ></iframe>
 
-`note: change this GH link to the actual code`.
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode0)
+Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode2).

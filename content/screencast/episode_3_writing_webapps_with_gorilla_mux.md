@@ -7,7 +7,12 @@ type = "screencast"
 
 _Episode 3_
 
-Stuff to show in the <a href="/screencasts">full list of screencasts</a>
+We show how to write more advanced web applications with the [`gorilla/mux`](http://godoc.org/github.com/gorilla/mux). We walk through example code that implements
+a complex [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) API and highlights
+many of the features of the library.
+
+This screencast expands on concepts in [episode 1](/screencast/episode_1_building_restful_api_using_only_std_lib), but you don't need to
+watch that screencast to understand this one.
 <!--more-->
 
 <iframe
@@ -19,4 +24,4 @@ Stuff to show in the <a href="/screencasts">full list of screencasts</a>
   frameborder="0"
 ></iframe>
 
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode0)
+Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode3).

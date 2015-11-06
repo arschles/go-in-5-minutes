@@ -7,7 +7,11 @@ type = "screencast"
 
 _Episode 4_
 
-Stuff to show in the <a href="/screencasts">full list of screencasts</a>
+We explain what [Websockets](https://en.wikipedia.org/wiki/WebSocket) are and why they matter
+in modern web development. Then, we show how to build a full featured Websocket server
+using the [`gorilla/websocket`](https://godoc.org/github.com/gorilla/websocket) package.
+
+The example and sample code shows a complete browser-based chat application.
 <!--more-->
 
 <iframe
@@ -19,4 +23,4 @@ Stuff to show in the <a href="/screencasts">full list of screencasts</a>
   frameborder="0"
 ></iframe>
 
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode4)
+Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode4).

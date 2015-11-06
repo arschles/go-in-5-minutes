@@ -21,4 +21,4 @@ We show how to write code that is extensible and testable and then how to write 
   frameborder="0"
 ></iframe>
 
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode0)
+Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode0).

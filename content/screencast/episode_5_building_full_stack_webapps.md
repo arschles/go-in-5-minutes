@@ -7,10 +7,10 @@ type = "screencast"
 
 _Episode 5_
 
-Stuff to show in the <a href="/screencasts">full list of screencasts</a>
+We explain how to write full featured web applications in Go, which cover a wide variety
+of topics. We focus on database communication, rendering templates, and client-server
+communication via APIs.
 <!--more-->
-
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
 
 <iframe
   class="ytplayer"
@@ -21,6 +21,4 @@ _note: Change the last path element (after `/embed`) to be the new YouTube video
   frameborder="0"
 ></iframe>
 
-`note: change this GH link to the actual code`.
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode0)
+Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode5).
