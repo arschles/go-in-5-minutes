@@ -1,5 +1,6 @@
 body {
   margin-bottom:10px;
+  font-size:18px;
 }
 
 .top-sm-1 {
@@ -8,4 +9,8 @@ body {
 
 .footer {
   font-size:80%;
+}
+
+p {
+  color: #747474;
 }

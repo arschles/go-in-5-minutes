@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
   {{partial "head.html"}}
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Varela+Round|Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/screencasts.css"/>
 </head>
-<body class="container">
+<body class="container-fluid">
   {{partial "nav.html"}}
-  <div class="row">
-    <h1>All Screencasts</h1>
-  </div>
-
-  <div class="row">
+  <div class="container">
+    <div class="row">
+      <h1 class="page-title">
+        All Screencasts
+        <small>Newest on top</small>
+      </h1>
+    </div>
     {{range $p := (where .Site.Pages "Type" "screencast")}}
-    <div class="col-sm-4">
-      <h4 class="list-group-item-heading page-header">
-        {{$p.Title}}
-        <small>{{dateFormat "Monday, Jan 2, 2006" $p.Date}}</small>
-      </h4>
-      <div>
-        {{$p.Summary}}
+    <div class="row media">
+      <div class="date col-sm-1">
+        {{dateFormat "Monday, Jan 2, 2006" $p.Date}}
       </div>
-
-      {{if $p.Truncated}}
-      <div>
-        <a class="btn btn-default" href="{{$p.RelPermalink}}">Read More</a>
+      <div class="col-sm-10">
+        <h2>{{$p.Title}}</h2>
+        <p>
+          {{$p.Summary}}
+        </p>
+        <div>
+          <a class="btn btn-default" href="{{$p.RelPermalink}}">More</a>
+        </div>
       </div>
-      {{end}}
     </div>
     {{end}}
   </div>
 
+  <div class="row text-center footer">
+    {{partial "footer.html"}}
+  </div>
   {{partial "js.html"}}
 </body>
 </html>

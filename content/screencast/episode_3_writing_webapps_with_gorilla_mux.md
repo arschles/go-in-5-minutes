@@ -1,5 +1,5 @@
 +++
-date = "2015-11-05T15:35:53-08:00"
+date = "2015-10-17T15:35:53-08:00"
 title = "Writing Webapps With Gorilla Mux"
 type = "screencast"
 
