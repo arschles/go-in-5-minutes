@@ -15,3 +15,13 @@ Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels
 # Issues With Code, Documentation, etc...
 
 If you see any problems with code, documentation, or anything else in this repository, please [submit an issue](https://github.com/arschles/go-in-5-minutes/issues) with the `bug` label and I'll fix it as soon as I can. Pull requests are also welcome.
+
+# Build, Test and Run Instructions
+
+All the folders that start with `episode` (such as [`episode0`](https://github.com/arschles/go-in-5-minutes/tree/master/episode0)) contain the outline and code samples for that episode, and all code samples can be built and run.
+
+Unless otherwise specified in the `README.md` in the episode folder, the commands for building, testing and running simply use the `go` tool. All episodes are buildable and testable, but some don't have a `package main` because they're libraries, so they won't be runnable.
+
+- build: `go build`
+- test: `go test`
+- run: `go build -o example && ./example`
