@@ -4,7 +4,7 @@ Go in 5 Minutes, episode 5.
 
 This screencast shows the general layout and structure of a web application, as requested in [Issue # 24](https://github.com/arschles/go-in-5-minutes/issues/24).
 
-You can see it here: https://youtu.be/QvWUCYwmExE
+You can see it here: http://www.goin5minutes.com/screencast/episode_5_building_full_stack_webapps/
 
 ## YouTube Subscriptions and Github stars
 

@@ -6,7 +6,7 @@ This screencast shows how to take advantage of [Gorilla Mux](https://github.com/
 
 This screencast was requested in https://github.com/arschles/go-in-5-minutes/issues/18.
 
-You can see it here: https://youtu.be/6Pl5Xrrne2c
+You can see it here: http://www.goin5minutes.com/screencast/episode_3_writing_webapps_with_gorilla_mux/
 
 ## Outline
 
