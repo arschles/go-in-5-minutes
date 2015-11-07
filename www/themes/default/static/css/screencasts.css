@@ -1,0 +1,12 @@
+.screencast-row {
+  margin:1em 0 1em 0;
+}
+.screencast-col {
+  padding:1em;
+  margin:10px 10px 10px 10px;
+  border: 1px solid #eeeeee;
+}
+
+div.media-left.date {
+  color:#555555;
+}

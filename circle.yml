@@ -1,0 +1,24 @@
+machine:
+  environment:
+    CIRCLE_BUILD_DIR: $HOME/$CIRCLE_PROJECT_REPONAME
+    PATH: $PATH:$CIRCLE_BUILD_DIR/bin:$CIRCLE_BUILD_DIR/bin/gsutil
+    BOTO_CONFIG: $CIRCLE_BUILD_DIR/.boto
+  post:
+    - mkdir -p $CIRCLE_BUILD_DIR/bin
+dependencies:
+  pre:
+    - bash ./circle_install_gsutil.sh
+    - bash ./circle_install_hugo.sh
+  cache_directories:
+    - bin
+test:
+  override:
+    - hugo -v
+deployment:
+  gsutilup:
+    branch: www
+    commands:
+      - gsutil rsync -R public gs://www.goin5minutes.com
+      - gsutil -m acl ch -R -u AllUsers:R gs://www.goin5minutes.com
+      - gsutil web set -m index.html -e 404.html gs://www.goin5minutes.com
+      - gsutil web get gs://www.goin5minutes.com

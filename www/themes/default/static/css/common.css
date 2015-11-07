@@ -1,0 +1,31 @@
+body {
+  margin-bottom:10px;
+  font-size:18px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.top-sm-1 {
+  margin-top:1em;
+}
+
+.top-sm-2 {
+  margin-top: 2em;
+}
+
+.background-grey-1 {
+  background-color: #eeeeee;
+}
+
+.footer {
+  margin-top:3em;
+  font-size:80%;
+}
+
+p {
+  color: #747474;
+}
+
+.gifm-logo {
+  font-size:120%;
+  font-family: 'Cousine', ;
+}
