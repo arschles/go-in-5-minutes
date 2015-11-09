@@ -25,11 +25,16 @@ func TestGetIssuesTestSrv(t *testing.T) {
 	// concurrently, you should create and run one server per test case, and always
 	// remember to close the server at the end of the test.
 	// see https://godoc.org/github.com/arschles/testsrv for more documentation
-	// on testsrv, and
+	// on testsrv.
+	//
+	// note that this server runs in the same process as our tests.
 	srv := testsrv.StartServer(r)
 	// always close the server at the end of each test
 	defer srv.Close()
 
+	// do a *real* request against the server (serving at srv.URLStr()) and
+	// specify the right path to test the handler. this is exercising the Gorilla Mux router
+	// all the way down to the handler.
 	_, err := http.Get(fmt.Sprintf("%s/issues/arschles/go-in-5-minutes", srv.URLStr()))
 	if err != nil {
 		t.Fatalf("error executing GET on /issues/arschles/go-in-5-minutes [%s]", err)
