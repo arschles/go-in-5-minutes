@@ -17,7 +17,7 @@ import (
 // See TestGetIssuesTestSrv in get_issues_test.go for an example of testing complex router logic
 func TestAsciiCatRespRecorder(t *testing.T) {
 	w := httptest.NewRecorder()
-	r, err := http.NewRequest("GET", "/ascci_cat", nil)
+	r, err := http.NewRequest("GET", "/ascii_cat", nil)
 	if err != nil {
 		t.Fatalf("error constructing test HTTP request [%s]", err)
 	}
