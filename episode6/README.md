@@ -22,4 +22,5 @@ I'll be sending out weekly emails in the newsletter to let you know when the new
 
 1. Flash back to [episode 0](https://github.com/arschles/go-in-5-minutes/tree/master/episode0)
 2. [net/http/httptest](https://godoc.org/net/http/httptest) & [testsrv](https://github.com/arschles/testsrv)
+  - pure handler vs. router & handler tests
 3. Example - an API server to wrap the Github API
