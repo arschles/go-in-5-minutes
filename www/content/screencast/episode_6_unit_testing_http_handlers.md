@@ -26,7 +26,7 @@ _note: Change the last path element (after `/embed`) to be the new YouTube video
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/YmbbmyxSlcg?autoplay=0&origin=http://example.com"
   frameborder="0"
 ></iframe>
 
