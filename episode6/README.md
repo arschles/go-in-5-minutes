@@ -6,7 +6,7 @@ This screencast shows two ways to quickly and effectively test your [`net/http` 
 
 You can see it here: TODO
 
-## Say Hello to goin5minuts.com
+## goin5minutes.com
 
 Exciting news for this screencast - http://goin5minutes.com is up and running!
 
