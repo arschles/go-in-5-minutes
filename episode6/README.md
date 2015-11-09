@@ -6,11 +6,9 @@ This screencast shows two ways to quickly and effectively test your [`net/http` 
 
 You can see it here: TODO
 
-## goin5minutes.com
+## [goin5minutes.com](http://www.goin5minutes.com)
 
-Exciting news for this screencast - http://goin5minutes.com is up and running!
-
-Right now, it houses a list of all screencasts, but I'm planning to expand it with more auxiliary content.
+Our website is up and running! Right now, it houses a permanent list of all screencasts, but I'm planning to expand it with more auxiliary content.
 
 ## Newsletter
 
