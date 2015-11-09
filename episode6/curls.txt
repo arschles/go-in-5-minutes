@@ -1,0 +1,2 @@
+curl localhost:8080/ascii_cat
+curl localhost:8080/issues/arschles/go-in-5-minutes
