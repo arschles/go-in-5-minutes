@@ -11,6 +11,12 @@ import (
 func GetIssues(cl *github.Client) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
+		// note that the checks on vars["org"] and vars["name"] are not strictly
+		// necessary because Gorilla Mux will ensure that the values exist in the path,
+		// we are doing the checks here as defensive programming (for example, if the
+		// router is switched out later), and to ensure that any tests written directly
+		// against this handler (as opposed to using net/http/httptest.Server or github.com/arschles/testsrv.Server)
+		// will fail intelligently
 		org, ok := vars["org"]
 		if !ok {
 			http.Error(w, "missing org in path", http.StatusBadRequest)

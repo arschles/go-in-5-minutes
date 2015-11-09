@@ -10,7 +10,9 @@ import (
 
 // TestAsciiCatRespRecorder uses net/http/httptest ResponseRecorder
 // (https://godoc.org/net/http/httptest#ResponseRecorder) to test the AsciiCat
-// handler directly. ResponseRecorder is useful for direct testing of handlers,
+// handler directly.
+//
+// ResponseRecorder is useful for direct testing of handlers,
 // but doesn't provide a complete solution when the router itself handles complex logic.
 // See TestGetIssuesTestSrv in get_issues_test.go for an example of testing complex router logic
 func TestAsciiCatRespRecorder(t *testing.T) {
