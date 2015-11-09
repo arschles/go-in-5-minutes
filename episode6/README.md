@@ -10,7 +10,7 @@ You can see it here: TODO
 
 Our website is up and running! Right now, it houses a permanent list of all screencasts, but I'm planning to expand it with more auxiliary content.
 
-__Please [sign up for our newsletter](http://www.goin5minutes.com/subscribe)__ to get weekly notification emails when new screencasts come out.
+__Please [sign up for our newsletter](http://www.goin5minutes.com/subscribe) to get emails when new screencasts come out.__
 
 ## Outline
 
