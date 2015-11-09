@@ -19,8 +19,6 @@ Note that the second method is not strictly unit testing because it tests the ro
 
 Note also that I wrote the [testsrv](https://godoc.org/github.com/arschles/testsrv) library. It is a convenience wrapper on top of [`net/http/httptest.Server`](https://godoc.org/net/http/httptest#Server) and example code shows how to use it. [Pull requests](https://github.com/arschles/testsrv/pulls) and [issues](https://github.com/arschles/testsrv/issues) are welcome on `testsrv`.
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
-
 <iframe
   class="ytplayer"
   type="text/html"

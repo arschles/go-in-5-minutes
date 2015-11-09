@@ -4,22 +4,24 @@
   {{partial "head.html"}}
   <link rel="stylesheet" href="/css/subscribe.css"/>
 </head>
-<body class="container text-center">
+<body class="container-fluid text-center">
   {{partial "nav.html"}}
-  <div class="jumbotron row text-center">
-    <h1>Go In 5 Minutes Newsletter</h1>
-    <p>Periodic emails with new screencasts and valuable content, right in your inbox</p>
-    {{if 0}}
-    {{/*TODO: when ready to actually deliver this, do it*/}}
-    <p id="gifm-benefits">
-      <ul id="gifm-benefits-list">
-        <li>Never miss a screencast</li>
-        <li>See extra content that's not in the screencasts</li>
-        <li>Get curated Go-related resources</li>
-      </ul>
-    </p>
-    {{end}}
-    {{partial "subscribe_form.html"}}
+  <div class="container">
+    <div class="jumbotron row text-center">
+      <h1>Go In 5 Minutes Newsletter</h1>
+      <p>Periodic emails with new screencasts and valuable content, right in your inbox</p>
+      {{if 0}}
+      {{/*TODO: when ready to actually deliver this, do it*/}}
+      <p id="gifm-benefits">
+        <ul id="gifm-benefits-list">
+          <li>Never miss a screencast</li>
+          <li>See extra content that's not in the screencasts</li>
+          <li>Get curated Go-related resources</li>
+        </ul>
+      </p>
+      {{end}}
+      {{partial "subscribe_form.html"}}
+    </div>
   </div>
   <div class="row text-center footer">
     {{partial "footer.html"}}
