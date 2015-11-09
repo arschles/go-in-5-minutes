@@ -10,11 +10,7 @@ You can see it here: TODO
 
 Our website is up and running! Right now, it houses a permanent list of all screencasts, but I'm planning to expand it with more auxiliary content.
 
-## Newsletter
-
-I'll be sending out weekly emails in the newsletter to let you know when the newest screencast is out.
-
-[Sign up Now](http://www.goin5minutes.com/subscribe/index.html)
+__Please [sign up for our newsletter](http://www.goin5minutes.com/subscribe)__ to get weekly notification emails when new screencasts come out.
 
 ## Outline
 
