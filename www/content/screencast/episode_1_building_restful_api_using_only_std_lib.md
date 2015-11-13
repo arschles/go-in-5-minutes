@@ -16,7 +16,7 @@ We show how to write a feature-rich [REST](https://en.wikipedia.org/wiki/Represe
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/6Pl5Xrrne2c?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/eTjNtNnVOGY?autoplay=0&origin=http://example.com"
   frameborder="0"
 ></iframe>
 
