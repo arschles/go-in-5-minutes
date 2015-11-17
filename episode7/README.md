@@ -12,6 +12,7 @@ Sign up here: (http://www.goin5minutes.com/subscribe/index.html)
 
 ## Outline
 
-1. Manual profiling, HTTP endpoints
-2. `go tool pprof`
-3. Examples
+1. Why profile?
+2. Manual profiling, HTTP endpoints
+3. `go tool pprof`
+4. Examples
