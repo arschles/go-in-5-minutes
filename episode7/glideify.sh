@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Attention: remove the vendor/ directory and the glide.yaml file before running this script. It will fail to run if you run it against this repository as-is, or you've already successfully run it once.
+# Attention: run clean.sh before running this script. Otherwise, it will fail if you run it against this repo as-is, or you've already successfully run it once.
 
 # Details: This script creates a glide.yaml file to track dependencies, and a vendor/ folder to store them. Neither operation is idempotent, so they must be manually removed.
+
+# Also ensure that the GO15VENDOREXPERIMENT env var is set to 1 before running go build
 
 glide create # create the glide.yaml file
 
@@ -13,6 +15,8 @@ glide get github.com/arschles/testsrv # download the latest testsrc code into ve
 
 # install transitive dependencies
 glide get github.com/google/go-querystring/query
+
+# you can now run go build
 
 
 # Special note: The following are optional commands for project maintenance
