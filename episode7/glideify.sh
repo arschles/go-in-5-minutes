@@ -15,6 +15,7 @@ glide get github.com/arschles/testsrv # download the latest testsrc code into ve
 
 # install transitive dependencies
 glide get github.com/google/go-querystring/query
+glide get github.com/gorilla/context # note: running this command was elided from the screencast for brevity
 
 # you can now run go build
 
