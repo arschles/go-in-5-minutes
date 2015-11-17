@@ -19,5 +19,5 @@ The first email will go out this week!
 3. A Rich History
   - [Godep](https://github.com/tools/godep) (my favorite) & Others
   - [Go 1.5 Vendor Experiment](https://docs.google.com/document/d/1Bz5-UB7g2uPBdOx-rw5t9MxJwkfpx90cqG9AFL0JAYo/edit)
-  - [Glide](https://github.com/Masterminds/glide) *
+  - [Glide](https://github.com/Masterminds/glide)
 4. Example
