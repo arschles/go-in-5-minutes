@@ -10,7 +10,9 @@ See https://blog.golang.org/profiling-go-programs for plenty more details.
 
 Starting later this week, I'll be traveling to spend time with my family for [Thanksgiving](https://en.wikipedia.org/wiki/Thanksgiving), so there won't be a screencast or a newsletter next weekend.
 
-For everyone who celebrates Thanksgiving, happy Thanksgiving! If you don't, have a great week and weekend. I'll see everyone in two weeks.
+For everyone who celebrates Thanksgiving, happy Thanksgiving! If you don't, have a great week and weekend. In the spirit of the holiday, I'm thankful for everyone who enjoys the content I produce and motivates me to produce the best screencasts I possibly can.
+
+I'll see everyone in two weeks.
 
 ## Outline
 
