@@ -10,14 +10,12 @@ _Episode 8_
 We explain why you should profile your programs, how to do it, and (briefly) how you can improve your code based on your profile results.
 <!--more-->
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
-
 <iframe
   class="ytplayer"
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/7LCgsfHIMv4?autoplay=0&origin=http://example.com"
   frameborder="0"
 ></iframe>
 
