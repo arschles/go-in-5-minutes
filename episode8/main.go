@@ -23,8 +23,8 @@ func main() {
 	os.Exit(1)
 }
 
-// heavyDuty represents some "heavy duty" work to be done. this will grow memory usage
-// and goroutine usage forever because it does recursion
+// recur is a func that intentionally unboundedly increases goroutine and memory usage.
+// through profiling, you can see why (and where) it does so, and you can fix it.
 func recur(i int, strs []string) {
 	time.Sleep(30 * time.Second)
 	s1 := append(strs, strconv.Itoa(i))
