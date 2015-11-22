@@ -19,5 +19,5 @@ I'll see everyone in two weeks.
 1. Why profile?
 2. Two ways to profile
   - Today's topic - [HTTP endpoints](https://godoc.org/net/http/pprof)
-  - Additional Reading: [Manual profiling & `go tool pprof`](https://godoc.org/runtime/pprof)
+  - Additional Reading: [Manual profiling](https://godoc.org/runtime/pprof) and [`go tool pprof`](https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs)
 3. Examples
