@@ -2,6 +2,8 @@
 
 This repository has code and outlines for [Go In 5 Minutes Screencasts](htttp://bitly.com/goin5minutesyt). All content (code samples, outlines, etc...) is organized into folders, starting with [`episode0`](https://github.com/arschles/go-in-5-minutes/tree/master/episode0) and going from there.
 
+Full descriptions and videos are at http://www.goin5minutes.com/screencasts/index.html.
+
 Shortened URL for this repository: http://bitly.com/goin5minutes. Shortened URL for screencasts: http://bitly.com/goin5minutesyt.
 
 # Request A Screencast
@@ -11,6 +13,10 @@ I have some ideas for topics to cover, but if you want to see some topics covere
 Please [submit an issue](https://github.com/arschles/go-in-5-minutes/issues) with the `request a screencast` label and make sure to include a good description on what you want to see!
 
 Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels/request%20a%20screencast.
+
+# Email Newsletter
+
+Every week I send out an email newsletter with the latest screencast and some additional information and resources. I encourage you to sign up for it at http://www.goin5minutes.com/subscribe/index.html.
 
 # Issues With Code, Documentation, etc...
 
