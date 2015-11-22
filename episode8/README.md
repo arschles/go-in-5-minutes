@@ -1,16 +1,16 @@
 # Profiling Go Programs
 
-Go in 5 Minutes, episode 7.
+Go in 5 Minutes, episode 8.
 
 This screencast goes into detail on how to profile Go programs.
 
 See https://blog.golang.org/profiling-go-programs for plenty more details.
 
-## 2 Months!
+## Special Note
 
-This is the official 2 month anniversary of Go In 5 Minutes! The show has grown faster than I anticipated and it's all thanks to all of you. Your Github stars, Youtube subscriptions and idea submissions ([shameless plug](https://github.com/arschles/go-in-5-minutes/issues)) really motivate me to produce the best screencasts I possibly can.
+Starting later this week, I'll be traveling to spend time with my family for [Thanksgiving](https://en.wikipedia.org/wiki/Thanksgiving), so there won't be a screencast or a newsletter next weekend.
 
-Thank you all, and I'm looking forward to everything to come!
+For everyone who celebrates Thanksgiving, happy Thanksgiving! If you don't, have a great week and weekend. I'll see everyone in two weeks.
 
 ## Outline
 
