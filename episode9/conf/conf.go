@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-// Default is an in-memory config backend. It's used in the SetInt and GetInt calls
+// Default is an in-memory config backend. It's used in the SetInt and GetInt calls, and it's the optional singleton. Some packages export this name and others don't. If it's exported, it's the library user's responsibility to set it correctly and avoid concurrency issues (like setting it from two different goroutines, which would be a race condition)
 var Default Data = NewMem()
 
 // ErrNotFound is the error returned when a config item isn't found
