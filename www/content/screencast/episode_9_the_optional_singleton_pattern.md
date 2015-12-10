@@ -10,14 +10,12 @@ _Episode 9_
 We explain what the optional singleton pattern is, how it can make libraries easier to use, and walk through the code for a simple library that uses this pattern.
 <!--more-->
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
-
 <iframe
   class="ytplayer"
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/kZ1YwEH-OdQ?autoplay=0&origin=http://example.com"
   frameborder="0"
 ></iframe>
 
