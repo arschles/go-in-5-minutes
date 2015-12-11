@@ -36,6 +36,7 @@ func TestAsciiCatRespRecorder(t *testing.T) {
 	if len(bodyStr) <= 0 {
 		t.Fatalf("expected non-empty response body")
 	}
+	ghClient := github.NewClient(nil)
 	expectedCat, _, err := ghClient.Octocat("Hello, Go In 5 Minutes Viewer!")
 	if err != nil {
 		t.Fatalf("error getting expected octocat string [%s]", err)
