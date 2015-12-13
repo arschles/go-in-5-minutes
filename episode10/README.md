@@ -13,5 +13,6 @@ And once again, thank you for all your support!
 ## Outline
 
 1. Concurrency series on GIFM
+  - https://github.com/arschles/go-in-5-minutes/issues/14
 2. This problem
 3. Example code
