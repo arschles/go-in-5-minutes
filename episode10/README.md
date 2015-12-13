@@ -6,7 +6,7 @@ This screencast overviews "The Daily Walk" problem on [Trivial Concurrency Exerc
 
 ## Shameless Plug/Reminder
 
-We're  **so close** to 1000 subscriptions [on YouTube](https://www.youtube.com/channel/UC2GHqYE3fVJMncbrRd8AqcA) (106 shy of 100 as of this writing). If you haven't already, [go subscribe](https://www.youtube.com/channel/UC2GHqYE3fVJMncbrRd8AqcA)!
+We're  **so close** to 1000 subscriptions [on YouTube](https://www.youtube.com/channel/UC2GHqYE3fVJMncbrRd8AqcA) (106 shy of 1000 as of this writing). If you haven't already, [go subscribe](https://www.youtube.com/channel/UC2GHqYE3fVJMncbrRd8AqcA)!
 
 And once again, thank you for all your support!
 
