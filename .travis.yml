@@ -1,0 +1,11 @@
+language: generic
+sudo: required
+services:
+  - docker
+install:
+  - docker run --rm -v "$PWD/web":/web -w /web quay.io/arschles/hugo hugo -v
+deploy:
+  provider: script
+  script: ./deploy-site.sh
+  on:
+    branch: master
