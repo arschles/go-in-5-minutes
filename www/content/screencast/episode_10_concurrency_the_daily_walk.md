@@ -10,14 +10,12 @@ _Episode 10_
 We describe the problem #1 on [Trivial Concurrency Exercises for the Confused Newbie Gopher](http://whipperstacker.com/2015/10/05/3-trivial-concurrency-exercises-for-the-confused-newbie-gopher) and then present and detail a solution to the problem.
 <!--more-->
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
-
 <iframe
   class="ytplayer"
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/ylWpMN3UREo?autoplay=0&origin=http://example.com"
   frameborder="0"
 ></iframe>
 
