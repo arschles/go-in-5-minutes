@@ -5,4 +5,10 @@ the Go In 5 Minutes example code and outlines, please see the [root directory](h
 
 # Create a New Screencast Page
 
-run `hugo create screencast/episode_x_some_description.md`
+run `hugo new screencast/episode_x_some_description.md`
+
+if you don't have [Hugo](http://gohugo.io) installed, follow the [install instructions](http://gohugo.io/) (click the "install" button) or run it in a [Docker](https://www.docker.com/) container:
+
+```console
+docker run --rm -v $PWD:/pwd -w /pwd quay.io/arschles/hugo:latest hugo new screencast/episode_x_some_description.md
+```
