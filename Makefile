@@ -1,0 +1,3 @@
+deploy-site:
+	# note the need for GOOGLE_APPLICATION_CREDENTIALS. still working on that...
+	docker run --rm -v $PWD:/pwd -w /pwd -e GCSUP_JWT_FILE_LOCATION=./go-in-5-minutes-jwt.json -e GCSUP_PROJECT_NAME=go-in-5-minutes -e GCSUP_BUCKET_NAME=goin5minutes-site-test -e GCSUP_LOCAL_FOLDER=www/public -e GOOGLE_APPLICATION_CREDENTIALS=./go-in-5-minutes-jwt.json quay.io/arschles/gcsup:latest gcsup
