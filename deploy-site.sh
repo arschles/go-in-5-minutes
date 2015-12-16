@@ -2,7 +2,7 @@
 
 JWT_FILE="gifm-jwt.json"
 touch $JWT_FILE
-JWT=echo "$GCSUP_JWT" | base64 -D
+JWT=$(echo "$GCSUP_JWT" | base64 -D)
 echo "$JWT" > $JWT_FILE
 
 # build in hugo
