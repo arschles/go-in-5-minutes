@@ -21,21 +21,30 @@ func main() {
 
 	router := mux.NewRouter()
 
-	redisOpts := &redis.Options{
-		Addr:     fmt.Sprintf(conf.RedisHost),
-		Password: conf.RedisPass,
-		DB:       conf.RedisDB,
+	var database db.DB
+	switch conf.DBType {
+	case "mem":
+		database = db.NewMem()
+	case "redis":
+		redisOpts := &redis.Options{
+			Addr:     fmt.Sprintf(conf.RedisHost),
+			Password: conf.RedisPass,
+			DB:       conf.RedisDB,
+		}
+		rawRedisClient := redis.NewClient(redisOpts)
+		database = db.NewRedis(rawRedisClient)
+	default:
+		log.Printf("Error: no available DB type %s", conf.DBType)
+		os.Exit(1)
 	}
-	rawRedisClient := redis.NewClient(redisOpts)
-	redisClient := db.NewRedis(rawRedisClient)
 
-	cah := handlers.NewCreateAppHandler(redisClient)
+	cah := handlers.NewCreateAppHandler(database)
 	cah.RegisterRoute(router)
 
-	gah := handlers.NewGetAppHandler(redisClient)
+	gah := handlers.NewGetAppHandler(database)
 	gah.RegisterRoute(router)
 
-	dah := handlers.NewDeleteAppHandler(redisClient)
+	dah := handlers.NewDeleteAppHandler(database)
 	dah.RegisterRoute(router)
 
 	portStr := fmt.Sprintf(":%d", conf.Port)
