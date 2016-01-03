@@ -9,7 +9,10 @@ type AppKey struct {
 	str string
 }
 
-func (a AppKey) String() string {
+func NewAppKey(name string) *AppKey {
+	return &AppKey{str: name}
+}
+func (a *AppKey) String() string {
 	return a.str
 }
 
