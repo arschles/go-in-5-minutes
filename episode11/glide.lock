@@ -1,0 +1,14 @@
+hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+updated: 2016-01-03T11:49:55.603590002-08:00
+imports:
+- name: github.com/gorilla/context
+  version: 1c83b3eabd45b6d76072b66b746c20815fb2872d
+- name: github.com/gorilla/mux
+  version: 26a6070f849969ba72b72256e9f14cf519751690
+- name: github.com/kelseyhightower/envconfig
+  version: 12c18e8343f6eb5fc3a9d5c8dc353e42e6bb40b9
+- name: gopkg.in/bsm/ratelimit.v1
+  version: f14ad9c78b155f69b480cfa41cb655259baac260
+- name: gopkg.in/redis.v3
+  version: aa0a9697d83d57be721f4ef8176d367c63873855
+devImports: []
