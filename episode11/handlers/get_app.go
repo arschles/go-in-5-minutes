@@ -33,7 +33,11 @@ func (c *GetAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	app := &models.App{}
-	if err := c.db.Get(models.NewAppKey(name), app); err != nil {
+	err := c.db.Get(models.NewAppKey(name), app)
+	if err == db.ErrNotFound {
+		http.Error(w, jsonErrStr(fmt.Sprintf("app %s not found", name)), http.StatusNotFound)
+		return
+	} else if err != nil {
 		http.Error(w, jsonErrStr(fmt.Sprintf("database error: %s", err)), http.StatusInternalServerError)
 		return
 	}
