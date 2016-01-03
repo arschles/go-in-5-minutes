@@ -10,18 +10,22 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// GetAppHandler is the http.Handler that gets and returns existing applications
 type GetAppHandler struct {
 	db db.DB
 }
 
+// NewGetAppHandler initializes and returns a new GetAppHandler with the given database
 func NewGetAppHandler(db db.DB) *GetAppHandler {
 	return &GetAppHandler{db: db}
 }
 
+// RegisterRoute registers the appropriate route for this handler on the given router
 func (c *GetAppHandler) RegisterRoute(r *mux.Router) {
 	r.Handle(fmt.Sprintf("/app/{%s}", appNamePath), c).Methods("GET")
 }
 
+// ServeHTTP is the http.Handler interface implementation
 func (c *GetAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	name, ok := mux.Vars(r)[appNamePath]
 	if !ok {

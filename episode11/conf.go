@@ -8,6 +8,7 @@ const (
 	AppName = "episode11"
 )
 
+// Config is the envconfig-compatible configuration struct for this server. See https://github.com/kelseyhightower/envconfig for more detail
 type Config struct {
 	Port      int    `envconfig:"port" default:"8080"`
 	DBType    string `envconfig:"db_type" default:"mem"`
@@ -16,6 +17,7 @@ type Config struct {
 	RedisDB   int64  `envconfig:"redis_db" default:"0"`  // default to the redis default DB
 }
 
+// GetConfig uses envconfig to populate and return a Config struct. Returns all envconfig errors if they occurred
 func GetConfig() (*Config, error) {
 	conf := new(Config)
 	if err := envconfig.Process(AppName, conf); err != nil {

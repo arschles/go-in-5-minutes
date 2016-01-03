@@ -12,11 +12,12 @@ type Redis struct {
 	client *redis.Client
 }
 
+// NewRedis initializes and returns a redis DB using the given raw redis.v3 client
 func NewRedis(cl *redis.Client) *Redis {
 	return &Redis{client: cl}
 }
 
-//Get method of the RedisClientWrapper type
+// Save is the interface implementation
 func (r *Redis) Save(k models.Key, m models.Model) error {
 	b, err := m.MarshalBinary()
 	if err != nil {
@@ -25,10 +26,12 @@ func (r *Redis) Save(k models.Key, m models.Model) error {
 	return r.client.Set(k.String(), b, time.Duration(0)).Err()
 }
 
+// Delete is the interface implementation
 func (r *Redis) Delete(k models.Key) error {
 	return r.client.Del(k.String()).Err()
 }
 
+// Get is the interface implementation
 func (r *Redis) Get(k models.Key, m models.Model) error {
 	str, err := r.client.Get(k.String()).Result()
 	if err != nil {

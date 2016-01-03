@@ -9,18 +9,22 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// CreateAppHandler is the http.Handler that deletes existing applications
 type DeleteAppHandler struct {
 	db db.DB
 }
 
+// NewDeleteAppHandler initializes and returns a new DeleteAppHandler with the given database
 func NewDeleteAppHandler(db db.DB) *DeleteAppHandler {
 	return &DeleteAppHandler{db: db}
 }
 
+// RegisterRoute registers the appropriate route for this handler on the given router
 func (c *DeleteAppHandler) RegisterRoute(r *mux.Router) {
 	r.Handle(fmt.Sprintf("/app/{%s}", appNamePath), c).Methods("DELETE")
 }
 
+// ServeHTTP is the http.Handler interface implementation
 func (c *DeleteAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	name, ok := mux.Vars(r)[appNamePath]
 	if !ok {
