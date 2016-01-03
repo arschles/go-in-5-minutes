@@ -9,8 +9,8 @@ echo "$JWT" > $JWT_FILE
 # see https://github.com/arschles/gcsup/issues/4
 docker run --rm -v $PWD:/pwd -w /pwd \
   -e GCSUP_JWT_FILE_LOCATION=/pwd/$JWT_FILE \
-  -e GCSUP_PROJECT_NAME=go-in-5-minutes \
-  -e GCSUP_BUCKET_NAME=goin5minutes-site-test \
+  -e GCSUP_PROJECT_NAME=$GCSUP_PROJECT_NAME \
+  -e GCSUP_BUCKET_NAME=$GCSUP_BUCKET_NAME \
   -e GCSUP_LOCAL_FOLDER=www/public \
   -e GOOGLE_APPLICATION_CREDENTIALS=/pwd/$JWT_FILE \
   quay.io/arschles/gcsup:latest gcsup
