@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/arschles/go-in-5-minutes/episode11/db"
 	"github.com/arschles/go-in-5-minutes/episode11/handlers"
@@ -10,6 +11,12 @@ import (
 )
 
 func main() {
+	conf, err := GetConfig()
+	if err != nil {
+		log.Printf("Error getting config [%s]", err)
+		os.Exit(1)
+	}
+
 	router := mux.NewRouter()
 
 	red := db.NewRedis()
@@ -23,5 +30,7 @@ func main() {
 	dah := handlers.NewDeleteAppHandler(red)
 	dah.RegisterRoute(router)
 
-	log.Fatal(http.ListenAndServe(":8080", router))
+	portStr := fmt.Sprintf(":%d", conf.Port)
+	log.Printf("Serving on %s", portStr)
+	log.Fatal(http.ListenAndServe(portStr, router))
 }

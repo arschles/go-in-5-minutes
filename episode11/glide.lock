@@ -1,8 +1,9 @@
 hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-updated: 2016-01-03T10:50:46.625376015-08:00
+updated: 2016-01-03T11:46:55.533146482-08:00
 imports:
 - name: github.com/gorilla/context
   version: 1c83b3eabd45b6d76072b66b746c20815fb2872d
+  repo: https://github.com/gorilla/context
 - name: github.com/gorilla/mux
   version: 26a6070f849969ba72b72256e9f14cf519751690
 - name: gopkg.in/bsm/ratelimit.v1
