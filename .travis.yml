@@ -3,7 +3,7 @@ sudo: required
 services:
   - docker
 install:
-  - docker run --rm -v "$PWD/web":/web -w /web quay.io/arschles/hugo hugo -v
+  - docker run --rm -v "$PWD/www":/www -w /www quay.io/arschles/hugo hugo -v
 deploy:
   provider: script
   script: ./deploy-site.sh

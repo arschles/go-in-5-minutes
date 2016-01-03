@@ -5,11 +5,11 @@ touch $JWT_FILE
 JWT=$(echo "$GCSUP_JWT" | base64 -D)
 echo "$JWT" > $JWT_FILE
 
-# build in hugo
-docker run --rm -v "$PWD/www":/www -w /www quay.io/arschles/hugo:latest hugo -v
-
+# note the need for GOOGLE_APPLICATION_CREDENTIALS. still working on that...
 docker run --rm -v $PWD:/pwd -w /pwd \
-  -e GCSUP_JWT_FILE_LOCATION=$JWT_FILE \
-  -e GCSUP_PROJECT_NAME=$GCS_PROJECT_NAME \
-  -e GCSUP_BUCKET_NAME=$GCSUP_BUCKET_NAME \
-  -e GCSUP_LOCAL_FOLDER=www/public quay.io/arschles/gcsup:0.0.1 gcsup
+  -e GCSUP_JWT_FILE_LOCATION=/pwd/$JWT_FILE \
+  -e GCSUP_PROJECT_NAME=go-in-5-minutes \
+  -e GCSUP_BUCKET_NAME=goin5minutes-site-test \
+  -e GCSUP_LOCAL_FOLDER=www/public \
+  -e GOOGLE_APPLICATION_CREDENTIALS=/pwd/$JWT_FILE \
+  quay.io/arschles/gcsup:latest gcsup
