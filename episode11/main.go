@@ -12,6 +12,8 @@ import (
 	"gopkg.in/redis.v3"
 )
 
+// This server simulates an inventory system for applications inside a Platform as a Service (PaaS)
+
 func main() {
 	conf, err := GetConfig()
 	if err != nil {
