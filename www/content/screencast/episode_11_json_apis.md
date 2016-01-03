@@ -10,14 +10,12 @@ _Episode 11_
 We show how to structure and build a complete JSON API in a Go server. This screencast explains basic structuring patterns and concepts and includes code for a complete, working server that simulates a management system for a platform-as-a-service (PaaS).
 <!--more-->
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
-
 <iframe
   class="ytplayer"
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/xRF0xdouqT8?autoplay=0&origin=http://example.com"
   frameborder="0"
 ></iframe>
 
