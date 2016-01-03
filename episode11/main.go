@@ -9,6 +9,7 @@ import (
 	"github.com/arschles/go-in-5-minutes/episode11/db"
 	"github.com/arschles/go-in-5-minutes/episode11/handlers"
 	"github.com/gorilla/mux"
+	"gopkg.in/redis.v3"
 )
 
 func main() {
@@ -20,15 +21,21 @@ func main() {
 
 	router := mux.NewRouter()
 
-	red := db.NewRedis()
+	redisOpts := &redis.Options{
+		Addr:     fmt.Sprintf(conf.RedisHost),
+		Password: conf.RedisPass,
+		DB:       conf.RedisDB,
+	}
+	rawRedisClient := redis.NewClient(redisOpts)
+	redisClient := db.NewRedis(rawRedisClient)
 
-	cah := handlers.NewCreateAppHandler(red)
+	cah := handlers.NewCreateAppHandler(redisClient)
 	cah.RegisterRoute(router)
 
-	gah := handlers.NewGetAppHandler(red)
+	gah := handlers.NewGetAppHandler(redisClient)
 	gah.RegisterRoute(router)
 
-	dah := handlers.NewDeleteAppHandler(red)
+	dah := handlers.NewDeleteAppHandler(redisClient)
 	dah.RegisterRoute(router)
 
 	portStr := fmt.Sprintf(":%d", conf.Port)

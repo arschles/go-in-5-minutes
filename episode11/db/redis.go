@@ -12,8 +12,8 @@ type Redis struct {
 	client *redis.Client
 }
 
-func NewRedis() *Redis {
-	return &Redis{}
+func NewRedis(cl *redis.Client) *Redis {
+	return &Redis{client: cl}
 }
 
 //Get method of the RedisClientWrapper type
