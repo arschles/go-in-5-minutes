@@ -17,7 +17,7 @@ func NewGetAppHandler(db db.DB) *GetAppHandler {
 }
 
 func (c *GetAppHandler) RegisterRoute(r *mux.Router) {
-	r.Handle(fmt.Sprintf("/apps/{%s}", appNamePath), c).Methods("GET")
+	r.Handle(fmt.Sprintf("/app/{%s}", appNamePath), c).Methods("GET")
 }
 
 func (c *GetAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {

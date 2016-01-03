@@ -17,7 +17,7 @@ func NewDeleteAppHandler(db db.DB) *DeleteAppHandler {
 }
 
 func (c *DeleteAppHandler) RegisterRoute(r *mux.Router) {
-	r.Handle(fmt.Sprintf("/apps/{%s}", appNamePath), c).Methods("DELETE")
+	r.Handle(fmt.Sprintf("/app/{%s}", appNamePath), c).Methods("DELETE")
 }
 
 func (c *DeleteAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
