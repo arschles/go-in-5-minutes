@@ -5,7 +5,7 @@ import (
 )
 
 type DB interface {
-	Save(models.Model) error
-	Delete(models.Model) error
-	Get(models.PrimaryKey, models.Model) error
+	Save(models.Key, models.Model) error
+	Delete(models.Key) error
+	Get(models.Key, models.Model) error
 }

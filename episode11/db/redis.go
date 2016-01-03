@@ -17,20 +17,20 @@ func NewRedis() *Redis {
 }
 
 //Get method of the RedisClientWrapper type
-func (r *Redis) Save(m models.Model) error {
+func (r *Redis) Save(k models.Key, m models.Model) error {
 	b, err := m.MarshalBinary()
 	if err != nil {
 		return err
 	}
-	return r.client.Set(m.Key().String(), b, time.Duration(0)).Err()
+	return r.client.Set(k.String(), b, time.Duration(0)).Err()
 }
 
-func (r *Redis) Delete(m models.Model) error {
-	return r.client.Del(m.Key().String()).Err()
+func (r *Redis) Delete(k models.Key) error {
+	return r.client.Del(k.String()).Err()
 }
 
-func (r *Redis) Get(pk models.PrimaryKey, m models.Model) error {
-	str, err := r.client.Get(pk.String()).Result()
+func (r *Redis) Get(k models.Key, m models.Model) error {
+	str, err := r.client.Get(k.String()).Result()
 	if err != nil {
 		return err
 	}
