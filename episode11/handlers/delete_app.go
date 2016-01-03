@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/arschles/go-in-5-minutes/episode11/db"
+	"github.com/arschles/go-in-5-minutes/episode11/models"
 	"github.com/gorilla/mux"
 )
 
@@ -21,5 +22,14 @@ func (c *DeleteAppHandler) RegisterRoute(r *mux.Router) {
 }
 
 func (c *DeleteAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-
+	name, ok := mux.Vars(r)[appNamePath]
+	if !ok {
+		http.Error(w, jsonErrStr("app name not found in the path"), http.StatusBadRequest)
+		return
+	}
+	if err := c.db.Delete(models.NewAppKey(name)); err != nil {
+		http.Error(w, jsonErr(err, "DB error when trying to delete"), http.StatusInternalServerError)
+		return
+	}
+	w.WriteHeader(http.StatusNoContent)
 }
