@@ -8,4 +8,6 @@ import (
 type Model interface {
 	encoding.BinaryMarshaler
 	encoding.BinaryUnmarshaler
+	// Set replaces the contents of the model with the given model
+	Set(Model) error
 }

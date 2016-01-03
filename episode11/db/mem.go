@@ -45,6 +45,5 @@ func (m *Mem) Get(key models.Key, model models.Model) error {
 	if !ok {
 		return ErrNotFound
 	}
-	model = md
-	return nil
+	return model.Set(md)
 }

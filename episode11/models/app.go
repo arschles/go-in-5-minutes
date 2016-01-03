@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"fmt"
 	"time"
 )
 
@@ -35,4 +36,14 @@ func (a *App) MarshalBinary() ([]byte, error) {
 // UnmarshalBinary is the encoding.BinaryUnmarshaler interface implementation
 func (a *App) UnmarshalBinary(b []byte) error {
 	return json.Unmarshal(b, a)
+}
+
+// Set is the Model interface implementation
+func (a *App) Set(m Model) error {
+	app, ok := m.(*App)
+	if !ok {
+		return fmt.Errorf("given model %+v was not an *App", m)
+	}
+	*a = *app
+	return nil
 }
