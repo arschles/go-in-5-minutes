@@ -9,7 +9,7 @@ func jsonErr(err error, descr string) string {
 }
 
 func jsonErrStr(descr string) string {
-	return fmt.Sprintf(`{"error":"%s"`, descr)
+	return fmt.Sprintf(`{"error":"%s"}`, descr)
 }
 
 func jsonKVP(key, val string) string {
