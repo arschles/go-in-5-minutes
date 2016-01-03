@@ -17,3 +17,4 @@ See [BUILD_AND_TEST.md](./BUILD_AND_TEST.md) for instructions on how to build an
   - HTTP verbs
 2. Package structure
 3. Example
+4. Questions? Submit them at https://github.com/arschles/go-in-5-minutes/issues
