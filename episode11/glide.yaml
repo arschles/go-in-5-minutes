@@ -1,0 +1,5 @@
+package: github.com/arschles/go-in-5-minutes/episode11
+import:
+- package: github.com/gorilla/mux
+- package: gopkg.in/redis.v3
+- package: github.com/kelseyhightower/envconfig
