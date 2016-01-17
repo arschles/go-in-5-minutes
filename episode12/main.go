@@ -55,5 +55,7 @@ func main() {
 	}
 
 	wg.Wait()
+	// this shuts down the manager
+	close(mgr.Ch)
 	fmt.Println("That was delicious!")
 }
