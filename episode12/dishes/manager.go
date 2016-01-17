@@ -2,11 +2,6 @@ package dishes
 
 import "math/rand"
 
-// randNumMorsels returns a random number of morsels between 5 and 10
-func randNumMorsels() int {
-	return 5 + rand.Intn(5)
-}
-
 // Manager is an actor that manages the internal list of dishes and number of morsels left in each.
 type Manager struct {
 	// The slice of shared dishes. This is the shared state that the Manager actor is managing.
@@ -75,4 +70,14 @@ func (m *Manager) randDishIdx() int {
 		return -1
 	}
 	return rand.Intn(len(m.dishes))
+}
+
+type dish struct {
+	name       string
+	numMorsels int
+}
+
+// randNumMorsels returns a random number of morsels between 5 and 10
+func randNumMorsels() int {
+	return 5 + rand.Intn(5)
 }
