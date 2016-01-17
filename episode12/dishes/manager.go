@@ -51,11 +51,11 @@ func NewManager() *Manager {
 
 	go func() {
 		for retCh := range mgr.Ch {
-			if len(m.dishes) == 0 {
+			if len(mgr.dishes) == 0 {
 				retCh <- nil
 				continue
 			}
-			idx := rand.Intn(len(m.dishes))
+			idx := rand.Intn(len(mgr.dishes))
 			dish := &mgr.dishes[idx]
 			dish.numMorsels--
 			if dish.numMorsels == 0 {
