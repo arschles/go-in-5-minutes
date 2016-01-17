@@ -9,5 +9,6 @@ This screencast overviews the "Eating Tapas" problem on [Trivial Concurrency Exe
 1. Continuing the concurrency series!
   - https://github.com/arschles/go-in-5-minutes/issues/14
 2. This problem
+  - Don't communicate by sharing memory, share memory by communicating. See https://golang.org/ref/mem
   - Actor model
 3. Example code
