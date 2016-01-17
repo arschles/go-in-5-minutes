@@ -1,6 +1,6 @@
 # Concurrency Series: Eating Tapas
 
-Go in 5 Minutes, episode 11.
+Go in 5 Minutes, episode 12.
 
 This screencast overviews the "Eating Tapas" problem on [Trivial Concurrency Exercises for the Confused Newbie Gopher](http://whipperstacker.com/2015/10/05/3-trivial-concurrency-exercises-for-the-confused-newbie-gopher/), and provides a solution.
 
