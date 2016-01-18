@@ -2,7 +2,7 @@
 
 JWT_FILE="gifm-jwt.json"
 touch $JWT_FILE
-JWT=$(docker run --rm -e GCSUP_JWT=$GCSUP_JWT -v $PWD:/pwd -w /pwd alpine:3.3 echo "$GCSUP_JWT" | base64 -D)
+JWT=$(docker run --rm -e GCSUP_JWT=$GCSUP_JWT -v $PWD:/pwd -w /pwd alpine:3.3 echo "$GCSUP_JWT" | base64 -d)
 echo "$JWT" > $JWT_FILE
 
 # note the need for GOOGLE_APPLICATION_CREDENTIALS. it's needed by gcsup.
