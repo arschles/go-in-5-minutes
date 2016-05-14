@@ -13,3 +13,4 @@ deploy:
   local-dir: www/public
   on:
     branch: master
+  acl: public-read
