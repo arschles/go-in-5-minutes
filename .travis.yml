@@ -1,11 +1,15 @@
 language: generic
 sudo: required
 services:
-  - docker
+- docker
 install:
-  - docker run --rm -v "$PWD/www":/www -w /www quay.io/arschles/hugo hugo -v
+- docker run --rm -v "$PWD/www":/www -w /www quay.io/arschles/hugo hugo -v
 deploy:
-  provider: script
-  script: ./deploy-site.sh
+  provider: gcs
+  access_key_id: GOOGGIBGT6V7DZJU6Q6F
+  secret_access_key:
+    secure: CzZBwocXRtPNNvqCEwU04le8IZA1pql6uGLcLpM2QCV+FeH83YyN4coZXRqo6wG2DECZL5/jR4LtHg/KH05nSXju/0bajXMFlf+9HrXwrUlYDfhERaR8QsyVvfvMO8eBhY9jzCb3NcmuVvqQQ4SVHaky3ReWt2SYhSNfqnuTJqJ1MSb1qAfx6ryyUudy1Q5fE57oeU5Fl5ES6MteSxzBa5xUVHm3FXT7g/5FwW6lKcIt4cfVXlxMaFrX7+GEQR7sUALUKIDaR2/QIQnmfaYodhHWAJLfuRqJtF9cozTqCzRDmzWjdqQtNSrPf3bmvAe5XTzKxfljncm/las3tvm3cgbXx/GhoD88PrJl+ffb7oVkz7sBhSHKCO4itWHS8l+IYQOnVdxx2FUP23kG3TWZC35VpNtWQBDDYUI66C3oOmMgmxeU+gJ7JA6qXu7V4OC7NvQkuPLyoV0Kk3Hfa0pMCBkZnpaD5g+QMo8X05nhE1JqtkdDO3+W34tXfhIKkbStpzChAkM0yZ4q5LjuS0I+MOgorJzetwWfES/8rbJVYbr+AeSMe0BzgbXGpmRQQ9V8C7j/angiABA9MSgisanRy0cCmZN8HFZTQJIvJgC96Th6U79WY5OlRHVueyiZubDF8bnH6Ilw9mk/CZNT2AxnwQWH3qAhxauPwPykyWFWlYI=
+  bucket: www.goin5minutes.com
+  local-dir: www/public
   on:
     branch: master
