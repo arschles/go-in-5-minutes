@@ -1,0 +1,8 @@
+package: github.com/arschles/go-in-5-minutes/episode13
+import:
+- package: github.com/arschles/go-in-5-minutes
+  subpackages:
+  - episode13/pkg
+- package: github.com/mxk/go-sqlite
+  subpackages:
+  - sqlite3

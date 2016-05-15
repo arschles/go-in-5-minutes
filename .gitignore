@@ -19,6 +19,8 @@ _cgo_export.*
 
 _testmain.go
 
+episode13/vendor
+
 *.exe
 *.test
 *.prof
