@@ -14,6 +14,7 @@ const (
 )
 
 func main() {
+	// change this line to use a different database and connection string to connect to a different database
 	db, err := sql.Open(sqlite3Str, memStr)
 	if err != nil {
 		log.Fatalf("error opening DB (%s)", err)
