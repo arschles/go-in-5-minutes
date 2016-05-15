@@ -69,3 +69,43 @@ func SelectPerson(db *sql.DB, firstName, lastName string, age uint, result *Pers
 	result.Age = retAge
 	return nil
 }
+
+// UpdatePerson updates the person with the given first & last names and age with newPerson. Returns a non-nil error if the update failed, and nil if the update succeeded
+func UpdatePerson(db *sql.DB, firstName, lastName string, age uint, newPerson Person) error {
+	_, err := db.Exec(
+		fmt.Sprintf(
+			"UPDATE %s SET %s=?,%s=?,%s=? WHERE %s=? AND %s=? AND %s=?",
+			PersonTableName,
+			PersonFirstNameCol,
+			PersonLastNameCol,
+			PersonAgeCol,
+			PersonFirstNameCol,
+			PersonLastNameCol,
+			PersonAgeCol,
+		),
+		newPerson.FirstName,
+		newPerson.LastName,
+		newPerson.Age,
+		firstName,
+		lastName,
+		age,
+	)
+	return err
+}
+
+// DeletePerson deletes the person with the given first & last names and age. Returns a non-nil error if the delete failed, and nil if the delete succeeded
+func DeletePerson(db *sql.DB, firstName, lastName string, age uint) error {
+	_, err := db.Exec(
+		fmt.Sprintf(
+			"DELETE FROM %s WHERE %s=? AND %s=? AND %s=?",
+			PersonTableName,
+			PersonFirstNameCol,
+			PersonLastNameCol,
+			PersonAgeCol,
+		),
+		firstName,
+		lastName,
+		age,
+	)
+	return err
+}

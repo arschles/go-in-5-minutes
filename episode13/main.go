@@ -25,18 +25,34 @@ func main() {
 	}
 	log.Printf("Created")
 
-	person := models.Person{FirstName: "Aaron", LastName: "Schlesinger", Age: 29}
-	log.Printf("Inserting %+v into the DB", person)
-	if _, insErr := models.InsertPerson(db, person); insErr != nil {
+	me := models.Person{FirstName: "Aaron", LastName: "Schlesinger", Age: 29}
+	log.Printf("Inserting %+v into the DB", me)
+	if _, insErr := models.InsertPerson(db, me); insErr != nil {
 		log.Fatalf("Error inserting new person into the DB (%s)", insErr)
 	}
 	log.Printf("Inserted")
 
 	log.Printf("Selecting person from the DB")
-	retPerson := models.Person{}
-	if err := models.SelectPerson(db, person.FirstName, person.LastName, person.Age, &retPerson); err != nil {
+	selectedMe := models.Person{}
+	if err := models.SelectPerson(db, me.FirstName, me.LastName, me.Age, &selectedMe); err != nil {
 		log.Fatalf("Error selecting person from the DB (%s)", err)
 	}
-	log.Printf("Selected %+v from the DB", retPerson)
+	log.Printf("Selected %+v from the DB", selectedMe)
+
+	log.Printf("Updating person in the DB")
+	updatedMe := models.Person{
+		FirstName: "Aaron",
+		LastName:  "Schlesinger",
+		Age:       30, // make this update after my birthday!
+	}
+	if err := models.UpdatePerson(db, selectedMe.FirstName, selectedMe.LastName, selectedMe.Age, updatedMe); err != nil {
+		log.Fatalf("Error updating person in the DB (%s)", err)
+	}
+
+	log.Printf("Deleting person from the DB")
+	if delErr := models.DeletePerson(db, selectedMe.FirstName, selectedMe.LastName, selectedMe.Age); delErr != nil {
+		log.Fatalf("Error deleting person from the DB (%s)", delErr)
+	}
+	log.Printf("Deleted")
 
 }
