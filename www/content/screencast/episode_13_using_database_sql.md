@@ -15,14 +15,12 @@ The screencast includes example code to show best practices in reading, writing 
 
 _Note_: the examples in this screencast operate against an in-memory [SQLite](https://www.sqlite.org/) database, but we point out the line of code to change to operate against any other supported database.
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
-
 <iframe
   class="ytplayer"
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/nros7z5z-7M?autoplay=0&origin=http://example.com"
   frameborder="0"
 ></iframe>
 
