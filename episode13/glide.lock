@@ -1,0 +1,12 @@
+hash: f7152f577aa02fc08f00383956fd0e2cc82602d6f21cad6dd0557bbb16fe8e50
+updated: 2016-05-15T14:17:08.291550314-07:00
+imports:
+- name: github.com/arschles/go-in-5-minutes
+  version: f05ccde8bae9be3daeba565e02537ef7e8c579b5
+  subpackages:
+  - episode13/pkg
+- name: github.com/mxk/go-sqlite
+  version: 167da9432e1f4602e95ea67b67051cfa34412e3f
+  subpackages:
+  - sqlite3
+devImports: []
