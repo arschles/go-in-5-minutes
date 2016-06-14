@@ -6,7 +6,9 @@ This repository has code and outlines for [Go In 5 Minutes Screencasts](htttp://
 
 Full descriptions and videos are at http://www.goin5minutes.com/screencasts/index.html.
 
-Shortened URL for this repository: http://bitly.com/goin5minutes. Shortened URL for screencasts: http://bitly.com/goin5minutesyt.
+Shortened URL for this repository: http://bitly.com/goin5minutes
+
+Shortened URL for screencasts: http://bitly.com/goin5minutesyt
 
 # Request A Screencast
 
