@@ -20,7 +20,11 @@ Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels
 
 # Email Newsletter
 
-Every week I send out an email newsletter with the latest screencast and some additional information and resources. I encourage you to sign up for it at http://www.goin5minutes.com/subscribe/index.html.
+I send out an intermittent email newsletter intermittently with screencasts, additional information and resources. I encourage you to sign up for it at http://www.goin5minutes.com/subscribe/index.html.
+
+# Bundle
+
+If you're just getting started with the series, want to download the screencasts, or otherwise would like to have DRM-free, HD versions of the screencasts, I encourage you to buy the bundle of episodes 0-9 at https://gum.co/gifm-1-10.
 
 # Issues With Code, Documentation, etc...
 
