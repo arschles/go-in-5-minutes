@@ -24,7 +24,7 @@ If you're just getting started with the series, want to download the screencasts
 
 # Email Newsletter
 
-I send out an intermittent email newsletter intermittently with screencasts, additional information and resources. I encourage you to sign up for it at http://www.goin5minutes.com/subscribe/index.html.
+I send out an email newsletter intermittently with screencasts, additional information and resources. I encourage you to sign up for it at http://www.goin5minutes.com/subscribe/index.html.
 
 # Issues With Code, Documentation, etc...
 
