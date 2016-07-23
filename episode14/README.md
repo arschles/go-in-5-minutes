@@ -1,8 +1,8 @@
-# Using `database/sql`
+# Building Web Pages Using `html/template`
 
 Go in 5 Minutes, episode 14.
 
-This screencast shows the basics of using the `html/template` package.
+This screencast shows the basics of using the `html/template` package to build complex web pages with Go.
 
 # Outline
 
