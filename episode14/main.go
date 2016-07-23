@@ -25,6 +25,7 @@ func main() {
 	tpl := template.Must(template.New("site.html").ParseGlob("templates/*.html"))
 
 	log.Printf("Server listening on port 8080")
+	log.Printf("Example page: http://localhost:8080?a=b&a=c&c=d&d=e")
 	if err := http.ListenAndServe(":8080", hdl(tpl)); err != nil {
 		log.Fatalf("error running server (%s)", err)
 	}
