@@ -1,9 +1,6 @@
-<html>
-<head>
-  <title>Hello Gophers!</title>
-</head>
-<body>
+{{template "header"}}
+<div class="container text-center">
   <h1>Query String Values</h1>
-  <ul>{{range $key, $value := .}}<li>{{$key}} = {{$value}}</li>{{end}}</ul>
-</body>
-</html>
+  <ul class="list-unstyled">{{range $key, $value := .}}<li>{{$key}} = {{$value}}</li>{{end}}</ul>
+</div>
+{{template "footer"}}

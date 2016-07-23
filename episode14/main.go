@@ -18,10 +18,11 @@ func hdl(t *template.Template) http.Handler {
 }
 
 func main() {
-	tpl, err := template.ParseGlob("templates/*.html")
-	if err != nil {
-		log.Fatalf("error parsing templates (%s)", err)
-	}
+	// This call does the following:
+	// - template.ParseGlob parses *all* templates in the templates folder
+	//		- Important if you have templates that depend on each other
+	// - template.Must checks the error returned by ParseGlob and panics if it's non-nil. Otherwise returns the template that ParseGlob returned
+	tpl := template.Must(template.New("site.html").ParseGlob("templates/*.html"))
 
 	log.Printf("Server listening on port 8080")
 	if err := http.ListenAndServe(":8080", hdl(tpl)); err != nil {
