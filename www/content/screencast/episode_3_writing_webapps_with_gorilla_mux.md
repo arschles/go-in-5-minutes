@@ -20,7 +20,7 @@ watch that screencast to understand this one.
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/6Pl5Xrrne2c?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/6Pl5Xrrne2c?autoplay=0&origin=http://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 

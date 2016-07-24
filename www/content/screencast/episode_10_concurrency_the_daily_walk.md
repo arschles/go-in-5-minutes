@@ -15,7 +15,7 @@ We describe the problem #1 on [Trivial Concurrency Exercises for the Confused Ne
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/ylWpMN3UREo?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/ylWpMN3UREo?autoplay=0&origin=http://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 

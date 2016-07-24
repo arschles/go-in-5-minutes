@@ -1,8 +1,13 @@
 # Building Web Pages Using `html/template`
 
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_13_using_database_sql/)
+
 Go in 5 Minutes, episode 14.
 
 This screencast shows the basics of using the `html/template` package to build complex web pages with Go.
+
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_14_using_templates/
 
 # Outline
 

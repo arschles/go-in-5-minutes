@@ -15,7 +15,7 @@ We show how to structure and build a complete JSON API in a Go server. This scre
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/xRF0xdouqT8?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/xRF0xdouqT8?autoplay=0&origin=http://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 

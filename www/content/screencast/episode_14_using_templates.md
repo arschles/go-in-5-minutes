@@ -1,6 +1,6 @@
 +++
 date = "2016-05-15T15:03:28-07:00"
-title = "Using Templates"
+title = "Building web pages using the html/template package"
 type = "screencast"
 
 +++
@@ -16,8 +16,8 @@ We show how to do use the the [`html/template`](https://godoc.org/html/template)
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/Fr5cdsOZfGw?autoplay=0&origin=http://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode13).
+Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode14).
