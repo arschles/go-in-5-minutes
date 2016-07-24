@@ -14,3 +14,4 @@ deploy:
   on:
     branch: master
   acl: public-read
+  cache_control: "max-age=60"
