@@ -1,10 +1,14 @@
 # Profiling Go Programs
 
+[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_8_profiling/)
+
 Go in 5 Minutes, episode 8.
 
-This screencast goes into detail on how to profile Go programs.
+This screencast goes into detail on how to profile Go programs. See https://blog.golang.org/profiling-go-programs for much more details on profiling.
 
-See https://blog.golang.org/profiling-go-programs for plenty more details.
+
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_8_profiling/
 
 ## No Screencast The Weekend of 11/28/2015
 

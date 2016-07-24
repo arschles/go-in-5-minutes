@@ -1,11 +1,14 @@
 # Using Websockets
 
+[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_4_websockets_with_gorilla_websocket/)
+
 Go in 5 Minutes, episode 4.
 
 This screencast explains some of the concepts around Websockets and presents an example
 that shows how to build a websocket server.
 
-You can see it here: http://www.goin5minutes.com/screencast/episode_4_websockets_with_gorilla_websocket/
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_4_websockets_with_gorilla_websocket/
 
 ## Thanks
 

@@ -1,11 +1,14 @@
 # Mocking in Go
 
+[![Watch The Screencast](https://storage.googleapis.com/github-readme-assets/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_0_writing_testable_code_and_fast_unit_tests_using_mocking/)
+
 Go in 5 Minutes, episode 0.
 
 This screencast focuses on mocking external dependencies so you can write fast,
 focused unit tests for your code.
 
-You can see it here: http://www.goin5minutes.com/screencast/episode_0_writing_testable_code_and_fast_unit_tests_using_mocking/
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_0_writing_testable_code_and_fast_unit_tests_using_mocking/
 
 ## Outline
 
