@@ -14,5 +14,3 @@ deploy:
   on:
     branch: master
   acl: public-read
-  # detect_encoding: true
-  cache_control: "max-age=60"
