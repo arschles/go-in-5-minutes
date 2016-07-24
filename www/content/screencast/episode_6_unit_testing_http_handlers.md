@@ -24,7 +24,7 @@ Note also that I wrote the [testsrv](https://godoc.org/github.com/arschles/tests
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/YmbbmyxSlcg?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/YmbbmyxSlcg?autoplay=0&origin=http://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 

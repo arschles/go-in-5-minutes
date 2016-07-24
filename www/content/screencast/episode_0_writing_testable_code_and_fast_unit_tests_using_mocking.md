@@ -17,7 +17,7 @@ We show how to write code that is extensible and testable and then how to write 
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/mk4BCLimksY?autoplay=0&origin=http://example.com"
+  src="http://www.youtube.com/embed/mk4BCLimksY?autoplay=0&origin=http://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 
