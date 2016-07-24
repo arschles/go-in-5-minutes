@@ -9,6 +9,9 @@ This screencast shows the basics of using the `html/template` package to build c
 Screencast video:
 http://www.goin5minutes.com/screencast/episode_14_using_templates/
 
+Complementary extended screencast:
+https://gum.co/gifm-x-14
+
 # Outline
 
 1. Writing templates
