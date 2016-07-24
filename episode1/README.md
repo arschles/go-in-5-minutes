@@ -1,6 +1,6 @@
 # Building a RESTful API with net/http
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_1_building_restful_api_using_only_std_lib/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_1_building_restful_api_using_only_std_lib/)
 
 Go in 5 Minutes, episode 1.
 

@@ -1,6 +1,6 @@
 # Vendoring Dependencies in Go
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/)
 
 Go in 5 Minutes, episode 7.
 

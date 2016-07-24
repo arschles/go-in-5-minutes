@@ -1,6 +1,6 @@
 # Concurrency Series: Eating Tapas
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/)
 
 Go in 5 Minutes, episode 12.
 

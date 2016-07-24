@@ -1,6 +1,6 @@
 # Using Websockets
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_4_websockets_with_gorilla_websocket/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_4_websockets_with_gorilla_websocket/)
 
 Go in 5 Minutes, episode 4.
 

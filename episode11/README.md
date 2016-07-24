@@ -1,6 +1,6 @@
 # REST APIs: Separation of Concerns
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_11_json_apis/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_11_json_apis/)
 
 Go in 5 Minutes, episode 11.
 

@@ -1,6 +1,6 @@
 # Unit Testing HTTP Handlers
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_6_unit_testing_http_handlers/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_6_unit_testing_http_handlers/)
 
 Go in 5 Minutes, episode 6.
 

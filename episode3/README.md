@@ -1,6 +1,6 @@
 # Writing Webapps With Gorilla Mux
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_3_writing_webapps_with_gorilla_mux/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_3_writing_webapps_with_gorilla_mux/)
 
 Go in 5 Minutes, episode 3.
 

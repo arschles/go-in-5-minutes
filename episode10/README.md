@@ -1,6 +1,6 @@
 # Concurrency Series: The Daily Walk
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_10_concurrency_the_daily_walk/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_10_concurrency_the_daily_walk/)
 
 Go in 5 Minutes, episode 10.
 

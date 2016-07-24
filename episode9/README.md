@@ -1,6 +1,6 @@
 # The Optional Singleton Pattern
 
-[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_9_the_optional_singleton_pattern/)
+[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_9_the_optional_singleton_pattern/)
 
 Go in 5 Minutes, episode 9.
 
