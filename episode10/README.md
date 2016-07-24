@@ -1,8 +1,13 @@
 # Concurrency Series: The Daily Walk
 
+[![Watch The Screencast](../watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_10_concurrency_the_daily_walk/)
+
 Go in 5 Minutes, episode 10.
 
 This screencast overviews "The Daily Walk" problem on [Trivial Concurrency Exercises for the Confused Newbie Gopher](http://whipperstacker.com/2015/10/05/3-trivial-concurrency-exercises-for-the-confused-newbie-gopher/), and provides a solution.
+
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_10_concurrency_the_daily_walk/
 
 ## Shameless Plug/Reminder
 

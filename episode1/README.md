@@ -1,10 +1,13 @@
 # Building a RESTful API with net/http
 
+[![Watch The Screencast](../watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_1_building_restful_api_using_only_std_lib/)
+
 Go in 5 Minutes, episode 1.
 
 This screencast shows how to build a non-trivial HTTP API using nothing but [`net/http`](https://godoc.org/net/http).
 
-You can see it here: http://www.goin5minutes.com/screencast/episode_1_building_restful_api_using_only_std_lib/
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_1_building_restful_api_using_only_std_lib/
 
 ## Administrivia
 

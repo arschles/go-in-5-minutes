@@ -1,8 +1,13 @@
 # Unit Testing HTTP Handlers
 
+[![Watch The Screencast](../watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_6_unit_testing_http_handlers/)
+
 Go in 5 Minutes, episode 6.
 
 This screencast shows two ways to quickly and effectively test your [`net/http` handlers](https://godoc.org/net/http#Handler).
+
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_6_unit_testing_http_handlers/
 
 ## [goin5minutes.com](http://www.goin5minutes.com)
 

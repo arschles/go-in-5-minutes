@@ -1,12 +1,15 @@
 # Writing Webapps With Gorilla Mux
 
+[![Watch The Screencast](../watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_3_writing_webapps_with_gorilla_mux/)
+
 Go in 5 Minutes, episode 3.
 
 This screencast shows how to take advantage of [Gorilla Mux](https://github.com/gorilla/mux) to build a full featured REST API.
 
 This screencast was requested in https://github.com/arschles/go-in-5-minutes/issues/18.
 
-You can see it here: http://www.goin5minutes.com/screencast/episode_3_writing_webapps_with_gorilla_mux/
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_3_writing_webapps_with_gorilla_mux/
 
 ## Outline
 

@@ -1,8 +1,13 @@
 # Vendoring Dependencies in Go
 
+[![Watch The Screencast](../watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/)
+
 Go in 5 Minutes, episode 7.
 
 This screencast shows how to vendor your dependencies in Go, the modern way.
+
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/
 
 ## Email Newsletter
 

@@ -1,8 +1,13 @@
 # Using `database/sql`
 
+[![Watch The Screencast](../watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_13_using_database_sql/)
+
 Go in 5 Minutes, episode 13.
 
 This screencast shows the basics of using the `database/sql` package.
+
+Screencast video:
+http://www.goin5minutes.com/screencast/episode_13_using_database_sql/
 
 # Outline
 
