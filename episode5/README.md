@@ -1,6 +1,6 @@
 # Building Web Applications in Go
 
-[![Watch The Screencast](../watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_5_building_full_stack_webapps/)
+[![Watch The Screencast](http://www.goin5minutes/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_5_building_full_stack_webapps/)
 
 Go in 5 Minutes, episode 5.
 

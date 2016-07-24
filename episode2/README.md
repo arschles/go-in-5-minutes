@@ -1,6 +1,6 @@
 # Debugging Go Programs with godebug
 
-[![Watch The Screencast](../watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_2_debugging_with_godebug/)
+[![Watch The Screencast](https://storage.googleapis.com/github-readme-assets/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_2_debugging_with_godebug/)
 
 Go in 5 Minutes, episode 2.
 
