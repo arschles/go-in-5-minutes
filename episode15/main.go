@@ -80,6 +80,8 @@ func main() {
 			}
 		}(i)
 	}
+	// HACK: we're sleeping an arbitrary amount of time here to let tourists finish using the computer. The proper fix is in the extended screencast. See the README in this directory for more detail.
+	time.Sleep(5 * time.Second)
 	logf("The place is empty, let's close up and go to the beach!")
 	close(stopCh)
 }
