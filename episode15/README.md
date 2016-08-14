@@ -11,6 +11,8 @@ We're finishing up the concurrency series - see https://github.com/arschles/go-i
 Screencast video:
 http://www.goin5minutes.com/screencast/episode_15_intenet_cafe/
 
+Extended screencast: https://gum.co/gifm-x-15
+
 __Reminder: subscribe to the newsletter at http://www.goin5minutes.com/subscribe/__
 
 # Outline
