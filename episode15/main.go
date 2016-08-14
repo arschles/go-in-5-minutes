@@ -13,13 +13,17 @@ const (
 	maxOnlineDuration = 10 * time.Second
 )
 
+// seed the random number generator
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
+
+// convenience function for calling fmt.Printf with a trailing newline
 func logf(fmtStr string, params ...interface{}) {
 	fmt.Printf(fmtStr+"\n", params...)
 }
 
+// convenience function that returns plural if i != 1, singular otherwise
 func pluralize(i int, singular, plural string) string {
 	if i == 1 {
 		return singular
@@ -27,6 +31,7 @@ func pluralize(i int, singular, plural string) string {
 	return plural
 }
 
+// convenience function to sleep for a random amount of time in [minOnlineDuration, maxOnlineDuration]
 func sleepRand() time.Duration {
 	randSec := maxOnlineDuration.Seconds() - minOnlineDuration.Seconds()
 	sleepSec := rand.Intn(int(randSec)) + int(minOnlineDuration.Seconds())
