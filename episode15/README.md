@@ -2,7 +2,7 @@
 
 [![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_15_internet_cafe/)
 
-_Reminder: [subscribe to the newsletter](http://www.goin5minutes.com/subscribe/index.html)_ (http://www.goin5minutes.com/subscribe/)
+_Reminder: at http://www.goin5minutes.com/subscribe/
 
 Go in 5 Minutes, episode 15.
 
