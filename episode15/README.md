@@ -9,7 +9,7 @@ This screencast overviews the "Intenet Cafe" problem on [Trivial Concurrency Exe
 We're finishing up the concurrency series - see https://github.com/arschles/go-in-5-minutes/issues/14 for what we've covered.
 
 Screencast video:
-http://www.goin5minutes.com/screencast/episode_15_intenet_cafe/
+http://www.goin5minutes.com/screencast/episode_15_internet_cafe/
 
 # Other Notes
 
