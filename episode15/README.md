@@ -16,15 +16,15 @@ http://www.goin5minutes.com/screencast/episode_15_intenet_cafe/
 - Extended screencast: https://gum.co/gifm-x-15
 - __Reminder: subscribe to the newsletter at http://www.goin5minutes.com/subscribe/__
 
+# Extended Screencast
+
+The code in this screencast has a bug - it may exit before all of the tourists are done using their computer. The [extended screencast](#TODO) that accompanies this one shows how to fix it.
+
+Get the extended screencast at https://gum.co/gifm-x-15
+
 # Outline
 
 1. This problem
   - Broadcasting to many goroutines
   - A new way to use `select`
 2. Example code
-
-# Extended Screencast
-
-The code in this screencast has a bug - it may exit before all of the tourists are done using their computer. The [extended screencast](#TODO) that accompanies this one shows how to fix it.
-
-[Get the Extended Screencast](#TODO)
