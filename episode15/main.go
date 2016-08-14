@@ -83,7 +83,7 @@ func main() {
 	// HACK: we're sleeping an arbitrary amount of time here to let tourists finish using the computer. The proper fix is in the extended screencast.
 	//
 	// The extended screencast shows how to fix the code so that it _deterministically_ exits when all tourists are done. See https://gum.co/gifm-x-15 for more
-	time.Sleep(5 * time.Second)
+	time.Sleep(1 * time.Second)
 	logf("The place is empty, let's close up and go to the beach!")
 	close(stopCh)
 }
