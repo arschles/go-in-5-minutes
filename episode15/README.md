@@ -8,7 +8,7 @@ Go in 5 Minutes, episode 15.
 
 This screencast overviews the "Intenet Cafe" problem on [Trivial Concurrency Exercises for the Confused Newbie Gopher](http://whipperstacker.com/2015/10/05/3-trivial-concurrency-exercises-for-the-confused-newbie-gopher/), and provides a solution.
 
-We're continuing the concurrency series - see https://github.com/arschles/go-in-5-minutes/issues/14 for progress.
+We're finishing up the concurrency series - see https://github.com/arschles/go-in-5-minutes/issues/14 for what we've covered.
 
 Screencast video:
 http://www.goin5minutes.com/screencast/episode_15_intenet_cafe/
