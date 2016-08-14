@@ -20,7 +20,7 @@ http://www.goin5minutes.com/screencast/episode_15_intenet_cafe/
 
 The code in this screencast has a bug - it may exit before all of the tourists are done using their computer. The [extended screencast](https://gum.co/gifm-x-15) that accompanies this one shows how to fix it.
 
-Get the extended screencast at https://gum.co/gifm-x-15
+Get the extended screencast at https://gum.co/gifm-x-15.
 
 # Outline
 
