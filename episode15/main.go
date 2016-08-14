@@ -56,7 +56,9 @@ func main() {
 		go func(computerNum int) {
 			for {
 				select {
+				// when we close the stop channel (at the end of the main function), every one of the computer goroutines will receive here, and then return from this function. effectively, that means that the computer will "shut down" and stop waiting for tourists to come
 				case <-stopCh:
+					return
 				case tst := <-queue:
 					logf("Tourist %d is online.", tst.num)
 					spent := sleepRand()
