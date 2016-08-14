@@ -2,8 +2,6 @@
 
 [![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_15_internet_cafe/)
 
-_Reminder: subscribe to the newsletter at http://www.goin5minutes.com/subscribe/_
-
 Go in 5 Minutes, episode 15.
 
 This screencast overviews the "Intenet Cafe" problem on [Trivial Concurrency Exercises for the Confused Newbie Gopher](http://whipperstacker.com/2015/10/05/3-trivial-concurrency-exercises-for-the-confused-newbie-gopher/), and provides a solution.
@@ -12,6 +10,8 @@ We're finishing up the concurrency series - see https://github.com/arschles/go-i
 
 Screencast video:
 http://www.goin5minutes.com/screencast/episode_15_intenet_cafe/
+
+__Reminder: subscribe to the newsletter at http://www.goin5minutes.com/subscribe/__
 
 # Outline
 
