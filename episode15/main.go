@@ -80,7 +80,7 @@ func main() {
 			}
 		}(i)
 	}
-	// HACK: we're sleeping an arbitrary amount of time here to let tourists finish using the computer. The proper fix is in the extended screencast.
+	// HACK: we're sleeping an arbitrary amount of time here to let tourists finish using the computer. The proper fix is in the extended screencast. We can increase the time to let more tourists finish, but the code won't always wait for all tourists (since they take a random amount of time to finish using the computer)
 	//
 	// The extended screencast shows how to fix the code so that it _deterministically_ exits when all tourists are done. See https://gum.co/gifm-x-15 for more
 	time.Sleep(1 * time.Second)
