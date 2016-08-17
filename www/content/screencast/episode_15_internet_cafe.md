@@ -12,14 +12,12 @@ We finish the [concurrency series](https://github.com/arschles/go-in-5-minutes/i
 <a class="gumroad-button" href="https://gum.co/gifm-x-15">Get the Extended Screencast</a>
 <!--more-->
 
-_note: Change the last path element (after `/embed`) to be the new YouTube video ID_
-
 <iframe
   class="ytplayer"
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://www.goin5minutes.com"
+  src="http://www.youtube.com/embed/vs7zHj4rhy8?autoplay=0&origin=http://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 
