@@ -33,3 +33,7 @@ p {
   font-size:120%;
   font-family: 'Cousine', ;
 }
+
+h1.page-title {
+  border-bottom: 1px solid #eee;
+}
