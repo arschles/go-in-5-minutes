@@ -12,14 +12,14 @@ build:
 	cd ./episode2 && go build && cd ..
 	cd ./episode3 && go build && cd ..
 	cd ./episode4 && go build && cd ..
-	cd ./episode5 && ../glide install && go build && cd ..
+	cd ./episode5 && go build && cd ..
 	cd ./episode6 && go build && cd ..
-	cd ./episode7 && go build && cd ..
+	cd ./episode7 && ../glide install && go build && cd ..
 	cd ./episode8 && go build && cd ..
 	cd ./episode9 && go build && cd ..
 	cd ./episode10 && go build && cd ..
-	cd ./episode11 && go build && cd ..
+	cd ./episode11 && ../glide install && go build && cd ..
 	cd ./episode12 && go build && cd ..
-	cd ./episode13 && go build && cd ..
+	cd ./episode13 && ../glide install && go build && cd ..
 	cd ./episode14 && go build && cd ..
 	cd ./episode15 && go build && cd ..

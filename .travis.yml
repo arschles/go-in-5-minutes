@@ -9,5 +9,9 @@ install:
   - go get github.com/codegangsta/negroni
   - go get github.com/gorilla/mux
 
+build:
+  - make get-glide
+  - make build
+
 test:
   - go test -v ./...
