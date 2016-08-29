@@ -1,4 +1,4 @@
-.blog-content p {
+.blog-content p, .blog-content li {
   color: black;
   font-size: 0.85em;
 }
