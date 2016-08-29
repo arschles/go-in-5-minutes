@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{partial "head.html"}}
+  <link href="/css/blog.css" rel="stylesheet"/>
+  {{range $i, $css := .Params.extra_css}}
+  <link href="{{$css}}" rel="stylesheet"/>
+  {{end}}
+</head>
+<body class="container-fluid">
+  {{ partial "nav.html" }}
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1 class="page-title bot-sm-1">
+          {{ .Title }}
+          <small>by {{ .Params.author }}</small>
+          <div class="publish-date"><small>{{ dateFormat "Monday, Jan 2, 2006" $.Date }}</small></div>
+        </h1>
+        <div class="blog-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center footer">
+    {{partial "footer.html"}}
+    </div>
+  </div>
+  {{partial "js.html"}}
+</body>
+</html>
