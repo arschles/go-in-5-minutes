@@ -34,11 +34,12 @@
         </div>
         <div class="col-sm-10">
           <h2>{{$p.Title}}</h2>
-          <p>
-            {{$p.Params.teaser}}
-          </p>
+          <p>{{$p.Params.teaser}}</p>
           <div>
-            <a class="btn btn-info" href="{{$p.RelPermalink}}">Read More</a>
+            <a class="btn btn-info" href="{{$p.RelPermalink}}">
+              Read More - {{$p.ReadingTime}}
+              {{ if (eq $p.ReadingTime 1) }} minute {{ else }} minutes {{ end }}
+            </a>
           </div>
         </div>
       </div>
