@@ -139,6 +139,10 @@ func processor() {
 }
 ```
 
+As I indicated in the comment above `processor`, adding "consumers" to the channel is as trivial as calling `go processor()` again. And, the consumer of the channel can be anything - an RPC call, a no-op, etc...
+
+Note that there are elements of [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) here, because the `chan` is already a synchronized queue, implemented in the Go runtime.
+
 # Wrapping Up
 
 In many cases, you won't make or break your program if you don't design it with orthogonal pieces. And in almost all cases, you can refactor tightly-coupled, complex systems to be more loosely-coupled with orthogonal pieces. But regardless, orthogonal components will produce a simpler, easier to build and less complex program.
