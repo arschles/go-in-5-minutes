@@ -195,4 +195,4 @@ See this code in action at https://play.golang.org/p/gTSp2UFH-K.
 
 # Summary
 
-There are other ways to use this channel-over-channel pattern, but doing
+There are uses for this channel-over-channel strategy, but the ack one is simple and powerful. Further, in many cases when you need to "return" something to another goroutine, sending it a `chan` on which it can return a value is often the easiest way to do it. This pattern can even be useful when you want to wait for a goroutine to ack its completion. Note that you can also do ack-ing with a `sync.WaitGroup`.
