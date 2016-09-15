@@ -48,15 +48,19 @@ In this case, the sender can capture the channel inside the `func(int)` if they 
 
 Below are some code examples using the 3 strategies. In each case, We'll simulate the work using a simple `time.Sleep`.
 
-## Using a Channel Inside a Channel
+## Style 1: Using a Channel Inside a Channel
 
-The simplest pattern in action. Generally this is easiest to read and understand, but may be limiting.
+Here's the simplest of the patterns in action. Generally this style will be easiest to read and understand, but it has some limits:
+
+- Each `doStuff` goroutine sleeps for a set amount of time. You can't change the sleep time when you send on `ch`
+- Each `doStuff` goroutine can _only_ receive a `chan time.Duration` -- no more data than that. We'll address that problem in the next style.
 
 ```go
 package main
 
 import (
 	"log"
+	"sync"
 	"time"
 )
 
@@ -68,31 +72,37 @@ func doStuff(t time.Duration, ch <-chan chan time.Duration) {
 }
 
 func main() {
-  // create the channel-over-channel type
+	// create the channel-over-channel type
 	sendCh := make(chan chan time.Duration)
 
-  // start up 10 doStuff goroutines
+	// start up 10 doStuff goroutines
 	for i := 0; i < 10; i++ {
 		go doStuff(time.Duration(i+1)*time.Second, sendCh)
 	}
 
-  // send channels to each doStuff goroutine. doStuff will "ack" by sending its sleep time back
+	// send channels to each doStuff goroutine. doStuff will "ack" by sending its sleep time back
 	recvCh := make(chan time.Duration)
 	for i := 0; i < 10; i++ {
 		sendCh <- recvCh
 	}
 
-  // receive on each channel we previously sent. this is where we receive the ack that doStuff sent back above
+	// receive on each channel we previously sent. this is where we receive the ack that doStuff sent back above
+	var wg sync.WaitGroup // use this to block until all goroutines have received the ack and logged
 	for i := 0; i < 10; i++ {
-		dur := <-recvCh
-		log.Printf("slept for %s", dur)
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			dur := <-recvCh
+			log.Printf("slept for %s", dur)
+		}()
 	}
+	wg.Wait()
 }
 ```
 
-See this code in action at https://play.golang.org/p/P4zTombq30.
+See this code in action at https://play.golang.org/p/-1lY-4gd4N.
 
-## Using a Channel Stored Inside a Struct
+## Style 2: Using a Channel Stored Inside a Struct
 
 This code will look almost identical to the previous snippet, with 2 exceptions:
 
@@ -105,6 +115,7 @@ package main
 
 import (
 	"log"
+	"sync"
 	"time"
 )
 
@@ -122,13 +133,13 @@ func doStuff(ch <-chan process) {
 }
 
 func main() {
-  // start up the goroutines
+	// start up the goroutines
 	sendCh := make(chan process)
 	for i := 0; i < 10; i++ {
 		go doStuff(sendCh)
 	}
 
-  // store an array of each struct we sent to the goroutines
+	// store an array of each struct we sent to the goroutines
 	processes := make([]process, 10)
 	for i := 0; i < 10; i++ {
 		dur := time.Duration(i+1) * time.Second
@@ -137,25 +148,32 @@ func main() {
 		sendCh <- proc
 	}
 
-  // recieve on each struct's ack channel
+	// recieve on each struct's ack channel
+	var wg sync.WaitGroup // use this to block until all goroutines have received the ack and logged
 	for i := 0; i < 10; i++ {
-		dur := <-processes[i].ch
-		log.Printf("slept for %s", dur)
+		wg.Add(1)
+		go func(ch <-chan time.Duration) {
+			defer wg.Done()
+			dur := <-ch
+			log.Printf("slept for %s", dur)
+		}(processes[i].ch)
 	}
+	wg.Wait()
 }
 ```
 
-See this code in action at https://play.golang.org/p/IEqXY5WrPT.
+See this code in action at https://play.golang.org/p/bJoiGP9ua2.
 
-## Using a Channel Inside a Function Closure
+## Style 3: Using a Channel Inside a Function Closure
 
-This code will look different from the previous examples, because the `doStuff` function won't know _anything_ about a return channel.
+This code will look different from the previous examples, because the `doStuff` function won't know _anything_ about a return channel. That fact is both good and bad. On the up side, you can change your code later to do anything you want inside that function (e.g. good for testing!), but on the down side, you can't pass dynamic `time.Duration`s into the `doStuff` goroutines, as you could in the previous example.
 
 ```go
 package main
 
 import (
 	"log"
+	"sync"
 	"time"
 )
 
@@ -169,7 +187,8 @@ func main() {
 	// start up the doStuff goroutines
 	sendCh := make(chan func(time.Duration))
 	for i := 0; i < 10; i++ {
-		go doStuff(time.Duration(i+1)*time.Second, sendCh)
+		dur := time.Duration(i+1) * time.Second
+		go doStuff(dur, sendCh)
 	}
 
 	// create the channels that will be closed over, create functions that close over each channel, then send them to the doStuff goroutines
@@ -184,15 +203,21 @@ func main() {
 	}
 
 	// receive on the closed-over functions
+	var wg sync.WaitGroup // use this to block until all goroutines have received the ack and logged
 	for _, recvCh := range recvChs {
-		dur := <-recvCh
-		log.Printf("slept for %s", dur)
+		wg.Add(1)
+		go func(recvCh <-chan time.Duration) {
+			defer wg.Done()
+			dur := <-recvCh
+			log.Printf("slept for %s", dur)
+		}(recvCh)
 	}
+	wg.Wait()
 }
 ```
 
-See this code in action at https://play.golang.org/p/gTSp2UFH-K.
+See this code in action at https://play.golang.org/p/JAtGxdBVRW.
 
 # Summary
 
-There are uses for this channel-over-channel strategy, but the ack one is simple and powerful. Further, in many cases when you need to "return" something to another goroutine, sending it a `chan` on which it can return a value is often the easiest way to do it. This pattern can even be useful when you want to wait for a goroutine to ack its completion. Note that you can also do ack-ing with a `sync.WaitGroup`.
+There are uses for this channel-over-channel strategy, but the ack one is simple and powerful. Further, in many cases when you need to "return" something to another goroutine, sending it a `chan` on which it can return a value is often the easiest way to do it. This pattern can even be useful when you want to wait for a goroutine to ack its completion. Note, however, that you can also do ack-ing with a `sync.WaitGroup`.
