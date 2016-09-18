@@ -21,7 +21,6 @@
     </h6>
   </div>
   {{ end }}
-  {{partial "nav.html"}}
   {{ if 0 }}
   <div class="row text-center">
     <div class="jumbotron" id="gifm-landing-jumbotron">
@@ -40,10 +39,16 @@
   </div>
   {{ end }}
   <div class="row text-center">
-    <h1>The most concise, practical <a href="https://golang.org">Go</a> screencasts on the web</h1>
+    <h1>
+      Learn Go
+      <span id="gifm-rotating-topics" class="text-primary">
+        Testing, Debugging, HTTP Servers, Websockets, Gorilla Mux, Benchmarking
+      </span>
+      Fast
+    </h1>
   </div>
   <div class="row text-center">
-    <small class="text-muted">Here's our latest episode</small>
+    <small class="text-muted">Go In 5 Minutes has the shortest, most concise screencasts on the web. Here's our latest episode:</small>
     <!-- latest screencast video -->
     {{ partial "latest_screencast.html" }}
   </div>
