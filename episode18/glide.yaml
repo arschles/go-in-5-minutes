@@ -1,0 +1,5 @@
+package: github.com/arschles/go-in-5-minutes/episode18
+import:
+- package: golang.org/x/net
+  subpackages:
+  - context/ctxhttp

@@ -1,0 +1,9 @@
+hash: c6dba64302ddd07a926e608735cdfa5c05cd4b2d3038f99f37ef5b3be8dcf212
+updated: 2016-10-09T17:03:37.739672539-07:00
+imports:
+- name: golang.org/x/net
+  version: f4b625ec9b21d620bb5ce57f2dfc3e08ca97fce6
+  subpackages:
+  - context/ctxhttp
+  - context
+devImports: []
