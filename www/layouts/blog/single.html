@@ -17,12 +17,21 @@
           <small>by {{ .Params.author }}</small>
           <div class="publish-date"><small>{{ dateFormat "Monday, Jan 2, 2006" $.Date }}</small></div>
         </h1>
-        <div class="blog-content">
-          {{ .Content }}
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-sm-8 col-sm-offset-2 subscribe-form">
+        <h4>Subscribe to the Newsletter <small>Emails with new posts. No spam, ever</small></h4>
+        <div>
+          {{ partial "subscribe_form.html" }}
         </div>
       </div>
     </div>
-
+    <div class="row text-center">
+      <div class="col-sm-8 col-sm-offset-2 blog-content text-left">
+        {{ .Content }}
+      </div>
+    </div>
     <div class="row text-center footer">
     {{partial "footer.html"}}
     </div>
