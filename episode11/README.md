@@ -1,6 +1,6 @@
 # REST APIs: Separation of Concerns
 
-[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_11_json_apis/)
+[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_11_json_apis/)
 
 Go in 5 Minutes, episode 11.
 
@@ -9,7 +9,7 @@ This screencast discusses how to structure a REST API server in Go. It outlines 
 See [BUILD_AND_TEST.md](./BUILD_AND_TEST.md) for instructions on how to build and test this code.
 
 Screencast video:
-http://www.goin5minutes.com/screencast/episode_11_json_apis/
+https://www.goin5minutes.com/screencast/episode_11_json_apis/
 
 # Happy New Year!
 

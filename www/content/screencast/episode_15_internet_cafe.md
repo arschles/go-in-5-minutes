@@ -17,7 +17,7 @@ We finish the [concurrency series](https://github.com/arschles/go-in-5-minutes/i
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/vs7zHj4rhy8?autoplay=0&origin=http://www.goin5minutes.com"
+  src="https://www.youtube.com/embed/vs7zHj4rhy8?autoplay=0&origin=https://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 

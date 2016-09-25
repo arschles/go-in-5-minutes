@@ -17,7 +17,7 @@ communication via APIs.
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=http://www.goin5minutes.com"
+  src="https://www.youtube.com/embed/QvWUCYwmExE?autoplay=0&origin=https://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 

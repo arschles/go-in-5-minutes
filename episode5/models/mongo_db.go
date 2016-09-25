@@ -80,7 +80,7 @@ func (m *MongoDB) Upsert(key string, val Model) (bool, error) {
 		return false, err
 	}
 	// the Updated field is set when already existed, otherwise the UpsertedID field is set.
-	// see the func at http://bazaar.launchpad.net/+branch/mgo/v2/view/head:/session.go#L1896
+	// see the func at https://bazaar.launchpad.net/+branch/mgo/v2/view/head:/session.go#L1896
 	return cInfo.UpsertedId != nil, nil
 }
 
