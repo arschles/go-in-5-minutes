@@ -5,7 +5,7 @@ import (
 )
 
 func pkCallback(conn ssh.ConnMetadata, key ssh.PublicKey) (*ssh.Permissions, error) {
-	return &ssh.Permissions{}, nil
+	return nil, nil
 }
 
 func getConfig(pkBytes []byte) (*ssh.ServerConfig, error) {
