@@ -4,6 +4,14 @@ body {
   font-family: 'Varela Round', sans-serif;
 }
 
+.pad-left-sm-1 {
+  padding-left: 1em;
+}
+
+.pad-right-sm-1 {
+  padding-right: 1em;
+}
+
 .top-sm-1 {
   margin-top:1em;
 }

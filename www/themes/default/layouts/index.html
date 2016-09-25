@@ -7,15 +7,21 @@
   <link rel="stylesheet" href="/css/index.css"/>
 </head>
 <body class="container-fluid">
-  {{partial "nav.html"}}
+  {{ if 0 }}
+  <!-- bundle buy box -->
   <div class="row text-center top-sm-1 bot-sm-1">
-    <h3 class="text-danger">Announcing the Go In 5 Minutes Bundle</h3>
+    <h4 class="text-danger">
+      Announcing the Go In 5 Minutes Bundle
+    </h4>
     <h6 class="text-muted">
-      Download episodes 0-9 in HD with no DRM
-      <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+      <a class="gumroad-button" href="https://gum.co/gifm-1-10">
+        Buy Episodes 0-9 in HD with no DRM
+        <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+      </a>
     </h6>
-    <a class="gumroad-button" href="https://gum.co/gifm-1-10">Buy now</a>
   </div>
+  {{ end }}
+  {{ if 0 }}
   <div class="row text-center">
     <div class="jumbotron" id="gifm-landing-jumbotron">
       <p class="gifm-subtitle">
@@ -31,12 +37,55 @@
       </p>
     </div>
   </div>
+  {{ end }}
   <div class="row text-center">
-    <p class="lead">
-      Go In 5 Minutes is a screencast series with the most concise, practical <a href="http://golang.org">Go</a> screencasts on the web.
-    </p>
+    <h1>
+      Learn Go
+      <span id="gifm-rotating-topics" class="text-primary">
+        Testing, Debugging, HTTP Servers, Websockets, Gorilla Mux, Benchmarking
+      </span>
+      Fast
+    </h1>
   </div>
   <div class="row text-center">
+    <small class="text-muted">Go In 5 Minutes has the shortest, most concise screencasts on the web. Here's our latest episode:</small>
+    <!-- latest screencast video -->
+    {{ partial "latest_screencast.html" }}
+  </div>
+  <div class="row text-center">
+    <!-- glyphicon glyphicon-chevron-down -->
+    <h1>
+      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+    </h1>
+  </div>
+  <div class="row top-sm-2 text-center">
+    {{partial "latest_screencast_want_more.html"}}
+  </div>
+
+  <div class="row text-left top-sm-2 bg-success pad-left-sm-1">
+    <h3>What's this all about?</h3>
+    <p>
+      Go in 5 Minutes is a technical screencast series by <a href="/about">Aaron Schlesinger</a>, where each episode is about 5 minutes long.
+    </p>
+    <p>
+      Episodes are laser-focused on explaining how to get <i>real work</i> done in your apps with Go
+    </p>
+  </div>
+  <div class="row text-right top-sm-1 bg-info pad-right-sm-1">
+    <h3>Stay in the loop</h3>
+    <p>
+      Each screencast gets published to <a href="https://youtube.com/goin5minutes">YouTube</a>, and notifications go out in an email newsletter.
+    </p>
+    <p>
+      Keep up to date with each episode by subscribing to the newsletter below.
+    </p>
+    <p>
+      {{partial "subscribe_form.html"}}
+    </p>
+  </div>
+
+
+  <div class="row text-center top-sm-2">
     <div class="col-sm-6 text-right">
       <iframe src="https://ghbtns.com/github-btn.html?user=arschles&repo=go-in-5-minutes&type=star&count=true&size=large"
 	      style="border:0; width:160px; height:30px; overflow:hidden"></iframe>
@@ -46,8 +95,6 @@
     </div>
   </div>
   <div class="row text-center">
-    <a class="btn btn-link" href="/subscribe">Subscribe to the Newsletter</a>
-    <a class="btn btn-link" href="/about">Learn More</a>
     <a class="btn btn-link" href="https://github.com/arschles/go-in-5-minutes" target="_blank">See The Code on Github</a>
   </div>
 
