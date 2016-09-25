@@ -1,6 +1,6 @@
 # Profiling Go Programs
 
-[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_8_profiling/)
+[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_8_profiling/)
 
 Go in 5 Minutes, episode 8.
 
@@ -8,7 +8,7 @@ This screencast goes into detail on how to profile Go programs. See https://blog
 
 
 Screencast video:
-http://www.goin5minutes.com/screencast/episode_8_profiling/
+https://www.goin5minutes.com/screencast/episode_8_profiling/
 
 ## No Screencast The Weekend of 11/28/2015
 

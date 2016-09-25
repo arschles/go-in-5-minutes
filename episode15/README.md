@@ -1,6 +1,6 @@
 # Concurrency Series: Internet Cafe
 
-[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_15_internet_cafe/)
+[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_15_internet_cafe/)
 
 Go in 5 Minutes, episode 15.
 
@@ -9,12 +9,12 @@ This screencast overviews the "Internet Cafe" problem on [Trivial Concurrency Ex
 We're finishing up the concurrency series - see https://github.com/arschles/go-in-5-minutes/issues/14 for what we've covered.
 
 Screencast video:
-http://www.goin5minutes.com/screencast/episode_15_internet_cafe/
+https://www.goin5minutes.com/screencast/episode_15_internet_cafe/
 
 # Other Notes
 
 - Extended screencast: https://gum.co/gifm-x-15
-- __Reminder: subscribe to the newsletter at http://www.goin5minutes.com/subscribe/__
+- __Reminder: subscribe to the newsletter at https://www.goin5minutes.com/subscribe/__
 
 # Extended Screencast
 

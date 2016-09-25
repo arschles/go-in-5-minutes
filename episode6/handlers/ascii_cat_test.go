@@ -45,5 +45,5 @@ func TestAsciiCatRespRecorder(t *testing.T) {
 		t.Fatalf("got unexpected octocat string [%s]", bodyStr)
 	}
 	// ResponseRecorder records more useful data about the response.
-	// see http://godoc.org/net/http/httptest#ResponseRecorder for details
+	// see https://godoc.org/net/http/httptest#ResponseRecorder for details
 }

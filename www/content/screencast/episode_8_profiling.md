@@ -15,7 +15,7 @@ We explain why you should profile your programs, how to do it, and (briefly) how
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/7LCgsfHlMv4?autoplay=0&origin=http://www.goin5minutes.com"
+  src="https://www.youtube.com/embed/7LCgsfHlMv4?autoplay=0&origin=https://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 

@@ -1,6 +1,6 @@
 # Debugging Go Programs with godebug
 
-[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_2_debugging_with_godebug/)
+[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_2_debugging_with_godebug/)
 
 Go in 5 Minutes, episode 2.
 
@@ -8,7 +8,7 @@ This screencast shows how to use [godebug](https://github.com/mailgun/godebug) t
 programs. I'll show an example of debugging a concurrent program.
 
 Screencast video:
-http://www.goin5minutes.com/screencast/episode_2_debugging_with_godebug/
+https://www.goin5minutes.com/screencast/episode_2_debugging_with_godebug/
 
 ## Reminder
 

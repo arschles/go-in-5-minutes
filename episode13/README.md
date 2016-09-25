@@ -1,13 +1,13 @@
 # Using `database/sql`
 
-[![Watch The Screencast](http://www.goin5minutes.com/img/watch-screencast.svg)](http://www.goin5minutes.com/screencast/episode_13_using_database_sql/)
+[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_13_using_database_sql/)
 
 Go in 5 Minutes, episode 13.
 
 This screencast shows the basics of using the `database/sql` package.
 
 Screencast video:
-http://www.goin5minutes.com/screencast/episode_13_using_database_sql/
+https://www.goin5minutes.com/screencast/episode_13_using_database_sql/
 
 # Outline
 
@@ -21,4 +21,4 @@ To build and run the code in this directory, ensure you have [glide](https://git
 
 # Additional Resources
 
-http://go-database-sql.org has excellent, detailed documentation on the `database/sql` package. If you find the [documentation on godoc.org](http://godoc.org/database/sql) lacking in some area, I encourage you to check out that site.
+http://go-database-sql.org has excellent, detailed documentation on the `database/sql` package. If you find the [documentation on godoc.org](https://godoc.org/database/sql) lacking in some area, I encourage you to check out that site.

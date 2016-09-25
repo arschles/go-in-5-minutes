@@ -20,7 +20,7 @@ _Note_: the examples in this screencast operate against an in-memory [SQLite](ht
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/nros7z5z-7M?autoplay=0&origin=http://www.goin5minutes.com"
+  src="https://www.youtube.com/embed/nros7z5z-7M?autoplay=0&origin=https://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 
