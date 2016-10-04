@@ -12,5 +12,6 @@ Screencast video: TODO
 
 1. Simple syntax
 2. Using for setup/Teardown logic
+  - Per-test logic, more fine-grained than `TestMain`
 3. Advanced usage for table-driven tests
 4. Example code
