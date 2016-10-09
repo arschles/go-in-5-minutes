@@ -12,11 +12,11 @@ I'd like to introduce [Minio](https://minio.io/) as the first sponsor of the scr
 
 ### Twitter
 
-First, We're live [on Twitter](https://twitter.com/goin5minutes)! Go follow us at https://twitter.com/goin5minutes.
+We're live [on Twitter](https://twitter.com/goin5minutes)! Go follow us at https://twitter.com/goin5minutes.
 
 ### Blog
 
-Second, I'd like to announce the __Go In 5 Minutes Blog__ at https://www.goin5minutes.com/blog/!
+I'd like to announce the __Go In 5 Minutes Blog__ at https://www.goin5minutes.com/blog/!
 
 I'll be writing posts about the same kinds of topics you see here, but in more details. Follow along to get even more out of the screencasts.
 
