@@ -6,7 +6,7 @@ This screencast overviews the new "Subtests" feature in Go 1.7's `testing` packa
 
 # New Developments!
 
-- __First Sponsor - [Minio](https://minio.io)!__
+- __First Sponsor - Minio!__ - https://minio.io
 - __We're on Twitter!__ - https://twitter.com/goin5minutes
 - __The Blog is Live!__ - https://www.goin5minutes.com/blog/
   - Subscribe at https://www.goin5minutes.com/subscribe/
