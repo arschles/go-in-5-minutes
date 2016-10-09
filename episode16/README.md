@@ -4,19 +4,15 @@ Go in 5 Minutes, episode 16.
 
 This screencast overviews the new "Subtests" feature in Go 1.7's [testing](https://godoc.org/testing) package, and how to better organize your tests using them.
 
-# New Twitter Account!
+# Some New Additions to the Family
 
-We're live [on Twitter](https://twitter.com/goin5minutes)! Go follow us for new screencast notifications, [blog post](https://www.goin5minutes.com/blog/) notifications, and short Go tips & tricks.
+First, We're live [on Twitter](https://twitter.com/goin5minutes)! Go follow us at https://twitter.com/goin5minutes.
 
-https://twitter.com/goin5minutes
+Second, I'd like to announce the __Go In 5 Minutes Blog__ at https://www.goin5minutes.com/blog/!
 
-# Blog Too!
+I'll be writing blog posts about the same kinds of topics you see here, but in more details. Follow along the blog to get even more out of the screencasts.
 
-You might have caught it above - I'd like to announce the [Go In 5 Minutes Blog](https://www.goin5minutes.com/blog/)!
-
-Check out the posts (and [subscribe to the newsletter](https://www.goin5minutes.com/subscribe/)) for longer explanations about concepts, tips and tricks in Go. The blog has articles about the same kinds of topics as what you see here, but with a lot more detail. And, it's a great companion to the screencasts!
-
-https://www.goin5minutes.com/blog
+And, subscribe to the newsletter to stay up to date on blog posts (just like you do for the screencasts) at https://www.goin5minutes.com/subscribe/
 
 # Outline
 
