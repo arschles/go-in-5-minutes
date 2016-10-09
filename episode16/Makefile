@@ -1,5 +1,5 @@
 test:
-	go test .
+	go test -test.v .
 
 test-race-cond:
-	go test -tags race_cond -race .
+	go test -test.v -tags race_cond -race .
