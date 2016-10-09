@@ -6,6 +6,10 @@ This screencast overviews the new "Subtests" feature in Go 1.7's [testing](https
 
 # Some New Additions to the Family
 
+### New Sponsor
+
+I'd like to introduce [Minio, Inc](https://minio.io/) as the first sponsor of the screencast! I couldn't be happier to be working with such a great, capable group of engineers. Check out https://minio.io for more details, and see the screencast page for more details.
+
 ### Twitter
 
 First, We're live [on Twitter](https://twitter.com/goin5minutes)! Go follow us at https://twitter.com/goin5minutes.
