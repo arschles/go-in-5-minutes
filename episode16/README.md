@@ -1,12 +1,8 @@
 # Nested Tests in Go
 
-(TODO) [![Watch The Screencast](TODO)
-
 Go in 5 Minutes, episode 16.
 
 This screencast overviews the new "Subtests" feature in Go 1.7's [testing](https://godoc.org/testing) package, and how to better organize your tests using them.
-
-Screencast video: TODO
 
 # Outline
 
