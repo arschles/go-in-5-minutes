@@ -16,7 +16,7 @@ You might have caught it above - I'd like to announce the [Go In 5 Minutes Blog]
 
 Check out the posts (and [subscribe to the newsletter](https://www.goin5minutes.com/subscribe/)) for longer explanations about concepts, tips and tricks in Go. The blog has articles about the same kinds of topics as what you see here, but with a lot more detail. And, it's a great companion to the screencasts!
 
-https://goin5minutes.com/blog
+https://www.goin5minutes.com/blog
 
 # Outline
 
