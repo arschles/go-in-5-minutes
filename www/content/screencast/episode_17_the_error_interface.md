@@ -7,7 +7,7 @@ type = "screencast"
 
 _Episode 17_
 
-We explore the [`error`](https://godoc.org/builtin#error) interface more closely and explain how and why to create custom error types that you can pass wherever an `error` is expected.
+We explore the `error` interface (https://godoc.org/builtin#error) more closely and explain how and why to create custom error types that you can pass wherever an `error` is expected.
 
 We also talk about some best practices in exposing and describing your custom types inside of your libraries and packages.
 
