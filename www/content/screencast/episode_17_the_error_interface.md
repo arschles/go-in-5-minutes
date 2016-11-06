@@ -18,7 +18,7 @@ We also talk about some best practices in exposing and describing your custom ty
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/R3Dp2x7BrtE?autoplay=0&origin=https://www.goin5minutes.com"
+  src="https://www.youtube.com/embed/R3Dp2x7BrtE?autoplay=0&origin=https://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 
