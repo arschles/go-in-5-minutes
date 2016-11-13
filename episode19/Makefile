@@ -11,3 +11,7 @@ test-pluralize:
 	@echo "plural 'boat':"
 	curl localhost:8080/pluralize/boat?num=2
 	@echo ""
+
+test-middleware:
+	curl localhost:8080/request_count
+	@echo ""

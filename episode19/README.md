@@ -8,4 +8,5 @@ This screencast overviews [Echo HTTP Server Framework](https://github.com/labsta
 
 1. The basics
 1. Middlewares
+  - Including custom middleware!
 1. Example code

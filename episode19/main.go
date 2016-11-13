@@ -14,11 +14,18 @@ func main() {
 	// Setting up basic middleware(s)
 	/////
 	e.Use(middleware.Logger())
+	reqCounter := requestCounter{}
+	e.Use(reqCounter.Process)
 
 	/////
-	// simple example
+	// path and query params (simple)
 	/////
 	e.GET(fmt.Sprintf("/pluralize/:%s", singularPathParam), pluralizeHandler)
+
+	/////
+	// number of incoming requests, using the request counter middleware
+	/////
+	e.GET("/request_count", reqCounter.handle)
 
 	const port = 8080
 	e.Logger.Printf("starting on port %d", port)
