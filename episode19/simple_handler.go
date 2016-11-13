@@ -8,8 +8,10 @@ import (
 	"github.com/labstack/echo"
 )
 
+const singularPathParam = "singular"
+
 func pluralizeHandler(c echo.Context) error {
-	singular := c.QueryParam("singular")
+	singular := c.Param(singularPathParam)
 	numStr := c.QueryParam("num")
 	num, err := strconv.Atoi(numStr)
 	if err != nil {

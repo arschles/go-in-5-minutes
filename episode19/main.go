@@ -18,7 +18,7 @@ func main() {
 	/////
 	// simple example
 	/////
-	e.GET("/pluralize", pluralizeHandler)
+	e.GET(fmt.Sprintf("/pluralize/:%s", singularPathParam), pluralizeHandler)
 
 	const port = 8080
 	e.Logger.Printf("starting on port %d", port)

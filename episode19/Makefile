@@ -6,8 +6,8 @@ run:
 
 test-pluralize:
 	@echo "singular 'boat':"
-	curl localhost:8080/pluralize?singular=boat\&num=1
+	curl localhost:8080/pluralize/boat?num=1
 	@echo ""
 	@echo "plural 'boat':"
-	curl localhost:8080/pluralize?singular=boat\&num=2
+	curl localhost:8080/pluralize/boat?num=2
 	@echo ""
