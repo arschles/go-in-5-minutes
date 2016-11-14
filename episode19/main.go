@@ -11,7 +11,12 @@ func main() {
 	e := echo.New()
 
 	/////
-	// Setting up basic middleware(s)
+	// Setting up basic middleware(s). There are lots of other built-in middlewares, including:
+	//
+	// 1. CSRF prevention: https://echo.labstack.com/middleware/csrf
+	// 2. CORS support: https://echo.labstack.com/middleware/cors
+	// 3. JWT support: https://echo.labstack.com/middleware/jwt
+	// 4. HTTPS redirects: https://echo.labstack.com/middleware/redirect
 	/////
 	e.Use(middleware.Logger())
 	e.Use(middleware.Gzip())
