@@ -23,7 +23,7 @@ func main() {
 	e.GET(fmt.Sprintf("/pluralize/:%s", singularPathParam), pluralizeHandler)
 
 	/////
-	// number of incoming requests, using the request counter middleware
+	// use the request counter middleware to return the number of incoming requests
 	/////
 	e.GET("/request_count", reqCounter.handle)
 
