@@ -14,6 +14,7 @@ func main() {
 	// Setting up basic middleware(s)
 	/////
 	e.Use(middleware.Logger())
+	e.Use(middleware.Gzip())
 	reqCounter := requestCounter{}
 	e.Use(reqCounter.Process)
 

@@ -4,18 +4,20 @@ build:
 run:
 	./episode19
 
+CURL_PREAMBLE := curl -v --compressed
+
 test-pluralize:
 	@echo "singular 'boat':"
-	curl localhost:8080/pluralize/boat?num=1
+	${CURL_PREAMBLE} localhost:8080/pluralize/boat?num=1
 	@echo ""
 	@echo "plural 'boat':"
-	curl localhost:8080/pluralize/boat?num=2
+	${CURL_PREAMBLE} localhost:8080/pluralize/boat?num=2
 	@echo ""
 
 test-middleware:
-	curl localhost:8080/request_count
+	${CURL_PREAMBLE} localhost:8080/request_count
 	@echo ""
 
 test-json:
-	curl -XPOST -d '{"x":123,"y":456}' -H "Content-Type: application/json" localhost:8080/json
+	${CURL_PREAMBLE} -H "Content-Type: application/json" -XPOST -d '{"x":123,"y":456}'  localhost:8080/json
 	@echo ""
