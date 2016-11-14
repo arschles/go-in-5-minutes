@@ -15,3 +15,7 @@ test-pluralize:
 test-middleware:
 	curl localhost:8080/request_count
 	@echo ""
+
+test-json:
+	curl -XPOST -d '{"x":123,"y":456}' -H "Content-Type: application/json" localhost:8080/json
+	@echo ""

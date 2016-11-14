@@ -27,6 +27,11 @@ func main() {
 	/////
 	e.GET("/request_count", reqCounter.handle)
 
+	/////
+	// accept a JSON body
+	/////
+	e.POST("/json", jsonHandler)
+
 	const port = 8080
 	e.Logger.Printf("starting on port %d", port)
 	if err := e.Start(fmt.Sprintf(":%d", port)); err != nil {
