@@ -8,24 +8,20 @@
   {{partial "nav.html"}}
   <div class="row">
     <div class="container">
-      <div class="row">
-        <h1 class="page-title">
-          All Screencasts
-          <small>Newest on top</small>
-        </h1>
-      </div>
-      <div class="row">
-        <p>
-          <a
-            class="btn btn-success btn-lg btn-inline"
-            data-toggle="tooltip"
-            title="Get periodic emails with new screencasts and valuable content, right in your inbox."
-            href="/subscribe"
-          >
-            Get These in your Inbox
-          </a>
-        </p>
-      </div>
+      <h1 class="page-title">
+        All Screencasts
+        <small>Newest on top</small>
+      </h1>
+      <p>
+        <a
+          class="btn btn-success btn-lg btn-inline"
+          data-toggle="tooltip"
+          title="Get periodic emails with new screencasts and valuable content, right in your inbox."
+          href="/subscribe"
+        >
+	  Get These in your Inbox
+        </a>
+      </p>
       {{range $p := (where .Site.Pages "Type" "screencast")}}
       <div class="row media">
         <div class="date col-sm-1">
