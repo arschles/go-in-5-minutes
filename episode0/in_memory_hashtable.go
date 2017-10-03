@@ -11,7 +11,7 @@ func NewInMemoryHashTable() HashTable {
 	return &inMemoryHashTable{m: make(map[string][]byte)}
 }
 
-func (i *inMemoryHashTable) Get(key string) ([]byte, error) {
+func (i inMemoryHashTable) Get(key string) ([]byte, error) {
 	i.lck.RLock()
 	defer i.lck.RUnlock()
 	val, ok := i.m[key]
