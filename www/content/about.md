@@ -17,7 +17,9 @@ type = "page"
   <div class="col-sm-5 text-left">
     <h2>The Author</h2>
     <p>
-      I'm Aaron Schlesinger, creator of Go In 5 Minutes. I've been writing Go code for just over 2 years and gathered best practices, tips and tricks, great packages, and other general knowledge on how to write good Go code in <i>the Go way</i>.
+      I'm Aaron Schlesinger, creator of Go In 5 Minutes. I've been writing Go code for about 4
+      years. I've gathered best practices, tips and tricks, great packages, and other practical
+      knowledge and best practices on how to write good Go code in <i>the Go way</i>.
     </p>
     <p>
       Read on to learn more about the series.
