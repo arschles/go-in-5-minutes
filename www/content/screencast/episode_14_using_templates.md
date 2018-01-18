@@ -9,12 +9,6 @@ _Episode 14_
 
 We show how to do use the the [`html/template`](https://godoc.org/html/template) package (and its close sibling, [`text/template`](https://godoc.org/text/template)). We pay special attention to templating tasks most common to web development like layouts, blocks and partials.
 
-<div>
-  <a class="gumroad-button" href="https://gum.co/gifm-x-14">
-    Get the Extended Screencast
-  </a>
-</div>
-
 <!--more-->
 
 <div>
