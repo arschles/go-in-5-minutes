@@ -4,17 +4,6 @@
 <html lang="en">
 <head>
   {{ partial "head.html" }}
-  <!-- ads for the blog list -->
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-format="fluid"
-      data-ad-layout-key="-gw-c+2p-30-2w"
-      data-ad-client="ca-pub-4879856180927890"
-      data-ad-slot="8780833767"></ins>
-  <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
 </head>
 <body class="container-fluid">
   {{ partial "nav.html" . }}
@@ -37,6 +26,19 @@
             Subscribe to New Posts
           </a>
         </p>
+      </div>
+      <div class="row">
+        <!-- ads for the blog list -->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-format="fluid"
+            data-ad-layout-key="-gw-c+2p-30-2w"
+            data-ad-client="ca-pub-4879856180927890"
+            data-ad-slot="8780833767"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
       {{ range $p := $paginator.Pages }}
       <div class="row media">
