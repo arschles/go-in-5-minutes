@@ -37,3 +37,5 @@ I've created a 1hr extended screencast to complement this one. This screencast e
 - Best practices for building larger template structures, suitable for a large web app
 
 Go In 5 Minutes screencasts will always be free, while extended screencasts will be paid. I recommend you get this extended screencast if you're planning to build a larger application or want to learn more details on how to practically use it.
+
+See [https://gum.co/gifm-x-14](https://gum.co/gifm-x-14) for more details.
