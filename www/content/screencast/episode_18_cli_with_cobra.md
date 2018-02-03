@@ -1,6 +1,6 @@
 +++
 date = "2018-02-03T11:44:01-08:00"
-title = "Writing a Command Line Applicaition using Cobra"
+title = "Writing a Command Line Application using Cobra"
 type = "screencast"
 
 +++
