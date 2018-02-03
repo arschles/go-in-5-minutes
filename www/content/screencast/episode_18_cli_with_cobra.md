@@ -13,6 +13,11 @@ app I've written for the last year.
 
 <!--more-->
 
+I'm picking up Go in 5 Minutes after over a year! I wrote about it 
+[here](https://www.goin5minutes.com/blog/hiatus/). *I want to say thank you to everyone
+who has come back!*
+
+Cheers, everyone :)
 
 <iframe
   class="ytplayer"
