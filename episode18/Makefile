@@ -1,4 +1,4 @@
 build:
-	go build -o episode18
+	go build -o gifm
 run:
-	./episode18
+	./gifm
