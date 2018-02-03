@@ -1,5 +1,5 @@
 +++
-date = "2018-01-03T11:44:01-8:00"
+date = "2018-02-03T11:44:01-08:00"
 title = "Writing a Command Line Applicaition using Cobra"
 type = "screencast"
 
