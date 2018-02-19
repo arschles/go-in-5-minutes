@@ -2,13 +2,17 @@
 
 Go in 5 Minutes, episode 19, as requested by [@tmcarr](https://github.com/tmcarr)!
 
-This screencast teaches how to consume a JSON structure that we don't known ahead of time.
-We'll be using Bitly's [go-simplejson](https://godoc.org/github.com/bitly/go-simplejson#Json)
-package to do this. I am relatively new to this package, but have successfully used it
-in the recent past and it's very easy to use.
+This screencast teaches how to consume some unknown JSON. We don't know what it looks like
+ahead of time, and we have to handle anything that comes our way.
+
+We'll be using only the standard library for this, although we could also use some wonderful 
+packages out there to help. My favorite so far is Bitly's 
+[go-simplejson](https://godoc.org/github.com/bitly/go-simplejson#Json).
+I've always done this type of parsing myself, but I've started using `go-simplejson` and really
+like it. It's well designed and very easy to use!
 
 # Outline
 
-1. The `go-simplejson` package
-2. Using `go-simplejson` for two different unknown structures
-3. Seeing an example
+1. Basics of JSON Parsing in Go
+2. Handling different types with recursion :)
+3. Let's see an example!
