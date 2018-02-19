@@ -4,92 +4,92 @@ import (
 	"encoding/json"
 	"fmt"
 	"strings"
-
-	gson "github.com/bitly/go-simplejson"
 )
 
 func main() {
-	js, err := gson.NewJson([]byte(aDict))
-	if err != nil {
+	if js, err := unmarshal(aDict); err != nil {
 		logger.Fatalf("error decoding (%s)", err)
+	} else {
+		if str, err := ifaceToString(js); err != nil {
+			logger.Fatalf("error converting js (%s)", err)
+		} else {
+			logger.Println(str)
+		}
 	}
-	str, err := jsonToString(js)
-	if err != nil {
-		logger.Fatalf("error converting js to string (%s)", err)
-	}
-	logger.Println(str)
 
-	js, err = gson.NewJson([]byte(aList))
-	if err != nil {
+	if js, err := unmarshal(aList); err != nil {
 		logger.Fatalf("error decoding (%s)", err)
+	} else {
+		if str, err := ifaceToString(js); err != nil {
+			logger.Fatalf("error converting js (%s)", err)
+		} else {
+			logger.Println(str)
+		}
 	}
-	str, err = jsonToString(js)
-	if err != nil {
-		logger.Fatalf("error converting js to string (%s)", err)
-	}
-	logger.Println(str)
 
-	js, err = gson.NewJson([]byte(anInt))
-	if err != nil {
+	if js, err := unmarshal(anInt); err != nil {
 		logger.Fatalf("error decoding (%s)", err)
+	} else {
+		if str, err := ifaceToString(js); err != nil {
+			logger.Fatalf("error converting js (%s)", err)
+		} else {
+			logger.Println(str)
+		}
 	}
-	str, err = jsonToString(js)
-	if err != nil {
-		logger.Fatalf("error converting to string (%s)", err)
-	}
-	logger.Println(str)
 
-	js, err = gson.NewJson([]byte(aString))
-	if err != nil {
+	if js, err := unmarshal(aString); err != nil {
 		logger.Fatalf("error decoding (%s)", err)
+	} else {
+		if str, err := ifaceToString(js); err != nil {
+			logger.Fatalf("error converting js (%s)", err)
+		} else {
+			logger.Println(str)
+		}
 	}
-	str, err = jsonToString(js)
-	if err != nil {
-		logger.Fatalf("error converting js to string (%s)", err)
-	}
-	logger.Println(str)
 }
 
-func jsonToString(js *gson.Json) (string, error) {
-	if dict, err := js.Map(); err == nil {
-		return ifaceToString(dict), nil
-	} else if arr, err := js.Array(); err == nil {
-		return ifaceToString(arr), nil
-	} else if str, err := js.String(); err == nil {
-		return ifaceToString(str), nil
-	} else if num, err := js.Int(); err == nil {
-		return ifaceToString(num), nil
-	} else if num, err := js.Int64(); err == nil {
-		return ifaceToString(num), nil
+func unmarshal(str string) (interface{}, error) {
+	var iface interface{}
+	decoder := json.NewDecoder(strings.NewReader(str))
+	decoder.UseNumber()
+	if err := decoder.Decode(&iface); err != nil {
+		return nil, err
 	}
-
-	return "", fmt.Errorf("unsupported js object %#v (%T)", js, js)
+	return iface, nil
 }
 
-func ifaceToString(iface interface{}) string {
+func ifaceToString(iface interface{}) (string, error) {
 	switch t := iface.(type) {
 	case map[string]interface{}:
 		strs := make([]string, len(t))
 		i := 0
 		for key, val := range t {
-			strs[i] = fmt.Sprintf("%s: %s", key, ifaceToString(val))
+			str, err := ifaceToString(val)
+			if err != nil {
+				return "", err
+			}
+			strs[i] = fmt.Sprintf("%s: %s", key, str)
 			i++
 		}
-		return "{" + strings.Join(strs, ", ") + "}"
+		return "{" + strings.Join(strs, ", ") + "}", nil
 	case []interface{}:
 		strs := make([]string, len(t))
 		i := 0
 		for _, val := range t {
-			strs[i] = ifaceToString(val)
+			str, err := ifaceToString(val)
+			if err != nil {
+				return "", err
+			}
+			strs[i] = str
 			i++
 		}
-		return "[" + strings.Join(strs, ", ") + "]"
+		return "[" + strings.Join(strs, ", ") + "]", nil
 	case int:
-		return fmt.Sprintf("%d", t)
+		return fmt.Sprintf("%d", t), nil
 	case json.Number:
-		return fmt.Sprintf("%s", t)
+		return fmt.Sprintf("%s", t), nil
 	case string:
-		return fmt.Sprintf(`"%s"`, t)
+		return fmt.Sprintf(`"%s"`, t), nil
 	}
-	return fmt.Sprintf("unsupported value %#v (%T)", iface, iface)
+	return "", fmt.Errorf("unsupported value %#v (%T)", iface, iface)
 }
