@@ -1,4 +1,4 @@
-# Writing a CLI App
+# Using [`github.com/stretchr/testify/suite`(https://godoc.org/github.com/stretchr/testify/suite) To Write More Robust Tests
 
 Go in 5 Minutes, episode 20.
 
