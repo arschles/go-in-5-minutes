@@ -9,7 +9,7 @@ func (t *TransformerTests) TestTransform() {
 		return s + "c"
 	})
 	r.True(transformed)
-	r.Equal("ac", t.transformer.cache["a"])
+	r.Equal("bc", t.transformer.cache["a"])
 
 	// key exists and the value is not a string. should not be transformed
 	t.transformer.cache["b"] = 1
@@ -17,7 +17,7 @@ func (t *TransformerTests) TestTransform() {
 		return s + "d"
 	})
 	r.False(transformed)
-	r.Equal("b", 1)
+	r.Equal(1, t.transformer.cache["b"])
 
 	// key doesn't exist. should not be transformed
 	transformed = t.transformer.transform("c", func(s string) string {
