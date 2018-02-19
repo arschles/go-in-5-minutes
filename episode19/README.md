@@ -7,7 +7,7 @@ ahead of time, and we have to handle anything that comes our way.
 
 We'll be using only the standard library for this, although we could also use some wonderful 
 packages out there to help. My favorite so far is Bitly's 
-[go-simplejson](https://godoc.org/github.com/bitly/go-simplejson#Json).
+[go-simplejson](https://godoc.org/github.com/bitly/go-simplejson).
 I've always done this type of parsing myself, but I've started using `go-simplejson` and really
 like it. It's well designed and very easy to use!
 
