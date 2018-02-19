@@ -15,5 +15,4 @@ func (t *TransformerTests) TestRemove() {
 	r.False(removed)
 	_, found = t.transformer.cache["b"]
 	t.False(found)
-
 }
