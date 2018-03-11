@@ -1,6 +1,6 @@
 # Go in 5 Minutes Financial Contributors
 
-Go in 5 Minutes is a screencast series [I](https://github.com/arschles) create because
+Go in 5 Minutes is a screencast series [I](https://github.com/arschles) created because
 I believe short, focused screencasts are one of the best ways to help Gophers all over
 the world advance their skills.
 
