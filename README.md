@@ -5,6 +5,8 @@
 Welcome Gophers! First off, lots of :heart: from me to you. I hope you enjoy
 the screencasts, and as always, keep on rockin!
 
+----
+
 This repository has code and outlines for [Go In 5 Minutes Screencasts](htttp://bitly.com/goin5minutesyt). All content (code samples, outlines, etc...) is organized into folders, starting with [`episode0`](https://github.com/arschles/go-in-5-minutes/tree/master/episode0) and going from there.
 
 Full descriptions and videos are at https://www.goin5minutes.com/screencasts/index.html.
