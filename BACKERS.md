@@ -21,11 +21,11 @@ Go and level up their skills.
 
 ### [Light Code Labs](https://www.lightcodelabs.com/)
 
-![Light Code Labs](./assets/light-code-labs.png)
+![Light Code Labs](./www/static/img/light-code-labs.png)
 
 ### [Care Anywhere](https://careanywhereapp.com)
 
-![Care Anywhere](./assets/care-anywhere.jpg)
+![Care Anywhere](./www/static/img/care-anywhere.jpg)
 
 ## [Your Company Here](https://patreon.com/goin5minutes)
 
