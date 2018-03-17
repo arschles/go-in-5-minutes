@@ -17,3 +17,7 @@ Check out the screencast to learn more!
 1. The [`suite`](https://github.com/stretchr/testify/suite) package
 2. Basics for writing test suites
 3. Let's look at the code!
+
+If you enjoy these screencasts, please consider 
+[becoming a backer](https://www.patreon.com/goin5minutes)
+and supporting this project. Cool stickers and more await you if you do!
