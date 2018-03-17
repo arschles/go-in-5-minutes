@@ -2,6 +2,11 @@
 
 [![Build Status](https://travis-ci.org/arschles/go-in-5-minutes.svg?branch=master)](https://travis-ci.org/arschles/go-in-5-minutes)
 
+Welcome Gophers! First off, lots of :heart: from me to you. I hope you enjoy
+the screencasts, and as always, keep on rockin!
+
+----
+
 This repository has code and outlines for [Go In 5 Minutes Screencasts](htttp://bitly.com/goin5minutesyt). All content (code samples, outlines, etc...) is organized into folders, starting with [`episode0`](https://github.com/arschles/go-in-5-minutes/tree/master/episode0) and going from there.
 
 Full descriptions and videos are at https://www.goin5minutes.com/screencasts/index.html.
@@ -20,6 +25,14 @@ Please [submit an issue](https://github.com/arschles/go-in-5-minutes/issues) wit
 Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels/request%20a%20screencast.
 
 **I'd love to hear from you!**
+
+# Sponsors
+
+Go in 5 Minutes has some folks who generously provide financial backing to help pay
+for development costs. See [BACKERS.md](./BACKERS.md) for the list of those folks.
+
+If you'd like to sponsor the screencast (and get your logo up on that page!), go to
+[https://patreon.com/goin5minutes](https://patreon.com/goin5minutes).
 
 # Bundle
 

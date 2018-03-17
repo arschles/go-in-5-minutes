@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{partial "head.html"}}
+  <link href="/css/blog.css" rel="stylesheet"/>
+  {{range $i, $css := .Params.extra_css}}
+  <link href="{{$css}}" rel="stylesheet"/>
+  {{end}}
+  <title>Go in 5 Minutes Financial Backers</title>
+</head>
+<body class="container-fluid">
+  {{ partial "nav.html" }}
+  <div class="container">
+    <div class="row page-header">
+        <h1>Go in 5 Minutes Financial Backers</h1>
+    </div>
+    <div class="row">
+      <p>
+        I created Go in 5 Minutes because I believe short, focused screencasts are 
+        one of the best ways to help Gophers all over the world advance their skills.
+      </p>
+      <p>
+        The concepts I've covered in screencasts have helped developers get involved 
+        in the community, get a new Go job, or just learn something new. Over 3000 
+        Gophers have benefitted from the content so far.
+      </p>
+      <p>
+        Financial contributions help pay for development of new material and production 
+        of new screencasts.
+      </p>
+      <p>
+        If you or your company has benefitted from the lessons that Go in 5 Minutes teaches,
+        please consider supporting the screencast to help Gophers all over the world 
+        learn Go and level up their skills.
+      </p>
+      <p>
+        <a href="https://www.patreon.com/goin5minutes">
+            https://www.patreon.com/goin5minutes
+        </a>
+      </p>
+      <p>
+        Below is a list of the financial contributors.
+      </p>
+    </div>
+    <div class="row">
+        <h1>Sponsors</h1>
+        <h2>
+            <a href="https://www.lightcodelabs.com/">
+            Light Code Labs
+            </a>
+        </h2>
+        <img src="/img/light-code-labs.png"/>
+        <h2>
+            <a href="https://careanywhereapp.com">
+                Care Anywhere
+            </a>
+        </h2>
+        <img src="/img/care-anywhere.jpg"/>
+        <h3>
+            <a href="https://patreon.com/goin5minutes">
+                Your Company Here
+            </a>
+        </h3>
+    </div>
+    <div class="row">
+        <h1>Backers</h1>
+        <h3>
+            <a href="https://patreon.com/goin5minutes">
+                Your Company Here
+            </a>
+        </h3>
+    </div>
+  </div>
+  {{partial "footer.html"}}
+  {{partial "js.html"}}
+</body>
+</html>
