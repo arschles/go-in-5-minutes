@@ -9,7 +9,7 @@ _Episode 20_
 
 Tests are a _huge_ part of your codebase and your workflow includes writing lots
 of tests (I hope!) We'll talk about how to up your testing game using 
-[`github.com/stretchr/testify/suite`](https://github.com/stretchr/testify/suite).
+[`github.com/stretchr/testify/suite`](https://godoc.org/github.com/stretchr/testify/suite).
 
 Why should you use more than just the standard [`testing`](https://godoc.org/testing)
 package? Under what circumstances? What are the benefits? All covered here!
