@@ -18,7 +18,7 @@ package? Under what circumstances? What are the benefits? All covered here!
 
 Keep on rockin', Gophers!
 
-<iframe width="560" height="315" src="https://youtu.be/z-LFbV8kiMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z-LFbV8kiMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode20).
 
