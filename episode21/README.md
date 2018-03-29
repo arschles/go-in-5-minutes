@@ -1,34 +1,22 @@
-# Welcome to Buffalo!
+# Getting Started with [Buffalo](https://gobuffalo.io) to Build Awesome Websites
 
-Thank you for choosing Buffalo for your web development needs.
+Go in 5 Minutes, episode 21.
 
-## Database Setup
+How do you build a web application in Go? For a while, we all just cobbled something
+together with the standard library, Gorilla Mux, and so on. We haven't had a "Rails for Go"!
 
-It looks like you chose to set up your application using a postgres database! Fantastic!
+Until now... Enter [Buffalo](https://gobuffalo.io). This is the most popular framework
+today for building _awesome_ full-stack web applications with Go. You don't need to
+drop back to Ruby/PHP/Python land to build beautiful website anymore!
 
-The first thing you need to do is open up the "database.yml" file and edit it to use the correct usernames, passwords, hosts, etc... that are appropriate for your environment.
+Check out the screencast for more!
 
-You will also need to make sure that **you** start/install the database of your choice. Buffalo **won't** install and start postgres for you.
+# Outline
 
-### Create Your Databases
+1. Some history
+2. Why Buffalo?
+3. Getting started
 
-Ok, so you've edited the "database.yml" file and started postgres, now Buffalo can create the databases in that file for you:
-
-	$ buffalo db create -a
-## Starting the Application
-
-Buffalo ships with a command that will watch your application and automatically rebuild the Go binary and any assets for you. To do that run the "buffalo dev" command:
-
-	$ buffalo dev
-
-If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you should see a "Welcome to Buffalo!" page.
-
-**Congratulations!** You now have your Buffalo application up and running.
-
-## What Next?
-
-We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and reviewing all of the great documentation there.
-
-Good luck!
-
-[Powered by Buffalo](http://gobuffalo.io)
+If you enjoy these screencasts, please consider 
+[becoming a backer](https://www.patreon.com/goin5minutes)
+and supporting this project. Cool stickers and more await you if you do!
