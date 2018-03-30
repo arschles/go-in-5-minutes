@@ -2,12 +2,27 @@
 
 Go in 5 Minutes, episode 21.
 
-How do you build a web application in Go? For a while, we all just cobbled something
-together with the standard library, Gorilla Mux, and so on. We haven't had a "Rails for Go"!
+How do you build a website with Go? For a while, we all just cobbled something
+together with the standard library, Gorilla Mux, and so on. We had to figure all this stuff
+out for ourselves, and more!
 
-Until now... Enter [Buffalo](https://gobuffalo.io). This is the most popular framework
-today for building _awesome_ full-stack web applications with Go. You don't need to
-drop back to Ruby/PHP/Python land to build beautiful website anymore!
+- A database ORM
+- Database migrations
+- Templating
+- Javascript & "frontend stuff"
+- An asset pipeline
+- Having a good development environment
+- Compiling for production?
+- Dockerizing the app
+- Background jobs
+
+That's a long list! But other languages have good frameworks to handle all of it. I love
+Go, but before Buffalo I wouldn't have chosen it to build a full-on website.
+
+In other words, we didn't have a "Rails for Go" before Buffalo.
+
+[Buffalo](https://gobuffalo.io) is now one of the most popular frameworks today for building 
+_awesome_ full-stack web applications with Go, because it's a framework like Rails! You don't need to drop back to Ruby/PHP/Python land to build beautiful website in Go anymore :smile:.
 
 Check out the screencast for more!
 
