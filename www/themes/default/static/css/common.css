@@ -1,11 +1,11 @@
 body {
-  margin-bottom:10px;
-  font-size:18px;
+  margin-bottom: 10px;
+  font-size: 18px;
   font-family: 'Varela Round', sans-serif;
 }
 
 .top-sm-1 {
-  margin-top:1em;
+  margin-top: 1em;
 }
 
 .top-sm-2 {
@@ -13,7 +13,7 @@ body {
 }
 
 .bot-sm-1 {
-  margin-bottom:1em;
+  margin-bottom: 1em;
 }
 
 .background-grey-1 {
@@ -21,8 +21,8 @@ body {
 }
 
 .footer {
-  margin-top:3em;
-  font-size:80%;
+  margin-top: 3em;
+  font-size: 80%;
 }
 
 p {
@@ -30,10 +30,16 @@ p {
 }
 
 .gifm-logo {
-  font-size:120%;
+  font-size: 120%;
   font-family: 'Cousine', ;
 }
 
 h1.page-title {
   border-bottom: 1px solid #eee;
+}
+
+.footer {
+  font-size: 0.7em;
+  padding-top: 1em;
+  border-top: 1px solid #aaa;
 }
