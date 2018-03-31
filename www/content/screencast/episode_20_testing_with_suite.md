@@ -1,6 +1,6 @@
 +++
 date = "2018-03-17T11:44:01-08:00"
-title = "Testing with testify suite"
+title = "Testing with Testify Suite"
 type = "screencast"
 
 +++
