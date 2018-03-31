@@ -43,3 +43,7 @@ h1.page-title {
   padding-top: 1em;
   border-top: 1px solid #aaa;
 }
+
+a.screencast-title:link, a.screencast-title:visited {
+  color: #000;
+}
