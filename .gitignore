@@ -32,4 +32,7 @@ episode*/gifm
 www/public
 episode19/vendor
 episode21/node_modules
+episode22/node_modules
 episode21/tmp
+!episode21/vendor
+!episode22/vendor
