@@ -35,9 +35,9 @@ episode19/vendor
 episode21/node_modules
 !episode21/vendor
 episode21/tmp
-episode21/public*
+episode21/public
 
 episode22/node_modules
 episode22/tmp
 !episode22/vendor
-episode22/public*
+episode22/public
