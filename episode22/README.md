@@ -6,8 +6,8 @@ Go in 5 Minutes, episode 22.
 at the basics for getting started with Buffalo. This time we're going to talk about
 how to do more with the Buffalo request router:
 
-- Registering different HTTP methods
 - Capturing parameters in request paths
+- Groups
 - Buffalo Resources
 
 Check out the screencast for more!
