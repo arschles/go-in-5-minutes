@@ -7,8 +7,7 @@ at the basics for getting started with Buffalo. This time we're going to talk ab
 how to do more with the Buffalo request router:
 
 - Capturing parameters in request paths
-- Groups
-- Buffalo Resources
+- Path groups
 
 Check out the screencast for more!
 
@@ -16,7 +15,7 @@ Check out the screencast for more!
 
 1. Quick recap of Buffalo
 1. Even quicker recap of last episode
-1. Routing with Buffalo
+1. Advanced routing
 
 If you enjoy these screencasts, please consider 
 [becoming a backer](https://www.patreon.com/goin5minutes)
