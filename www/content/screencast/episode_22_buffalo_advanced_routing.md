@@ -20,5 +20,5 @@ Keep on rockin', Gophers!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/$YOUTUBE_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode$EPISODE_NUM).
+Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode22).
 
