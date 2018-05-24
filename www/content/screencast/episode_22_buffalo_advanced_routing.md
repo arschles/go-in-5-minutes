@@ -9,7 +9,7 @@ _Episode 22_
 
 We learned about [Buffalo](https://gobuffalo.io) basics in [Episode 21](https://www.goin5minutes.com/screencast/episode_21_buffalo_intro/), and today we're going
 to keep the fun going! We're gonna talk about taking advantage of more advanced features
-in the Buffalo request router to build more powerful website.
+in the Buffalo request router to build more powerful websites.
 
 <!--more-->
 
