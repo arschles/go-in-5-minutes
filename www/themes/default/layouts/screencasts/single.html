@@ -8,27 +8,45 @@
   {{partial "nav.html"}}
   <div class="row">
     <div class="container">
-      <h1 class="page-title">
-        All Screencasts
-        <small>Newest on top</small>
-      </h1>
-      <p>
-        <a
-          class="btn btn-success btn-lg btn-inline"
-          data-toggle="tooltip"
-          title="Get periodic emails with new screencasts and valuable content, right in your inbox."
-          href="/subscribe"
-        >
-	  Get These in your Inbox
-        </a>
-      </p>
+      <div>
+        <h1 class="page-title">
+          All Screencasts
+          <small>Newest on top</small>
+        </h1>
+      </div>
+
+      <div>
+        <p>
+          <a
+            class="btn btn-success btn-lg btn-inline"
+            data-toggle="tooltip"
+            title="Get periodic emails with new screencasts and valuable content, right in your inbox."
+            href="/subscribe"
+          >
+            Get These in your Inbox
+          </a>
+        </p>
+      </div>
+    
+      <hr />
+    
+      <div class="row">
+        <div class="col-sm-8">
+          If you enjoy these screencasts, please consider 
+          <a href="https://www.patreon.com/goin5minutes">becoming a backer</a> and supporting
+          this project. Cool stickers and more await you if you do!
+        </div>
+      </div>
+
+      <hr />
+
       {{range $p := (where .Site.Pages "Type" "screencast")}}
       <div class="row media">
         <div class="date col-sm-1">
           {{dateFormat "Monday, Jan 2, 2006" $p.Date}}
         </div>
         <div class="col-sm-10">
-          <h2>{{$p.Title}}</h2>
+          <h2><a class="screencast-title" href="{{$p.RelPermalink}}">{{$p.Title}}</a></h2>
           <p>
             {{$p.Summary}}
           </p>
@@ -40,7 +58,6 @@
       {{end}}
     </div>
   </div>
-
   <div class="row text-center footer">
     {{partial "footer.html"}}
   </div>

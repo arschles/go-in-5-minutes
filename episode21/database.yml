@@ -1,0 +1,23 @@
+development:
+  dialect: mysql
+  database: episode21_development
+  user: ep21
+  password: ep21
+  host: 127.0.0.1
+  pool: 5
+
+test:
+  dialect: mysql
+  database: episode21_test
+  user: ep21
+  password: ep21
+  host: 127.0.0.1
+  pool: 5
+
+production:
+  dialect: mysql
+  database: episode21_prod
+  user: ep21
+  password: ep21
+  host: 127.0.0.1
+  pool: 5
