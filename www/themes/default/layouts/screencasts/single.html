@@ -8,13 +8,14 @@
   {{partial "nav.html"}}
   <div class="row">
     <div class="container">
-      <div class="row">
+      <div>
         <h1 class="page-title">
           All Screencasts
           <small>Newest on top</small>
         </h1>
       </div>
-      <div class="row">
+
+      <div>
         <p>
           <a
             class="btn btn-success btn-lg btn-inline"
@@ -26,9 +27,9 @@
           </a>
         </p>
       </div>
-      <div class="row">
-        <hr />
-      </div>
+    
+      <hr />
+    
       <div class="row">
         <div class="col-sm-8">
           If you enjoy these screencasts, please consider 
@@ -36,9 +37,9 @@
           this project. Cool stickers and more await you if you do!
         </div>
       </div>
-      <div class="row">
-        <hr />
-      </div>
+
+      <hr />
+
       {{range $p := (where .Site.Pages "Type" "screencast")}}
       <div class="row media">
         <div class="date col-sm-1">
