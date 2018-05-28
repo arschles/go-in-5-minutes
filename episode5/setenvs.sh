@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export TRICKORTREAT_PORT=8080
 export TRICKORTREAT_ENVIRONMENT=dev
 export TRICKORTREAT_MONGOURL=localhost
