@@ -1,0 +1,56 @@
+{
+  "name": "npm-install-webpack-plugin",
+  "version": "4.0.5",
+  "description": "Webpack loader to automatically npm install & save dependencies.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "changelog": "npm run changelog:generate && npm run changelog:add",
+    "changelog:add": "git add CHANGELOG.md",
+    "changelog:generate": "github_changelog_generator --future-release $npm_package_version",
+    "coverage": "npm test && nyc report --reporter=lcov > coverage/coverage.lcov && codecov",
+    "postversion": "npm run version:amend && git push origin master --tags && npm publish",
+    "test": "cross-env NODE_ENV=test nyc mocha",
+    "test:watch": "cross-env NODE_ENV=test mocha --watch",
+    "version": "npm run changelog",
+    "version:amend": "git commit --amend -m \"Release v${npm_package_version}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericclemmons/npm-install-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-plugin",
+    "npm",
+    "install"
+  ],
+  "author": "Eric Clemmons <eric@smarterspam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericclemmons/npm-install-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/ericclemmons/npm-install-webpack-plugin#readme",
+  "dependencies": {
+    "cross-spawn": "^5.0.1",
+    "json5": "^0.5.1",
+    "memory-fs": "^0.4.1",
+    "resolve": "^1.2.0"
+  },
+  "devDependencies": {
+    "codecov": "^1.0.1",
+    "cross-env": "^3.1.4",
+    "expect": "^1.14.0",
+    "mocha": "^3.0.0",
+    "nyc": "^10.1.2",
+    "webpack": "^3.0.0"
+  },
+  "peerDependencies": {
+    "webpack": "^1.0.0 || ^2.0.0 || >= 3.0.0-rc.0 || ^3.0.0"
+  }
+}
