@@ -19,9 +19,9 @@ func init() {
 
 		// Add template helpers here:
 		Helpers: render.Helpers{
-			// uncomment for non-Bootstrap form helpers:
-			// "form":     plush.FormHelper,
-			// "form_for": plush.FormForHelper,
+		// uncomment for non-Bootstrap form helpers:
+		// "form":     plush.FormHelper,
+		// "form_for": plush.FormForHelper,
 		},
 	})
 }
