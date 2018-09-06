@@ -13,6 +13,13 @@ database model. Today, we're going to see how to:
 
 Check out the screencast for more!
 
+# Show Notes
+
+- Buffalo resources: https://gobuffalo.io/en/docs/resources
+- Buffalo code generators: https://gobuffalo.io/en/docs/generators
+- Buffalo database models: https://gobuffalo.io/en/docs/db/models
+- Buffalo database migrations: https://gobuffalo.io/en/docs/db/migrations
+
 ---
 
 If you enjoy these screencasts, please consider 
