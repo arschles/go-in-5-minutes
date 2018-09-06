@@ -1,0 +1,4 @@
+package: github.com/arschles/testsrv
+import:
+- package: github.com/arschles/assert
+- package: github.com/pborman/uuid
