@@ -55,21 +55,6 @@ func App() *buffalo.App {
 		app.Use(T.Middleware())
 
 		app.GET("/", HomeHandler)
-		app.GET("/other/{name}", OtherHandler)
-
-		// Create a new path group. The 'apiGroup' returned by this method is like the 'app'
-		// variable - you can define HTTP routes & resources against it. The difference is that
-		// all of them are prefixed with /api in the path
-		apiGroup := app.Group("/api")
-
-		// Now create a v1 group - everything on apiV1Group will now get prefixed with
-		// '/api/v1'. That's really nice to do API versioning
-		apiV1Group := apiGroup.Group("/v1")
-		apiV1Group.GET("/things", apiV1ThingsHandler)
-
-		// Do the same thing for a v2 API
-		apiV2Group := apiGroup.Group("/v2")
-		apiV2Group.GET("/things", apiV2ThingsHandler)
 
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
