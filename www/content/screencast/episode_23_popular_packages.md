@@ -1,6 +1,6 @@
 +++
 type = "screencast"
-title = "Go Beyond 5 Minutes: Commonly Used, Popular Packages and Frameworks"
+title = "Go Beyond 5 Minutes: Commonly Used, Popular Packages and Frameworks for Real Life Development"
 author = "Aaron Schlesinger"
 date = "2018-06-03T12:57:11-07:00"
 +++
