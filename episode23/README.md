@@ -10,6 +10,8 @@ Everything in here is battle tested, maintained and documented well, and in
 this screencast, I talk about each framework and specifically what it can do 
 for you.
 
+Check out the screencast for more!
+
 # The Frameworks
 
 - [github.com/spf13/cobra](https://github.com/spf13/cobra) ([godocs](https://godoc.org/github.com/spf13/cobra))
