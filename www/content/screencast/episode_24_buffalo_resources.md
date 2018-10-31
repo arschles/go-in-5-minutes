@@ -20,5 +20,3 @@ Keep on rockin', Gophers!
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode24).
 
-_If you like this screencast, please consider becoming a backer at https://www.patreon.com/goin5minutes and supporting Go in 5 Minutes._
-
