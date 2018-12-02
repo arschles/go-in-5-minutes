@@ -15,7 +15,7 @@ These two methods are:
 1. Direct testing using [`net/http/httptest.ResponseRecorder`](https://godoc.org/net/http/httptest#ResponseRecorder)
 2. Integrated testing using [`github.com/arschles/testsrv`](https://godoc.org/github.com/arschles/testsrv)
 
-Note that the second method is not strictly unit testing because it tests the router and handler at the same time. This technique is necessary in some cases because some routers encourage or require tight coupling with their handlers. The [example code](https://github.com/arschles/go-in-5-minutes/tree/master/episode6) shows such an example with [Gorilla Mux](http://godoc.org/github.com/gorilla/mux), a favorite library of this screencast.
+Note that the second method is not strictly unit testing because it tests the router and handler at the same time. This technique is necessary in some cases because some routers encourage or require tight coupling with their handlers. The [example code](https://github.com/arschles/go-in-5-minutes/tree/master/episode6) shows such an example with [Gorilla Mux](https://godoc.org/github.com/gorilla/mux), a favorite library of this screencast.
 
 Note also that I wrote the [testsrv](https://godoc.org/github.com/arschles/testsrv) library. It is a convenience wrapper on top of [`net/http/httptest.Server`](https://godoc.org/net/http/httptest#Server) and example code shows how to use it. [Pull requests](https://github.com/arschles/testsrv/pulls) and [issues](https://github.com/arschles/testsrv/issues) are welcome on `testsrv`.
 
