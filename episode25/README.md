@@ -1,35 +1,31 @@
-# Welcome to Buffalo!
+# The [Buffalo](https://gobuffalo.io) Series #4 - Templates
 
-Thank you for choosing Buffalo for your web development needs.
+Go in 5 Minutes, episode 25.
 
-## Database Setup
+We've been looking at the [Buffalo framework](https://gobuffalo.io) lately, and
+we're gonna keep on going today with [templating](https://gobuffalo.io/en/docs/templating).
 
-It looks like you chose to set up your application using a postgres database! Fantastic!
+If you're building a webapp, templating is crucial for you to be able to serve dynamic content to your users. For example, if you need to fetch the user's name and information from your database, you'll need to somehow put that data into HTML that you can serve to their browser.
 
-The first thing you need to do is open up the "database.yml" file and edit it to use the correct usernames, passwords, hosts, etc... that are appropriate for your environment.
+Templates are how you do it, and Buffalo has a great, easy to understand template engine to help you out!
 
-You will also need to make sure that **you** start/install the database of your choice. Buffalo **won't** install and start postgres for you.
+Here's what we'll learn today:
 
-### Create Your Databases
+- Introduction to templating
+- The [plush](https://github.com/gobuffalo/plush) template engine
+- How to use plush from your Buffalo app
 
-Ok, so you've edited the "database.yml" file and started postgres, now Buffalo can create the databases in that file for you:
+And like always I'll be showing live code.
 
-	$ buffalo db create -a
+Check out the screencast for more!
 
-## Starting the Application
+# Show Notes
 
-Buffalo ships with a command that will watch your application and automatically rebuild the Go binary and any assets for you. To do that run the "buffalo dev" command:
+- Buffalo templates: https://gobuffalo.io/en/docs/templating
+- Go standard library [`html/template`](https://godoc.org/html/template) and [`text/template`](https://godoc.org/text/template)
 
-	$ buffalo dev
+---
 
-If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you should see a "Welcome to Buffalo!" page.
-
-**Congratulations!** You now have your Buffalo application up and running.
-
-## What Next?
-
-We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and reviewing all of the great documentation there.
-
-Good luck!
-
-[Powered by Buffalo](http://gobuffalo.io)
+If you enjoy these screencasts, please consider 
+[becoming a backer](https://www.patreon.com/goin5minutes)
+and supporting this project. Cool stickers and more await you if you do!
