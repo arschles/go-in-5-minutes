@@ -1,32 +1,25 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to Plush Templates!</h1>
-    </header>
-    <hr />
-    <div class="container-fluid">
-      <%= if(name) { %>
-        <h3>Welcome to Plush Templates, <%= name %>!</h3>
-      <% } else { %>
-        <%= form({action: "/", method: "POST"}) { %>
-          <div class="row">
-            <div class="col-md-6">
-              Hey, can you tell me your name so I can say hi properly?
-            </div>
-            <div class="col-md-6">
-              <%= f.InputTag({name:"name", placeholder:"Jane Doe"}) %>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 offset-md-6">
-              <button type="submit" class="btn-success form-control">Submit</button>
-            </div>
-          </div>
-        <% } %>
-      <% } %>
-    </div>
-  </body>
-  
-</html>
+<header>
+  <h1>Welcome to Plush Templates!</h1>
+</header>
+<hr />
+<div class="container-fluid">
+  <%= if(name) { %>
+    <h3>Welcome to Plush Templates, <%= name %>!</h3>
+  <% } else { %>
+    <%= form({action: "/", method: "POST"}) { %>
+      <div class="row">
+        <div class="col-md-6">
+          Hey, can you tell me your name so I can say hi properly?
+        </div>
+        <div class="col-md-6">
+          <%= f.InputTag({name:"name", placeholder:"Jane Doe"}) %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-6">
+          <button type="submit" class="btn-success form-control">Submit</button>
+        </div>
+      </div>
+    <% } %>
+  <% } %>
+</div>
