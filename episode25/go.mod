@@ -10,6 +10,6 @@ require (
 	github.com/gobuffalo/mw-paramlogger v0.0.0-20181005191442-d6ee392ec72e
 	github.com/gobuffalo/packr v1.21.5
 	github.com/gobuffalo/pop v4.9.2+incompatible
-	github.com/gobuffalo/suite v2.6.0+incompatible // indirect
+	github.com/gobuffalo/suite v2.6.0+incompatible
 	github.com/unrolled/secure v0.0.0-20181022170031-4b6b7cf51606
 )
