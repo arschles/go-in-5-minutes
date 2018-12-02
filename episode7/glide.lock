@@ -1,0 +1,40 @@
+hash: d1151b650a247c9ef3d4cec02e8c55df1d24161eb9a74c7d4b6783fa0f7e4bd1
+updated: 2018-05-28T18:42:44.241548-05:00
+imports:
+- name: github.com/arschles/testsrv
+  version: 1ca51fb1a3b6e612411883cf1c9dbc58319b1d5b
+- name: github.com/golang/protobuf
+  version: fec3b39b059c0f88fa6b20f5ed012b1aa203a8b4
+  subpackages:
+  - proto
+- name: github.com/google/go-github
+  version: e8d46665e050742f457a58088b1e6b794b2ae966
+  subpackages:
+  - github
+- name: github.com/google/go-querystring
+  version: 53e6ce116135b80d037921a7fdd5138cf32d7a8a
+  subpackages:
+  - query
+- name: github.com/gorilla/context
+  version: 1ea25387ff6f684839d82767c1733ff4d4d15d0a
+- name: github.com/gorilla/mux
+  version: bcd8bc72b08df0f70df986b97f95590779502d31
+- name: github.com/kelseyhightower/envconfig
+  version: b6fde1625d631a48340817849a547164f395d9eb
+- name: golang.org/x/net
+  version: 513929065c19401a1c7b76ecd942f9f86a0c061b
+  subpackages:
+  - context
+- name: google.golang.org/appengine
+  version: 170382fa85b10b94728989dfcf6cc818b335c952
+  subpackages:
+  - internal
+  - internal/app_identity
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/modules
+  - internal/remote_api
+testImports:
+- name: github.com/pborman/uuid
+  version: 1b00554d822231195d1babd97ff4a781231955c9

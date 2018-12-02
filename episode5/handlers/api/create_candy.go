@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"labix.org/v2/mgo/bson"
+	"gopkg.in/mgo.v2/bson"
 
 	"github.com/arschles/go-in-5-minutes/episode5/models"
 )

@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"context"
 	"encoding/json"
 	"net/http"
 
@@ -9,6 +10,7 @@ import (
 )
 
 func GetIssues(cl *github.Client) http.Handler {
+	ctx := context.Background()
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
 		// note that the checks on vars["org"] and vars["name"] are not strictly
@@ -28,7 +30,7 @@ func GetIssues(cl *github.Client) http.Handler {
 			return
 		}
 
-		issues, _, err := cl.Issues.ListByRepo(org, name, nil)
+		issues, _, err := cl.Issues.ListByRepo(ctx, org, name, nil)
 		if err != nil {
 			jsonErr(w, http.StatusInternalServerError, err)
 			return
