@@ -7,7 +7,7 @@ type = "screencast"
 
 _Episode 3_
 
-We show how to write more advanced web applications with the [`gorilla/mux`](http://godoc.org/github.com/gorilla/mux). We walk through example code that implements
+We show how to write more advanced web applications with the [`gorilla/mux`](https://godoc.org/github.com/gorilla/mux). We walk through example code that implements
 a complex [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) API and highlights
 many of the features of the library.
 
@@ -20,7 +20,7 @@ watch that screencast to understand this one.
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/6Pl5Xrrne2c?autoplay=0&origin=http://www.goin5minutes.com"
+  src="https://www.youtube.com/embed/6Pl5Xrrne2c?autoplay=0&origin=https://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 

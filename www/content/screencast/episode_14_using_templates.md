@@ -7,13 +7,7 @@ type = "screencast"
 
 _Episode 14_
 
-We show how to do use the the [`html/template`](https://godoc.org/html/template) package (and its close sibling, [`text/template`](http://godoc.org/text/template)). We pay special attention to templating tasks most common to web development like layouts, blocks and partials.
-
-<div>
-  <a class="gumroad-button" href="https://gum.co/gifm-x-14">
-    Get the Extended Screencast
-  </a>
-</div>
+We show how to do use the the [`html/template`](https://godoc.org/html/template) package (and its close sibling, [`text/template`](https://godoc.org/text/template)). We pay special attention to templating tasks most common to web development like layouts, blocks and partials.
 
 <!--more-->
 
@@ -28,7 +22,7 @@ We show how to do use the the [`html/template`](https://godoc.org/html/template)
   type="text/html"
   width="640"
   height="390"
-  src="http://www.youtube.com/embed/Fr5cdsOZfGw?autoplay=0&origin=http://www.goin5minutes.com"
+  src="https://www.youtube.com/embed/Fr5cdsOZfGw?autoplay=0&origin=https://www.goin5minutes.com"
   frameborder="0"
 ></iframe>
 
@@ -43,3 +37,5 @@ I've created a 1hr extended screencast to complement this one. This screencast e
 - Best practices for building larger template structures, suitable for a large web app
 
 Go In 5 Minutes screencasts will always be free, while extended screencasts will be paid. I recommend you get this extended screencast if you're planning to build a larger application or want to learn more details on how to practically use it.
+
+See [https://gum.co/gifm-x-14](https://gum.co/gifm-x-14) for more details.

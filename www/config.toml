@@ -1,4 +1,4 @@
-baseurl = "http://goin5minutes.com/"
+baseurl = "https://goin5minutes.com/"
 languageCode = "en-us"
 title = "Go In 5 Minutes"
 theme = "default"

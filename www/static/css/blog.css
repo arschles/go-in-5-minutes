@@ -1,0 +1,17 @@
+.blog-content p, .blog-content li {
+  color: black;
+  font-size: 0.85em;
+}
+
+.blog-content h1 {
+  font-size: 1.3em;
+}
+
+.blog-content h2 {
+  font-size: 1.15em;
+}
+
+.subscribe-form {
+  padding:0.5em;
+  border:1px solid #000;
+}
