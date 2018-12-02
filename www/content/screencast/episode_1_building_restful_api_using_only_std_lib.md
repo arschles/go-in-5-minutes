@@ -7,7 +7,7 @@ type = "screencast"
 
 _Episode 1_
 
-We show how to write a feature-rich [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)ful API using only the Go [`net/http`](http://godoc.org/net/http) package in the standard library.
+We show how to write a feature-rich [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)ful API using only the Go [`net/http`](https://godoc.org/net/http) package in the standard library.
 
 <!--more-->
 
