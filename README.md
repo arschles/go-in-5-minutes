@@ -5,6 +5,9 @@
 Welcome Gophers! First off, lots of :heart: from me to you. I hope you enjoy
 the screencasts, and as always, keep on rockin!
 
+>Go in 5 Minutes was featured on [GoTime](https://gotime.fm). Check out the [episode](https://changelog.com/gotime/18)!
+
+
 ----
 
 This repository has code and outlines for [Go In 5 Minutes Screencasts](htttp://bitly.com/goin5minutesyt). All content (code samples, outlines, etc...) is organized into folders, starting with [`episode0`](https://github.com/arschles/go-in-5-minutes/tree/master/episode0) and going from there.
