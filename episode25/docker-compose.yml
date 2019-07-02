@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dev-env:
+    image: mysql:8.0.3
+    ports:
+      - "3306:3306"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=ep25"
+      - "MYSQL_USER=ep25"
+      - "MYSQL_PASSWORD=ep25"
+      - "MYSQL_DATABASE=episode25_development"
