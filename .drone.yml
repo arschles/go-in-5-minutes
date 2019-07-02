@@ -6,7 +6,7 @@ steps:
 - name: builds
   image: golang:1.12
   commands:
-    - cd episode25 && go build && go test ./...
+    - cd episode25 && go build
   environment:
     GO111MODULE: on
     GOPROXY: https://proxy.golang.org
