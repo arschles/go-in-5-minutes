@@ -23,3 +23,13 @@ build:
 	cd ./episode13 && ../glide install && go build && cd ..
 	cd ./episode14 && go build && cd ..
 	cd ./episode15 && go build && cd ..
+	cd ./episode16 && go build && cd ..
+	cd ./episode17 && go build && cd ..
+	cd ./episode18 && go build && cd ..
+	cd ./episode19 && go build && cd ..
+	cd ./episode20 && go build && cd ..
+	cd ./episode21 && go build && cd ..
+	cd ./episode22 && go build && cd ..
+	cd ./episode23 && go build && cd ..
+	cd ./episode24 && go build && cd ..
+	cd ./episode25 && go build && cd ..

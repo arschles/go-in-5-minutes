@@ -1,6 +1,8 @@
 # Go In 5 Minutes
 
-[![Build Status](https://travis-ci.org/arschles/go-in-5-minutes.svg?branch=master)](https://travis-ci.org/arschles/go-in-5-minutes)
+[![Build Status](https://travis-ci.org/arschles/go-in-5-minutes.svg?branch=master)](https://travis-ci.org/arschles/go-in-5-minutes) 
+[![Build Status](https://cloud.drone.io/api/badges/arschles/go-in-5-minutes/status.svg)](https://cloud.drone.io/arschles/go-in-5-minutes)
+
 
 Welcome Gophers! First off, lots of :heart: from me to you. I hope you enjoy
 the screencasts, and as always, keep on rockin!

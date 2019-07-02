@@ -1,0 +1,16 @@
+---
+kind: pipeline
+name: default
+
+steps:
+- name: builds
+  image: golang:1.12
+  commands:
+    # wait for services to be ready.
+    - make get-glide
+    - make build
+  environment:
+    GO111MODULE: on
+    GOPROXY: https://proxy.golang.org
+
+...
