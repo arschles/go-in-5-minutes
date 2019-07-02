@@ -1,6 +1,5 @@
 const Webpack = require("webpack");
 const Glob = require("glob");
-const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
@@ -72,6 +71,9 @@ const configurator = {
   },
 
   buildConfig: function(){
+    // NOTE: If you are having issues with this not being set "properly", make
+    // sure your GO_ENV is set properly as `buffalo build` overrides NODE_ENV
+    // with whatever GO_ENV is set to or "development".
     const env = process.env.NODE_ENV || "development";
 
     var config = {

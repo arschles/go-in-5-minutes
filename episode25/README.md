@@ -26,9 +26,3 @@ Check out the screencast for more!
 - [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
     - [Prevention cheat sheet](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)
     - See [here](https://stackoverflow.com/questions/941594/understanding-the-rails-authenticity-token) for a great explanation on how `authenticity_token` fits in 
-
----
-
-If you enjoy these screencasts, please consider 
-[becoming a backer](https://www.patreon.com/goin5minutes)
-and supporting this project. Cool stickers and more await you if you do!
