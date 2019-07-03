@@ -6,7 +6,7 @@ In this screencast, we're going to build a command line client to consume the aw
 
 We'll be using [cobra](https://github.com/spf13/cobra) to build our command line client, and I did a previous episode on that package. If you haven't seen [episode 18](https://www.goin5minutes.com/screencast/episode_18_cli_with_cobra/), you might want to go review that before you look at this one.
 
-Instead of using an already-built Dark Sky API client (there are a [few](https://darksky.net/dev/docs/libraries) for Go), we're going to build our own client according to the API documentation. For that, we'll use the [gorequest](https://github.com/parnurzeal/gorequest) package.
+Instead of using an already-built Dark Sky API client (there are a [few](https://darksky.net/dev/docs/libraries) for Go), we're going to build our own client according to the API documentation. For that, we'll use the awesome [gorequest](https://github.com/parnurzeal/gorequest) package.
 
 # Outline
 
