@@ -24,13 +24,12 @@ func temp(apiKey string) (*cobra.Command, error) {
 		if err != nil {
 			return err
 		}
-		fmt.Println(fcast)
 		if len(fcast.Hourly.Data) < 1 {
 			return fmt.Errorf("No hourly data returned!")
 		}
 		hourly := fcast.Hourly.Data[0]
 		fmt.Printf(
-			"Temperature for your location (%f, %f): %s\n",
+			"Temperature for your location (%f, %f): %f\n",
 			*lat,
 			*long,
 			hourly.ApparentTemp, // the API only allows apparent temp on hourly

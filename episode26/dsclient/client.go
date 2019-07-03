@@ -21,7 +21,7 @@ func New(apiKey string) (*Client, error) {
 
 func (c *Client) Forecast(lat, long float64) (*Response, error) {
 	forecastURL := fmt.Sprintf(
-		"https://api.darksky.net/forecast/%s/%f/%f",
+		"https://api.darksky.net/forecast/%s/%f,%f",
 		c.apiKey,
 		lat,
 		long,
