@@ -1,23 +1,21 @@
-# Using [`github.com/stretchr/testify/suite`](https://godoc.org/github.com/stretchr/testify/suite) To Write More Robust Tests
+# Consuming a REST API in Go
 
-Go in 5 Minutes, episode 20.
+Go in 5 Minutes, episode 26.
 
-This screencast teaches how to use the 
-[`github.com/stretchr/testify/suite`](https://github.com/stretchr/testify/suite) package
-to test Go apps.
+In this screencast, we're going to build a command line client to consume the awesome [Dark Sky API](https://darksky.net/dev/docs).
 
-This package lets us more easily write our tests than using the bare standard library's
-[`testing`](https://godoc.org/testing) package. `suite` package doesn't replace the standard
-library, but it builds upon it. 
+We'll be using [cobra](https://github.com/spf13/cobra) to build our command line client, and I did a previous episode on that package. If you haven't seen [episode 18](https://www.goin5minutes.com/screencast/episode_18_cli_with_cobra/), you might want to go review that before you look at this one.
 
-Check out the screencast to learn more!
+Instead of using an already-built Dark Sky API client (there are a [few](https://darksky.net/dev/docs/libraries) for Go), we're going to build our own client according to the API documentation. For that, we'll use the [gorequest](https://github.com/parnurzeal/gorequest) package.
 
 # Outline
 
-1. The [`suite`](https://github.com/stretchr/testify/suite) package
-2. Basics for writing test suites
-3. Let's look at the code!
+1. Quick primer on Cobra
+1. Quick primer on gorequest
+1. Let's check out the code!
 
-If you enjoy these screencasts, please consider 
-[becoming a backer](https://www.patreon.com/goin5minutes)
-and supporting this project. Cool stickers and more await you if you do!
+# Show Notes
+
+- [Cobra CLI Package](https://github.com/spf13/cobra)
+- [Cobra Code Generation CLI](https://github.com/spf13/cobra/blob/master/cobra/README.md)
+- [GitHub client library](https://godoc.org/github.com/google/go-github/github)
