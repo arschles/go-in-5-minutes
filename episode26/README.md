@@ -34,7 +34,8 @@ The `lat` and `long` flags are set to the latitude and longitude (respectively) 
 
 # Show Notes
 
+- [Dark Sky API](https://darksky.net/dev/docs)
+- [gorequest](https://github.com/parnurzeal/gorequest)
 - [Cobra CLI Package](https://github.com/spf13/cobra)
 - [Cobra Code Generation CLI](https://github.com/spf13/cobra/blob/master/cobra/README.md)
-- [GitHub client library](https://godoc.org/github.com/google/go-github/github)
 - A different way to decode JSON: [dcode](https://github.com/go-functional/dcode)
