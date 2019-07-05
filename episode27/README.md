@@ -22,6 +22,27 @@ We're going to show a little bit of how modules work and how you can use them in
 
 Check out the screencast for more!
 
+# How To Build This Code
+
+Because Go Modules is built into the `go` toolchain, building is pretty easy - you don't even need a Makefile or a `GOPATH` set up!
+
+First, make sure you either don't have this `episode27` directory inside your `GOPATH`, _or_ that you have `GO111MODULE` set to `on` like this:
+
+```console
+$ export GO111MODULE=on
+```
+
+And then, you should be ready to go!
+
+```console
+$ go build -o heygophers .
+$ ./heygophers
+```
+
+Once you run `./heygophers`, your web server should start up on port 8080, and you can open up the app at `http://localhost:8080` in your browser.
+
+Enjoy!
+
 # Show Notes
 
 - Just For Func _Intro to Go Modules and SemVer_: https://www.youtube.com/watch?v=aeF3l-zmPsY
