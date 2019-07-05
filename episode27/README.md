@@ -43,6 +43,8 @@ Once you run `./heygophers`, your web server should start up on port 8080, and y
 
 Enjoy!
 
+(P.S. for an exciting look under the covers of what the Go Modules system is doing, clear your local modules cache with this command: `sudo rm -rf $(go env GOPATH)/pkg/mod`)
+
 # Show Notes
 
 - Just For Func _Intro to Go Modules and SemVer_: https://www.youtube.com/watch?v=aeF3l-zmPsY
