@@ -16,7 +16,7 @@ In this episode, we're going to use the [cobra library](https://github.com/spf13
 
 Keep on rockin', Gophers!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VMi0mDtLCq4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yJbrjz00COk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode26).
 
