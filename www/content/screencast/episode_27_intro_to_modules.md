@@ -1,6 +1,6 @@
 +++
 type = "screencast"
-title = "Using Go Modules!"
+title = "Using Go Modules"
 teaser = "Go Modules is the future of dependency management in Go. We should all learn it, so get started here!"
 author = "Aaron Schlesinger"
 date = "2019-07-16T13:28:20-07:00"
@@ -18,7 +18,7 @@ This episode gives you a taste of how they work and how to use them (hint: it's 
 
 Keep on rockin', Gophers!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/$YOUTUBE_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/71hgdExuCbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode27).
 
