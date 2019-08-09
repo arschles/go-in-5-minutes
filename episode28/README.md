@@ -85,7 +85,9 @@ And you're done!
 # Show Notes
 
 - [The module download protocol](https://docs.gomods.io/intro/protocol/)
-- [List of all available module proxies](https://github.com/golang/go/wiki/Modules#are-there-always-on-module-repositories-and-enterprise-proxies)
 - [The Athens Project](https://docs.gomods.io)
+- [Joining the Gophers Slack](https://invite.slack.golangbridge.org/)
+  - Come say hi in the `#athens` channel!
+- [List of all available module proxies](https://github.com/golang/go/wiki/Modules#are-there-always-on-module-repositories-and-enterprise-proxies)
 - [The Go team's module proxy](https://proxy.golang.org)
 - [The JFrog public module proxy](https://gocenter.io)
