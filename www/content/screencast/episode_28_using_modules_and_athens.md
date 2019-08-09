@@ -24,7 +24,7 @@ I'm going to explain how module servers work, introduce Athens, and show how to 
 
 Keep on rockin', Gophers!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/$YOUTUBE_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P3P9NINDW1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode28).
 
