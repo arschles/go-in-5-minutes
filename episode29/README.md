@@ -19,8 +19,10 @@ With our Buffalo app created (I ran `buffalo new episode29` to create this very 
 First, get the `buffalo-goth` plugin for Buffalo. You'll only need to do this once, then you can re-use the plugin for all your Buffalo projects:
 
 ```console
-$ go get -u github.com/gobuffalo/buffalo-goth
+$ go get github.com/gobuffalo/buffalo-goth
 ```
+
+>The `buffalo-goth` executable is going to be put into `$GOPATH/bin`, so make sure that directory is in your `PATH`.
 
 Next, generate the code for GitHub login:
 
