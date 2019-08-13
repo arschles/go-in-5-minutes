@@ -27,7 +27,6 @@ $ go get github.com/gobuffalo/buffalo-goth
 Next, generate the code for GitHub login:
 
 ```console
-Copy
 $ buffalo generate goth github
 ```
 
