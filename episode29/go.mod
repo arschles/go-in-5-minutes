@@ -20,6 +20,8 @@ require (
 	github.com/gobuffalo/pop v4.11.2+incompatible
 	github.com/gobuffalo/suite v2.8.1+incompatible
 	github.com/jackc/fake v0.0.0-20150926172116-812a484cc733 // indirect
+	github.com/markbates/going v1.0.3 // indirect
+	github.com/markbates/goth v1.55.0
 	github.com/markbates/grift v1.1.0
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/shopspring/decimal v0.0.0-20180709203117-cd690d0c9e24 // indirect
