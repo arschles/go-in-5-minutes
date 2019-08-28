@@ -38,7 +38,8 @@ ALTER TABLE public.schema_migration OWNER TO postgres;
 CREATE TABLE public.todoes (
     id uuid NOT NULL,
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    title character varying(255) DEFAULT 'Empty Title!'::character varying NOT NULL
 );
 
 
