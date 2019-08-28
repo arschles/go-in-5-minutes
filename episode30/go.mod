@@ -14,6 +14,8 @@ require (
 	github.com/gobuffalo/packr/v2 v2.6.0
 	github.com/gobuffalo/pop v4.11.6+incompatible
 	github.com/gobuffalo/suite v2.8.1+incompatible
+	github.com/gobuffalo/validate v2.0.3+incompatible
+	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/markbates/grift v1.1.0
 	github.com/spf13/afero v1.2.1 // indirect
 	github.com/unrolled/secure v1.0.1
