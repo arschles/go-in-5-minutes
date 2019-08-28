@@ -18,6 +18,7 @@
       <tr>
       <td>
           <div class="pull-right">
+            <h3><%= todo.Title %></h3>
             <%= linkTo(todoPath({ todo_id: todo.ID }), {class: "btn btn-info", body: "View"}) %>
             <%= linkTo(editTodoPath({ todo_id: todo.ID }), {class: "btn btn-warning", body: "Edit"}) %>
             <%= linkTo(todoPath({ todo_id: todo.ID }), {class: "btn btn-danger", "data-method": "DELETE", "data-confirm": "Are you sure?", body: "Destroy"}) %>

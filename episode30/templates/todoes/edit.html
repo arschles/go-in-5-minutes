@@ -3,6 +3,7 @@
 </div>
 
 <%= formFor(todo, {action: todoPath({ todo_id: todo.ID }), method: "PUT"}) { %>
+  <%= f.InputTag("Title") %>
   <%= partial("todoes/form.html") %>
   <%= linkTo(todoPath({ todo_id: todo.ID }), {class: "btn btn-warning", "data-confirm": "Are you sure?", body: "Cancel"}) %>
 <% } %>

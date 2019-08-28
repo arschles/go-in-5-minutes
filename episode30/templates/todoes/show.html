@@ -3,10 +3,13 @@
 </div>
 
 <ul class="list-unstyled list-inline">
-  <li class="list-inline-item">
+  <li>
     <%= linkTo(todoesPath(), {class: "btn btn-info"}) { %>
       Back to all Todoes
     <% } %>
+  </li>
+  <li class="list-inline-item">
+    <h3><%= todo.Title %></h3>
   </li>
   <li class="list-inline-item">
     <%= linkTo(editTodoPath({ todo_id: todo.ID }), {class: "btn btn-warning", body: "Edit"}) %>
