@@ -6,6 +6,8 @@ Another episode in the [Buffalo](https://gobuffalo.io) series! [Last episode](ht
 
 Today, we're gonna travel from that part of your app up to the database layer. If you're building a website, you'll almost certainly need a database to store information about your users. Luckily, Buffalo has great support for some of the most popular SQL databases.
 
+>This episode is tangentially related to [#168](https://github.com/arschles/go-in-5-minutes/issues/168)
+
 We're going to use the [pop](https://github.com/gobuffalo/pop) library -- which has great Buffalo integration -- to do some basic database integration in our app.
 
 I'll briefly introduce the library and how to use it, then we'll go right to the code and see it in action!
