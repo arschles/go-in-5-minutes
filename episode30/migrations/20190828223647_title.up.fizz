@@ -1,0 +1,1 @@
+add_column("todoes", "title", "string", {"default": "Empty Title!"})
