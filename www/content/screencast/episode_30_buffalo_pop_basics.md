@@ -16,7 +16,7 @@ I'll briefly introduce the library and how to use it, then we'll go right to the
 
 Keep on rockin', Gophers!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2moKP-FBPnw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2moKP-FBPnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode30).
 
