@@ -2,7 +2,7 @@ build:
 	go build -o episode31
 
 run:
-	./episode19
+	./episode31
 
 CURL_PREAMBLE := curl -v --compressed
 
