@@ -2,6 +2,14 @@
 
 [![Build Status](https://travis-ci.org/arschles/go-in-5-minutes.svg?branch=master)](https://travis-ci.org/arschles/go-in-5-minutes)
 
+Welcome Gophers! First off, lots of :heart: from me to you. I hope you enjoy
+the screencasts, and as always, keep on rockin!
+
+>Go in 5 Minutes was featured on [GoTime](https://gotime.fm). Check out the [episode](https://changelog.com/gotime/18)!
+
+
+----
+
 This repository has code and outlines for [Go In 5 Minutes Screencasts](htttp://bitly.com/goin5minutesyt). All content (code samples, outlines, etc...) is organized into folders, starting with [`episode0`](https://github.com/arschles/go-in-5-minutes/tree/master/episode0) and going from there.
 
 Full descriptions and videos are at https://www.goin5minutes.com/screencasts/index.html.
@@ -12,11 +20,22 @@ Shortened URL for screencasts: https://bitly.com/goin5minutesyt
 
 # Request A Screencast
 
-I have some ideas for topics to cover, but if you want to see some topics covered in a future screencast, I'd like to hear from you.
+If you've been interested in a Go package, best practice, or topic, I've probably had some experience with it, so I'd like
+to hear from you. Especially if you'd like to see a screencast on it!
 
-Please [submit an issue](https://github.com/arschles/go-in-5-minutes/issues) with the `request a screencast` label and make sure to include a good description on what you want to see!
+Please [submit an issue](https://github.com/arschles/go-in-5-minutes/issues) with a short description on the package/best practice/etc... that you've been thinking of.
 
 Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels/request%20a%20screencast.
+
+**I'd love to hear from you!**
+
+# Sponsors
+
+Go in 5 Minutes has some folks who generously provide financial backing to help pay
+for development costs. See [BACKERS.md](./BACKERS.md) for the list of those folks.
+
+If you'd like to sponsor the screencast (and get your logo up on that page!), go to
+[https://patreon.com/goin5minutes](https://patreon.com/goin5minutes).
 
 # Bundle
 

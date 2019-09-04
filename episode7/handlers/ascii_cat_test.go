@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"context"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -16,6 +17,7 @@ import (
 // but doesn't provide a complete solution when the router itself handles complex logic.
 // See TestGetIssuesTestSrv in get_issues_test.go for an example of testing complex router logic
 func TestAsciiCatRespRecorder(t *testing.T) {
+	ctx := context.Background()
 	// create a ResponseRecorder, which implements http.ResponseWriter. it will be passed into the handler
 	w := httptest.NewRecorder()
 	// create a fake request to be passed into the handler
@@ -23,8 +25,9 @@ func TestAsciiCatRespRecorder(t *testing.T) {
 	if err != nil {
 		t.Fatalf("error constructing test HTTP request [%s]", err)
 	}
+	ghClient := github.NewClient(nil)
 	// create and execute the handler, passing the ResponseRecorder and fake request
-	handler := AsciiCat(github.NewClient(nil))
+	handler := AsciiCat(ghClient)
 	handler.ServeHTTP(w, r)
 
 	// now that the request has been 'served' by the handler, check the response that it would
@@ -36,7 +39,7 @@ func TestAsciiCatRespRecorder(t *testing.T) {
 	if len(bodyStr) <= 0 {
 		t.Fatalf("expected non-empty response body")
 	}
-	expectedCat, _, err := ghClient.Octocat("Hello, Go In 5 Minutes Viewer!")
+	expectedCat, _, err := ghClient.Octocat(ctx, "Hello, Go In 5 Minutes Viewer!")
 	if err != nil {
 		t.Fatalf("error getting expected octocat string [%s]", err)
 	}

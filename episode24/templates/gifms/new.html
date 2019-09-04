@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>New Gifm</h1>
+</div>
+
+<%= form_for(gifm, {action: gifmsPath(), method: "POST"}) { %>
+  <%= partial("gifms/form.html") %>
+  <a href="<%= gifmsPath() %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>
