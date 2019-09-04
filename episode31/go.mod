@@ -1,4 +1,4 @@
-module github.com/arschles/go-in-5-minutes
+module github.com/arschles/go-in-5-minutes/episode31
 
 go 1.12
 
