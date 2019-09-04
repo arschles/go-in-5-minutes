@@ -1,7 +1,7 @@
 +++
 type = "screencast"
-title = "THIS IS A TITLE!"
-teaser = "this is a teaser. it will show up on the blog list page"
+title = "Building Fast Web Apps with the Echo Framework!"
+teaser = "Learn how to use the Echo framework to quickly write highquality web services."
 author = "Aaron Schlesinger"
 date = "2019-09-04T15:22:28-07:00"
 +++
