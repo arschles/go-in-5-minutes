@@ -1,4 +1,0 @@
-package: github.com/arschles/go-in-5-minutes/episode19
-import:
-- package: github.com/labstack/echo
-- package: github.com/gedex/inflector

@@ -1,5 +1,5 @@
 build:
-	go build -o episode19
+	go build -o episode31
 
 run:
 	./episode19
