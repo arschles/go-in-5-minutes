@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-cli": "~6.26.0",
-    "babel-core": "~6.26.0",
+    "babel-core": "~6.26.3",
     "babel-loader": "~7.1.2",
     "babel-preset-env": "~1.5.2",
     "bootstrap-sass": "~3.3.7",
