@@ -23,3 +23,23 @@ build:
 	cd ./episode13 && ../glide install && go build && cd ..
 	cd ./episode14 && go build && cd ..
 	cd ./episode15 && go build && cd ..
+	cd ./episode16 && go build && cd ..
+	cd ./episode17 && go build && cd ..
+	cd ./episode18 && go build && cd ..
+	cd ./episode19 && go build && cd ..
+	cd ./episode20 && go build && cd ..
+	cd ./episode21 && go build && cd ..
+	cd ./episode22 && go build && cd ..
+	cd ./episode23 && go build && cd ..
+	cd ./episode24 && go build && cd ..
+	cd ./episode25 && go build && cd ..
+
+.PHONY: build-modules
+build-modules:
+	cd ./episode25 && go build
+	cd ./episode26 && go build
+	cd ./episode27 && go build
+	cd ./episode28 && go build
+	cd ./episode29 && go build
+	cd ./episode30 && go build
+	cd ./episode31 && go build
