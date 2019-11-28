@@ -1,11 +1,12 @@
-GLIDE_TARURL := https://github.com/Masterminds/glide/releases/download/v0.12.0/glide-v0.12.0-linux-amd64.tar.gz
-GLIDE_TARBALL := glide-v0.12.0-linux-amd64.tar.gz
+.PHONY: api-build
+api-build:
+	cd api && go build -o bin/api .
 
-get-glide:
-	curl -L -o ${GLIDE_TARBALL} ${GLIDE_TARURL}
-	tar -xvf ${GLIDE_TARBALL}
-	mv linux-amd64/glide ./glide
+.PHONY: api-test
+api-test:
+	cd api && go test ./...
 
+.PHONY: build
 build:
 	cd ./episode0 && go build && cd ..
 	cd ./episode1 && go build && cd ..
