@@ -23,6 +23,8 @@ glide
 linux-amd64
 glide-v0.12.0-linux-amd64.tar.gz
 
+.envrc
+
 *.exe
 *.test
 *.prof
@@ -46,3 +48,6 @@ episode25/tmp
 episode25/tmp/episode25-build
 episode25/node_modules
 episode25/public/assets
+episode25/hugo
+
+episode26/ds

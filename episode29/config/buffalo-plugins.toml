@@ -1,0 +1,7 @@
+[[plugin]]
+  binary = "buffalo-pop"
+  go_get = "github.com/gobuffalo/buffalo-pop"
+
+[[plugin]]
+  binary = "buffalo-goth"
+  go-get = "github.com/gobuffalo/buffalo-goth"
