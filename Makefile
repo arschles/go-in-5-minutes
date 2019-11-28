@@ -33,3 +33,13 @@ build:
 	cd ./episode23 && go build && cd ..
 	cd ./episode24 && go build && cd ..
 	cd ./episode25 && go build && cd ..
+
+.PHONY: build-modules
+build-modules:
+	cd ./episode25 && go build
+	cd ./episode26 && go build
+	cd ./episode27 && go build
+	cd ./episode28 && go build
+	cd ./episode29 && go build
+	cd ./episode30 && go build
+	cd ./episode31 && go build

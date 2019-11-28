@@ -1,10 +1,14 @@
-name: Go
+name: Go for Modules
 on: [push]
 jobs:
 
   build:
     name: Build
     runs-on: ubuntu-latest
+    env:
+      GO111MODULE: on
+      GOPROXY: https://proxy.golang.org
+
     steps:
 
     - name: Set up Go 1.13
@@ -16,9 +20,5 @@ jobs:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v1
 
-    - name: Get dependencies
-      run: |
-        go get -v -t -d ./...
-
-    - name: Build
-      run: go build -v .
+    - name: Build episode 25 onward with modules
+      run: make build-modules
