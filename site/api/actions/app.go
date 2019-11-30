@@ -56,7 +56,7 @@ func App() *buffalo.App {
 		// app.Use(popmw.Transaction(models.DB))
 
 		app.GET("/", HomeHandler)
-		// app.GET("/screencasts/summary", screencasts.SummaryHandler)
+		app.GET("/api/v1/screencasts/summary_list", screencastSummaryListHandler)
 	}
 
 	return app

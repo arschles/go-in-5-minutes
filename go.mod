@@ -18,5 +18,6 @@ require (
 	github.com/gobuffalo/validate v2.0.3+incompatible
 	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/markbates/goth v1.56.0
+	github.com/rs/cors v1.7.0 // indirect
 	github.com/unrolled/secure v1.0.1
 )

@@ -1,7 +1,9 @@
 module Screencasts exposing (..)
 
 import Browser
-import Html exposing (Html, text, pre)
+import Html exposing (Html, text, pre, div)
+import Html.Parser
+import Html.Parser.Util
 import Http
 
 
@@ -32,7 +34,7 @@ init : () -> (Model, Cmd Msg)
 init _ =
   ( Loading
   , Http.get
-      { url = "/api/v1/screencasts/list"
+      { url = "/api/v1/screencasts/summary_list"
       , expect = Http.expectString GotText
       }
   )
@@ -80,5 +82,12 @@ view model =
     Loading ->
       text "Loading..."
 
-    Success fullText ->
-      pre [] [ text fullText ]
+    Success rawHtml ->
+      let
+        nodes =
+          case Html.Parser.run rawHtml of
+              Ok parsedNodes -> Html.Parser.Util.toVirtualDom parsedNodes
+              _ -> 
+                [text "Nothing here!"]
+      in
+      div [] nodes

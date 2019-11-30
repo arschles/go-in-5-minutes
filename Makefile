@@ -45,13 +45,22 @@ build-modules:
 	cd ./episode30 && go build
 	cd ./episode31 && go build
 
-.PHONY: site-dev
-site-static:
-	cd site/static && netlify dev
+.PHONY: install-caddy
+install-caddy:
+	curl https://getcaddy.com | bash -s personal
+
+.PHONY: site-proxy
+site-proxy:
+	caddy
+
+.PHONY: site-hugo
+site-hugo:
+	cd site/static && hugo server
 
 .PHONY: site-api
 site-api:
 	cd site/api && buffalo dev
 
+.PHONY: site-elm-compile
 site-elm-compile:
 	cd site/static && ./elm-build.sh

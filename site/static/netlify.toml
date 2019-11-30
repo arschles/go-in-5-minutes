@@ -7,10 +7,10 @@
     command = "hugo -v"
     environment = { HUGO_VERSION = "0.37" }
 
-# [[redirects]]
-#   from = "https://gomods.io/*"
-#   to = "https://docs.gomods.io/:splat"
-#   status = 303
+[[redirects]]
+  from = "/api/v1"
+  to = "http://localhost:3000"
+  status = 301
 
 # [[redirects]]
 #   from = "http://gomods.io/*"
@@ -21,9 +21,3 @@
 #   from = "https://gomods-athens.netlify.com/*"
 #   to = "https://docs.gomods.io/:splat"
 #   status = 303
-
-[dev]
-  command = "hugo server"
-  port = 8080
-#   targetPort = 1313 # Port of target app server
-  publish = "public" # If you use a _redirect file, provide the path to your static content folder
