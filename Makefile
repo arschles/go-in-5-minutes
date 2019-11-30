@@ -45,8 +45,8 @@ build-modules:
 	cd ./episode30 && go build
 	cd ./episode31 && go build
 
-.PHONY: site-js
-site-js:
+.PHONY: site-elm
+site-elm:
 	cd www && npm run watch
 
 .PHONY: site-api
@@ -55,4 +55,4 @@ site-api:
 
 .PHONY: site-hugo
 site-hugo:
-	cd www && hugo server
+	cd www && netlify dev
