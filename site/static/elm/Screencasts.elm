@@ -68,19 +68,16 @@ subscriptions : Model -> Sub Msg
 subscriptions model =
   Sub.none
 
-
-
 -- VIEW
-
 
 view : Model -> Html Msg
 view model =
   case model of
     Failure ->
-      text "I was unable to get screencasts."
+      text "I couldn't find any screencasts!"
 
     Loading ->
-      text "Loading..."
+      text "Loading Screencasts..."
 
     Success rawHtml ->
       let

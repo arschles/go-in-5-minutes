@@ -7,7 +7,6 @@
 </head>
 <body class="container-fluid">
   {{partial "nav.html"}}
-  <div class="row" id="elm">
   </div>
   <div class="row">
     <div class="container">
@@ -43,7 +42,8 @@
 
       <hr />
 
-      {{range $p := (where .Site.Pages "Type" "screencast")}}
+      <div class="row" id="screencasts-summary-list"></div>
+      <!-- {{range $p := (where .Site.Pages "Type" "screencast")}}
       <div class="row media">
         <div class="date col-sm-1">
           {{dateFormat "Monday, Jan 2, 2006" $p.Date}}
@@ -58,7 +58,7 @@
           </div>
         </div>
       </div>
-      {{end}}
+      {{end}} -->
     </div>
   </div>
   <div class="row text-center footer">
@@ -67,7 +67,7 @@
   {{partial "js.html"}}
   <script>
     var app = Elm.Screencasts.init({
-      node: document.getElementById('elm')
+      node: document.getElementById('screencasts-summary-list')
     });
   </script>
 </body>
