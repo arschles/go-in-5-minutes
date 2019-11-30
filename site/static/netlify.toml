@@ -8,8 +8,8 @@
     environment = { HUGO_VERSION = "0.37" }
 
 [[redirects]]
-  from = "/api/v1"
-  to = "http://localhost:3000"
+  from = "/api/v1/*"
+  to = "http://api.goin5minutes.com/:splat"
   status = 301
 
 # [[redirects]]
