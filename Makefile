@@ -1,11 +1,3 @@
-.PHONY: api-build
-api-build:
-	cd api && go build -o bin/api .
-
-.PHONY: api-test
-api-test:
-	cd api && go test ./...
-
 .PHONY: build
 build:
 	cd ./episode0 && go build && cd ..
@@ -44,23 +36,3 @@ build-modules:
 	cd ./episode29 && go build
 	cd ./episode30 && go build
 	cd ./episode31 && go build
-
-.PHONY: install-caddy
-install-caddy:
-	curl https://getcaddy.com | bash -s personal
-
-.PHONY: site-proxy
-site-proxy:
-	caddy
-
-.PHONY: site-hugo
-site-hugo:
-	cd site/static && hugo server
-
-.PHONY: site-api
-site-api:
-	cd site/api && buffalo dev
-
-.PHONY: site-elm-compile
-site-elm-compile:
-	cd site/static && ./elm-build.sh
