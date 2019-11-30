@@ -2,7 +2,10 @@
 
 set -e
 
-# This script taken from:
+# This script will build all of the elm files
+# needed to power the static site.
+#
+# Taken from
 # https://guide.elm-lang.org/optimization/asset_size.html#scripts
 
 # js="elm.js"

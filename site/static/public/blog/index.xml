@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Go In 5 Minutes</title>
+    <link>https://goin5minutes.com/blog/</link>
+    <description>Recent content in Blogs on Go In 5 Minutes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Jan 2017 16:01:02 -0700</lastBuildDate>
+    
+	<atom:link href="https://goin5minutes.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go in 5 Minutes is Coming Back</title>
+      <link>https://goin5minutes.com/blog/hiatus/</link>
+      <pubDate>Sun, 22 Jan 2017 16:01:02 -0700</pubDate>
+      
+      <guid>https://goin5minutes.com/blog/hiatus/</guid>
+      <description>I posted the last Go in 5 Minutes screencast on November 6, 2016, and haven&amp;rsquo;t posted any casts or blog posts since then.
+After more than a year, I&amp;rsquo;m excited to say that I&amp;rsquo;m bringing the series back!
+I&amp;rsquo;d like to take some time here to explain why I took the time off, why I&amp;rsquo;m bringing the series back, and what my plans are for the future.
+History When I started the series, I wanted to do one screencast a week.</description>
+    </item>
+    
+    <item>
+      <title>Passing Channels over Channels</title>
+      <link>https://goin5minutes.com/blog/channel_over_channel/</link>
+      <pubDate>Mon, 05 Sep 2016 10:11:58 -0700</pubDate>
+      
+      <guid>https://goin5minutes.com/blog/channel_over_channel/</guid>
+      <description>Passing Channels over Channels As most know, channels are one of the most powerful concurrency features in Go. Armed with Goroutines and the select statement, you can build correct, efficient and understandable concurrent programs that do complex things.
+In essence, a channel is a shared, concurrency-safe queue. Its primary purpose is to pass data across concurrency boundaries (i.e. between goroutines). Another way to say that is: you can send or receive an instance of any type on a channel.</description>
+    </item>
+    
+    <item>
+      <title>On Orthogonality</title>
+      <link>https://goin5minutes.com/blog/orthogonality/</link>
+      <pubDate>Sun, 28 Aug 2016 16:01:02 -0700</pubDate>
+      
+      <guid>https://goin5minutes.com/blog/orthogonality/</guid>
+      <description>First of all, welcome everyone to the first post in the Go In 5 Minutes blog series.
+Today I&amp;rsquo;m going to talk about orthogonality. I wrote a tweet storm (go follow Go In 5 Minutes if you haven&amp;rsquo;t already) on the concept a few days ago. In it, I explained that this is an easy concept to explain in theory, but it&amp;rsquo;s much harder to explain how to put it into practice.</description>
+    </item>
+    
+  </channel>
+</rss>

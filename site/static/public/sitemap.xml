@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_31_echo_framework/</loc>
+    <lastmod>2019-09-04T15:22:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/</loc>
+    <lastmod>2019-09-04T15:22:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/</loc>
+    <lastmod>2019-09-04T15:22:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_30_buffalo_pop_basics/</loc>
+    <lastmod>2019-08-29T12:07:35-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_29_buffalo_login_with_github_using_goth/</loc>
+    <lastmod>2019-08-13T10:20:59-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_28_using_modules_and_athens/</loc>
+    <lastmod>2019-08-09T13:10:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_27_intro_to_modules/</loc>
+    <lastmod>2019-07-16T13:28:20-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_26_writing_rest_clients/</loc>
+    <lastmod>2019-07-09T15:42:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_25_buffalo_templating_with_plush/</loc>
+    <lastmod>2019-07-02T12:50:04-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_24_buffalo_resources/</loc>
+    <lastmod>2018-10-31T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_23_popular_packages/</loc>
+    <lastmod>2018-06-03T12:57:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_22_buffalo_advanced_routing/</loc>
+    <lastmod>2018-05-24T12:57:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_21_buffalo_intro/</loc>
+    <lastmod>2018-03-30T17:28:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_20_testing_with_suite/</loc>
+    <lastmod>2018-03-17T11:44:01-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/backers/</loc>
+    <lastmod>2018-03-11T16:58:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_19_parsing_arbitrary_json/</loc>
+    <lastmod>2018-02-19T11:44:01-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_18_cli_with_cobra/</loc>
+    <lastmod>2018-02-03T11:44:01-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/blog/</loc>
+    <lastmod>2017-01-22T16:01:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/blog/hiatus/</loc>
+    <lastmod>2017-01-22T16:01:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_17_the_error_interface/</loc>
+    <lastmod>2016-11-06T14:53:53-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_16_nested_tests/</loc>
+    <lastmod>2016-10-03T17:44:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/blog/channel_over_channel/</loc>
+    <lastmod>2016-09-05T10:11:58-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/blog/orthogonality/</loc>
+    <lastmod>2016-08-28T16:01:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_15_internet_cafe/</loc>
+    <lastmod>2016-08-12T16:23:48-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_14_using_templates/</loc>
+    <lastmod>2016-07-24T15:03:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_13_using_database_sql/</loc>
+    <lastmod>2016-05-15T14:45:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/</loc>
+    <lastmod>2016-01-17T15:05:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_11_json_apis/</loc>
+    <lastmod>2016-01-03T12:37:43-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_10_concurrency_the_daily_walk/</loc>
+    <lastmod>2015-12-13T14:34:35-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_9_the_optional_singleton_pattern/</loc>
+    <lastmod>2015-12-06T17:22:36-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_8_profiling/</loc>
+    <lastmod>2015-11-22T12:50:10-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/</loc>
+    <lastmod>2015-11-16T22:10:25-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_6_unit_testing_http_handlers/</loc>
+    <lastmod>2015-11-09T13:32:59-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/subscribe/</loc>
+    <lastmod>2015-11-07T08:27:26-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencasts/</loc>
+    <lastmod>2015-11-02T16:58:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/about/</loc>
+    <lastmod>2015-11-02T16:58:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_5_building_full_stack_webapps/</loc>
+    <lastmod>2015-11-01T15:37:02-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_4_websockets_with_gorilla_websocket/</loc>
+    <lastmod>2015-10-25T15:36:30-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_3_writing_webapps_with_gorilla_mux/</loc>
+    <lastmod>2015-10-17T15:35:53-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_2_debugging_with_godebug/</loc>
+    <lastmod>2015-10-17T15:34:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_1_building_restful_api_using_only_std_lib/</loc>
+    <lastmod>2015-10-03T13:05:57-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/screencast/episode_0_writing_testable_code_and_fast_unit_tests_using_mocking/</loc>
+    <lastmod>2015-09-26T16:09:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://goin5minutes.com/tags/</loc>
+  </url>
+  
+</urlset>

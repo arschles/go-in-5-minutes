@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Go In 5 Minutes, a screencast series that presents short, informative and practical tips, patterns and best practices to Go developers."/>
+<meta name="keywords" content="Programming, Go, Golang, Software, Software Engineering, Software Development, Technology, Screencast"/>
+<meta name="author" content="Aaron Schlesinger"/>
+<title>Go In 5 Minutes - Short, helpful screencasts for professional Go developers</title>
+
+<link href="/css/bootstrap-3.3.5.min.css" rel="stylesheet"/>
+<link href="/css/bootstrap-theme-3.3.5.min.css" rel="stylesheet"/>
+<link href="/css/common.css" rel="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=Varela+Round|Cousine:400,700' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/jpeg" href="/img/gopher-student.jpg">
+
+  <link href="/css/blog.css" rel="stylesheet"/>
+  
+</head>
+<body class="container-fluid">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand gifm-logo" href="/">Go In 5 Minutes</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/screencasts">Episodes</a></li>
+        <li><a href="/subscribe">Subscribe</a></li>
+        <li><a href="/backers">Backers</a></li>
+        <li>
+          <a href="https://bitly.com/goin5minutes" target="_blank">
+            Code <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://www.patreon.com/goin5minutes" target="_blank">
+            Become a Patron 
+            <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1 class="page-title bot-sm-1">
+          On Orthogonality
+          <small>by Aaron Schlesinger</small>
+          <div class="publish-date"><small>Sunday, Aug 28, 2016</small></div>
+        </h1>
+      </div>
+    </div>
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+        <i>
+          The Go in 5 minutes blog has a new home! 
+          Head over to 
+          <a href="https://medium.com/go-in-5-minutes">https://medium.com/go-in-5-minutes</a>
+          to stay up to date. And give us a follow if you can, I'd really appreciate it!
+        </i>
+    </div>
+    <div class="row text-center">
+      <div class="col-sm-8 col-sm-offset-2 blog-content text-left top-sm-1">
+        
+
+<p>First of all, welcome everyone to the first post in the Go In 5 Minutes blog series.</p>
+
+<p>Today I&rsquo;m going to talk about <strong>orthogonality</strong>. I wrote a <a href="https://twitter.com/goin5minutes/status/769325705226227713">tweet storm</a> (go <a href="https://twitter.com/goin5minutes">follow Go In 5 Minutes</a> if you haven&rsquo;t already) on the concept a few days ago. In it, I explained that this is an easy concept to explain in theory, but it&rsquo;s much harder to explain how to put it into practice. I&rsquo;m going to try to do the latter today.</p>
+
+<h1 id="why-care">Why Care?</h1>
+
+<p>First of all, let me explain why orthogonality is worth understanding and achieving in your programs. Look up the term <a href="https://en.wikipedia.org/wiki/Orthogonality_(programming)">in Wikipedia</a>, and you&rsquo;ll find this:</p>
+
+<p><code>orthogonality in a programming language means that a relatively small set of primitive constructs can be combined in a relatively small number of ways to build the control and data structures of the language</code></p>
+
+<p>As Go programmers, we generally split up our programs into discrete <code>package</code>s, <code>type</code>s and <code>func</code>s. I&rsquo;ll group all of these terms together by saying <code>components</code> herefter.</p>
+
+<p>When we design our programs using components that are orthogonal to each other, we implicitly end up with fewer components that have strict rules for how they can be used together. And those rules are usually <em>enforced by the compiler</em>. That last sentence is important; any time the compiler enforces our rules for us, we reduce complexity and our testing and documentation burden.</p>
+
+<p>Simply put, making our components orthogonal to each other leads to less code, fewer edge cases, and a more understandable program. And in many cases our programs are <em>more</em> powerful than they would otherwise be.</p>
+
+<h1 id="doing-orthogonality">&ldquo;Doing&rdquo; Orthogonality</h1>
+
+<p>There are some hard-and-fast rules for determining whether a program&rsquo;s components are orthogonal to each other, but there&rsquo;s also some art to it. I put a few guidelines in my <a href="https://twitter.com/goin5minutes/status/769325705226227713">tweet storm</a> and I&rsquo;m going to expand on the first two of them here: interfaces and concurrency.</p>
+
+<h2 id="interfaces">Interfaces</h2>
+
+<p>If you have interfaces with lots of functions, it&rsquo;ll be harder to use them in your programs.</p>
+
+<p>Check this interface out:</p>
+
+<pre><code class="language-go">type HugeThinger interface {
+  Foo(int, string) int
+  Bar(int, float64) float64
+  Baz(string, string) string
+  Qux(string, float64) string
+  Oof(int, int) *int
+  Rab(string, string) *string
+}
+</code></pre>
+
+<p>Nothing wrong with it on the surface. We can use it inside a function just fine:</p>
+
+<pre><code class="language-go">func DoSomething(th HugeThing, i int, s string) int {
+  return th.Foo(i, s) + int(th.Foo(i, float64(i)))
+}
+</code></pre>
+
+<p>But any caller of <code>DoSomething</code> needs to have an entire implementation of <code>HugeThing</code> available to them.</p>
+
+<p>This pattern isn&rsquo;t very orthogonal because you need a lot of code to implement <code>HugeThing</code>, but <code>DoSomething</code> is only using 2 of the 6 functions in it. Another warning sign is that any implementation of <code>HugeThing</code> (and <code>HugeThing</code>) itself needs a lot of documentation.</p>
+
+<p>The solution? Split <code>HugeThing</code> up into appropriate &ldquo;chunks&rdquo; of functionality:</p>
+
+<pre><code class="language-go">type FooBarer interface {
+  Foo(int, string) int
+  Bar(int, float64) float64
+}
+
+type BazQuzer interface {
+  Baz(string, string) string
+  Qux(string, float64) string
+}
+type OofRaber interface {
+  Oof(int, int) *int
+  Rab(string, string) *string
+}
+</code></pre>
+
+<p>And compose them if you still need a <code>HugeThing</code>:</p>
+
+<pre><code class="language-go">type HugeThing interface {
+  FooBarer
+  BazQuxer
+  OofRaber
+}
+</code></pre>
+
+<p>If you have code that already implements <code>HugeThing</code>, nothing will break and you can even change the parameter in <code>DoSomething</code> to take in the simpler type. The implementation stays exactly the same:</p>
+
+<pre><code class="language-go">func DoSomething(th FooBarer, i int, s string) int {
+  return th.Foo(i, s) + int(th.Foo(i, float64(i)))
+}
+</code></pre>
+
+<h2 id="concurrency">Concurrency</h2>
+
+<p>If you have Goroutines that communicate by writing to shared variables, you&rsquo;re probably doing it wrong. Yes, you might have a really specific reason for using shared memory (and locks, etc&hellip;), and that&rsquo;s ok; keep doing it. But even you might get something out of this section!</p>
+
+<p>I&rsquo;ll be basing much of the content herein on a <a href="https://blog.golang.org/share-memory-by-communicating">golang.org blog post on a very similar topic</a>.</p>
+
+<p>If two or more Goroutines write to the same shared memory, they are now a single component. You can&rsquo;t just use one without at least considering the other. And they&rsquo;ll likely have to use a lock or some other synchronization mechanism (unless you <em>really, really, really</em> know what you&rsquo;re doing!), so you&rsquo;re gonna have to consider that too. In other words, you&rsquo;re not dealing with a simple construct anymore, and it definitely can&rsquo;t be combined with other simple constructs in a simple way.</p>
+
+<p>Sometimes using shared memory and a <code>sync.Mutex</code> (or similar) is the right thing to do for your use-case. If so, abstract it away behind a <code>struct</code>, hide the shared state the the mutex, and document it well. In essence, make it look like a good old class in Java so it can be composed with other components as easily as possible.</p>
+
+<p>Enough about shared memory, though. I&rsquo;m here to talk about channels!</p>
+
+<p>You should make your goroutines communicate with each other by sending messages over channels (e.g. share memory by communicating). Do this to make your code less complex and simpler to compose.</p>
+
+<p>Consider a web server that needs to do some asynchronous work:</p>
+
+<pre><code class="language-go">func handlerToDoAsyncWork(w http.ResponseWriter, r *http.Request) {
+  // schedule the work to be done asynchronously
+  w.Write([]byte(&quot;stuff will happen soon!&quot;))
+}
+</code></pre>
+
+<p>You have two main options for scheduling the work:</p>
+
+<ol>
+<li>Send it to a shared queue</li>
+<li>Send it on a channel</li>
+</ol>
+
+<p>Option #1 requires an implementation of a shared queue and a pool of consumers on the other side of the queue. And, the handler will need a reference to the shared queue, which will almost certainly be a non-trivial implementation. Option #2 simply requires the handler have access to the channel. The latter option makes for a simpler and easier to compose system.</p>
+
+<pre><code class="language-go">func handlerToDoAsyncWork(w http.ResponseWriter, r *http.Request) {
+  // will unblock after the work has been scheduled
+  asyncCh &lt;- r.URL.Path
+  w.Write([]byte(&quot;stuff will happen soon!&quot;))
+}
+
+// run as many of these as you need with 'go processor()'
+func processor() {
+  for {
+    // get the submission from the handler
+    urlPath := &lt;-asyncCh
+    // do the work asynchronously
+    go doSomethingWithURLPath(urlPath)
+  }
+}
+</code></pre>
+
+<p>As I indicated in the comment above <code>processor</code>, adding &ldquo;consumers&rdquo; to the channel is as trivial as calling <code>go processor()</code> again. And, the consumer of the channel can be anything - an RPC call, a no-op, etc&hellip;</p>
+
+<p>Note that there are elements of <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> here, because the <code>chan</code> is already a synchronized queue, implemented in the Go runtime.</p>
+
+<h1 id="wrapping-up">Wrapping Up</h1>
+
+<p>In many cases, you won&rsquo;t make or break your program if you don&rsquo;t design it with orthogonal pieces. And in almost all cases, you can refactor tightly-coupled, complex systems to be more loosely-coupled with orthogonal pieces. But regardless, orthogonal components will produce a simpler, easier to build and less complex program.</p>
+
+<p><em>Credit <a href="https://en.wikipedia.org/wiki/Unix_philosophy#Eric_Raymond.E2.80.99s_17_Unix_Rules">Eric Raymond&rsquo;s 17 Unix Rules</a> to inspire much of this post, in addition to all other resources linked</em></p>
+
+      </div>
+    </div>
+    <div class = "row text-center top-sm-1">
+      <div class="col-sm-4 col-sm-offset-4">
+        Thanks for reading! Ready for more?
+        <a class="btn-lg btn-success btn-block" type="button" href="/screencasts">
+          Check out the Screencasts
+        </a>
+      </div>
+    </div>
+    <div class="row text-center footer">
+      <div class="col-sm-2"></div>
+<div class="col-sm-4 text-left">
+  <p>
+    <a href="https://gum.co/gifm-1-10">
+      Buy the bundle
+      <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+    </a>
+  </p>
+  <p>
+    <a href="/subscribe">Sign up for the Newsletter</a>
+  </p>
+  <p>
+    <a href="mailto:arschles+gifm@gmail.com">
+      Contact
+      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+    </a>
+  </p>
+</div>
+
+<div class="col-sm-4 text-right">
+  <p>
+    Glyphicons courtesy of <a href="http://glyphicons.com">glyphicons.com</a>
+  </p>
+  <p>
+    Gopher icons attributed to <a href="http://reneefrench.blogspot.com/">Renee French</a>
+  </p>
+  <p>Proudly created with <a href="http://gohugo.io/">Hugo</a></p>
+</div>
+<div class="col-sm-2"></div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap-3.3.5.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69831218-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

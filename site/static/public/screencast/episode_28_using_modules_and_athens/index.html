@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Go In 5 Minutes, a screencast series that presents short, informative and practical tips, patterns and best practices to Go developers."/>
+<meta name="keywords" content="Programming, Go, Golang, Software, Software Engineering, Software Development, Technology, Screencast"/>
+<meta name="author" content="Aaron Schlesinger"/>
+<title>Go In 5 Minutes - Short, helpful screencasts for professional Go developers</title>
+
+<link href="/css/bootstrap-3.3.5.min.css" rel="stylesheet"/>
+<link href="/css/bootstrap-theme-3.3.5.min.css" rel="stylesheet"/>
+<link href="/css/common.css" rel="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=Varela+Round|Cousine:400,700' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/jpeg" href="/img/gopher-student.jpg">
+
+  
+</head>
+<body class="container-fluid">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand gifm-logo" href="/">Go In 5 Minutes</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/screencasts">Episodes</a></li>
+        <li><a href="/subscribe">Subscribe</a></li>
+        <li><a href="/backers">Backers</a></li>
+        <li>
+          <a href="https://bitly.com/goin5minutes" target="_blank">
+            Code <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://www.patreon.com/goin5minutes" target="_blank">
+            Become a Patron 
+            <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <div class="row">
+      <a class="btn btn-sm btn-link" href="/screencasts">
+        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+        All
+      </a>
+    </div>
+    <div class="row">
+      <h1>Using Modules with the Athens Project!</h1>
+    </div>
+    <div class="row col-sm-8">
+      <p><em>Episode 28</em></p>
+
+<p>In <a href="https://www.goin5minutes.com/screencast/episode_27_intro_to_modules/">episode 27</a>, we talked about how to use <a href="https://github.com/golang/go/wiki/Modules">Go Modules</a> to manage dependencies, but there&rsquo;s more to the story!</p>
+
+<p>Check out how module servers and Athens fit into the dependencies ecosystem.</p>
+
+<p>Go modules come with module servers that you can download your dependencies from too! The servers themselves are pretty cool, but here&rsquo;s why you should consider using one:</p>
+
+<ul>
+<li>Downloading dependencies will almost always be faster (sometimes up to 4x faster)
+
+<ul>
+<li>Think about how much faster CI runs can be ;)</li>
+</ul></li>
+<li>You can avoid broken builds when someone deletes a commit, tag or repository</li>
+</ul>
+
+<p>I&rsquo;m going to explain how module servers work, introduce Athens, and show how to use it in action.</p>
+
+<p>Keep on rockin&rsquo;, Gophers!</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P3P9NINDW1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Check out the example code <a href="https://github.com/arschles/go-in-5-minutes/tree/master/episode28">on Github</a>.</p>
+    </div>
+    <div class="row col-sm-8">
+      <hr />
+      <p>
+        <i>
+          If you enjoyed this screencast, please consider 
+          <a href="https://www.patreon.com/goin5minutes">becoming a backer</a>
+          and supporting Go in 5 Minutes. Cool stickers and more await you!
+        </i>
+      </p>
+    </div>
+  </div>
+  <div class="row text-center footer">
+    <div class="col-sm-2"></div>
+<div class="col-sm-4 text-left">
+  <p>
+    <a href="https://gum.co/gifm-1-10">
+      Buy the bundle
+      <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+    </a>
+  </p>
+  <p>
+    <a href="/subscribe">Sign up for the Newsletter</a>
+  </p>
+  <p>
+    <a href="mailto:arschles+gifm@gmail.com">
+      Contact
+      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+    </a>
+  </p>
+</div>
+
+<div class="col-sm-4 text-right">
+  <p>
+    Glyphicons courtesy of <a href="http://glyphicons.com">glyphicons.com</a>
+  </p>
+  <p>
+    Gopher icons attributed to <a href="http://reneefrench.blogspot.com/">Renee French</a>
+  </p>
+  <p>Proudly created with <a href="http://gohugo.io/">Hugo</a></p>
+</div>
+<div class="col-sm-2"></div>
+
+  </div>
+
+  <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap-3.3.5.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69831218-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
