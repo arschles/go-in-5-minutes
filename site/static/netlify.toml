@@ -25,5 +25,5 @@
 [dev]
   command = "hugo server"
   port = 8080
-  targetPort = 1313 # Port of target app server
+#   targetPort = 1313 # Port of target app server
   publish = "public" # If you use a _redirect file, provide the path to your static content folder

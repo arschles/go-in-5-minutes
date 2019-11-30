@@ -45,17 +45,13 @@ build-modules:
 	cd ./episode30 && go build
 	cd ./episode31 && go build
 
-CMD_API="cd site/api && buffalo dev"
-CMD_STATIC="cd site/static && netlify dev"
-CMD_ELM="cd site/static && npm watch"
 .PHONY: site-dev
-site-dev:
-	cd site && ./dev.sh
+site-static:
+	cd site/static && netlify dev
 
 .PHONY: site-api
 site-api:
-	cd api && buffalo dev
+	cd site/api && buffalo dev
 
-.PHONY: site-hugo
-site-hugo:
-	cd www && netlify dev
+site-elm-compile:
+	cd site/static && ./elm-build.sh
