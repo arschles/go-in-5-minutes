@@ -44,3 +44,15 @@ build-modules:
 	cd ./episode29 && go build
 	cd ./episode30 && go build
 	cd ./episode31 && go build
+
+.PHONY: site-js
+site-js:
+	cd www && npm run watch
+
+.PHONY: site-api
+site-api:
+	cd api && buffalo dev
+
+.PHONY: site-hugo
+site-hugo:
+	cd www && hugo server

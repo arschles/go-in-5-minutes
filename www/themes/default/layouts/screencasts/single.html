@@ -3,9 +3,12 @@
 <head>
   {{partial "head.html"}}
   <link rel="stylesheet" href="/css/screencasts.css"/>
+  <script type="text/javascript" src="/js/screencasts.elm.js"></script>
 </head>
 <body class="container-fluid">
   {{partial "nav.html"}}
+  <div class="row" id="elm">
+  </div>
   <div class="row">
     <div class="container">
       <div>
@@ -62,5 +65,10 @@
     {{partial "footer.html"}}
   </div>
   {{partial "js.html"}}
+  <script>
+    var app = Elm.Screencasts.init({
+      node: document.getElementById('elm')
+    });
+  </script>
 </body>
 </html>
