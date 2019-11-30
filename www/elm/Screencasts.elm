@@ -32,7 +32,7 @@ init : () -> (Model, Cmd Msg)
 init _ =
   ( Loading
   , Http.get
-      { url = "https://elm-lang.org/assets/public-opinion.txt"
+      { url = "/api/v1/screencasts/list"
       , expect = Http.expectString GotText
       }
   )
@@ -75,7 +75,7 @@ view : Model -> Html Msg
 view model =
   case model of
     Failure ->
-      text "I was unable to load your book."
+      text "I was unable to get screencasts."
 
     Loading ->
       text "Loading..."
