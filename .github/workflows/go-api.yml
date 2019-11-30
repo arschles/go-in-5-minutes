@@ -12,6 +12,13 @@ jobs:
       with:
         go-version: 1.13
       id: go
+    
+    - name: Install Buffalo
+      uses: ubuntu:18.04
+      run: |
+        wget https://github.com/gobuffalo/buffalo/releases/download/v0.15.2/buffalo_0.15.2_linux_amd64.tar.gz
+        tar -xvzf buffalo_0.15.2_linux_amd64.tar.gz
+        sudo mv buffalo /usr/local/bin/buffalo
 
     - name: Check out code into the Go module directory
       uses: actions/checkout@v1
