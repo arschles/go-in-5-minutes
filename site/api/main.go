@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/arschles/go-in-5-minutes/api/actions"
+	"github.com/arschles/go-in-5-minutes/site/api/actions"
 )
 
 // main is the starting point for your Buffalo application.
