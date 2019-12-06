@@ -2,6 +2,8 @@
 
 This folder has all the code to build the [Go in 5 Minutes website](https://www.goin5minutes.com). If you're looking for the Go In 5 Minutes example code and outlines, please see the [root directory](/).
 
+>Note: all of the Elm [code](./static/elm) and assets in here are unused. It was an experiment that I'll come back to :smile:
+
 # How the site works
 
 The complete site is composed of:

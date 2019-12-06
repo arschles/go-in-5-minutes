@@ -5,6 +5,8 @@
   {{range $i, $css := .Params.extra_css}}
   <link href="{{$css}}" rel="stylesheet"/>
   {{end}}
+  <script src="/js/classtrophobic-es5.js"></script>
+  <script src="/js/stimulus-1.0.1.min.js"></script>
 </head>
 <body class="container-fluid">
   {{partial "nav.html"}}
