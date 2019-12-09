@@ -1,0 +1,24 @@
+version: '2'
+
+tasks:
+    default:
+        deps: [api, hugo, elm, caddy]
+    api:
+        dir: api
+        cmds:
+            - buffalo dev
+    hugo:
+        dir: static
+        cmds:
+            - hugo server
+    elm:
+        dir: static
+        cmds:
+            # - ./elm-build.sh
+            - elm make elm/Screencasts.elm --output=static/js/screencasts.elm.js
+        sources:
+            - static/elm/Screencasts.elm
+        generates:
+            - static/static/js/screencasts.elm.js
+    caddy:
+        cmds: ['caddy']
