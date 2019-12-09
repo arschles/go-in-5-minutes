@@ -4,7 +4,7 @@ import "time"
 
 type Screencast struct {
 	Title           string
-	Date            time.Time
+	Data            time.Time
 	Summary         string
 	Complete        string
 	YouTubeEmbedURL string
