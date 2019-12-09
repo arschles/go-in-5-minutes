@@ -1,3 +1,6 @@
+# This is a task file, for use with go-task. See https://taskfile.dev/#/ for details
+#
+# GH site for this tool: https://github.com/go-task/task
 version: '2'
 
 tasks:
@@ -22,3 +25,5 @@ tasks:
             - static/static/js/screencasts.elm.js
     caddy:
         cmds: ['caddy']
+    install-caddy:
+        cmds: ['curl https://getcaddy.com | bash -s personal']
