@@ -6,10 +6,10 @@ import (
 	forcessl "github.com/gobuffalo/mw-forcessl"
 	paramlogger "github.com/gobuffalo/mw-paramlogger"
 	"github.com/unrolled/secure"
-
-	contenttype "github.com/gobuffalo/mw-contenttype"
+	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	"github.com/gobuffalo/x/sessions"
 	"github.com/rs/cors"
+	"github.com/arschles/go-in-5-minutes/site/api/models"
 )
 
 // ENV is used to help switch settings based on where the
@@ -48,15 +48,17 @@ func App() *buffalo.App {
 		app.Use(paramlogger.ParameterLogger)
 
 		// Set the request content type to JSON
-		app.Use(contenttype.Set("application/json"))
+		// app.Use(contenttype.Set("application/json"))
 
 		// Wraps each request in a transaction.
 		//  c.Value("tx").(*pop.Connection)
 		// Remove to disable this.
-		// app.Use(popmw.Transaction(models.DB))
+		app.Use(popmw.Transaction(models.DB))
 
 		app.GET("/", HomeHandler)
 		app.GET("/api/v1/screencasts/summary_list", screencastSummaryListHandler)
+		app.GET("/api/v1/screencasts/{id}", getScreencast)
+		app.POST("/api/new_hook", screencastAddHook)
 	}
 
 	return app
