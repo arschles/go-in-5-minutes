@@ -5,11 +5,14 @@ version: '2'
 
 tasks:
     default:
-        deps: [api, hugo, elm, caddy]
+        deps: [api, hugo, elm, caddy, redis]
     api:
         dir: api
         cmds:
             - buffalo dev
+    redis:
+        cmds:
+            - docker run -p 6379:6379 --rm redis:5.0.7
     hugo:
         dir: static
         cmds:
