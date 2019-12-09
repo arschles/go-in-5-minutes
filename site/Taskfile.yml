@@ -5,14 +5,28 @@ version: '2'
 
 tasks:
     default:
-        deps: [api, hugo, elm, caddy, postgres]
+        deps:
+            - api
+            - hugo
+            - elm
+            - caddy
+            - postgres
     api:
         dir: api
         cmds:
             - buffalo dev
+    dbmigrate:
+        dir: api
+        cmds: [buffalo db migrate up]
     postgres:
         cmds:
-            - docker run -p 5432:5432 --rm postgres:9.6.9-alpine
+            - |
+                docker run \
+                    -e POSTGRES_PASSWORD=postgres \
+                    -e POSTGRES_USER=postgres \
+                    -e POSTGRES_DB=api_development \
+                    -p 5432:5432 \
+                    --rm postgres:9.6.9-alpine
     hugo:
         dir: static
         cmds:
