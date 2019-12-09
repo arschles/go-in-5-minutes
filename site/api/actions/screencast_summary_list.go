@@ -11,6 +11,6 @@ func screencastSummaryListHandler(c buffalo.Context) error {
 	if err != nil {
 		return err
 	}
-	c.Set("casts", casts)
+	c.Set("screencasts", casts)
 	return c.Render(200, r.HTML("screencast_summary_list.html"))
 }

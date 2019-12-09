@@ -8,8 +8,9 @@ import (
 
 func Get(env string) ([]*models.Screencast, error) {
 	return []*models.Screencast{
-		{Title: "Test Screencast 1",
-			Data:            time.Now(),
+		{
+			Title:           "Test Screencast 1",
+			Date:            time.Now(),
 			Summary:         "This is a summary of the test screencast",
 			Complete:        "This is the complete text of the test screencast",
 			YouTubeEmbedURL: "https://goin5minutes.com",
