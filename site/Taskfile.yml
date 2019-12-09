@@ -2,7 +2,7 @@
 #
 # GH site for this tool: https://github.com/go-task/task
 version: '2'
-
+output: prefixed
 tasks:
     default:
         deps:
