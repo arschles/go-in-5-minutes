@@ -80,7 +80,7 @@ func App() *buffalo.App {
 			}
 			githubCl = github.NewClient(t.Client())
 		}
-		app.POST("/api/screencast/add", screencastAddHook(githubCl))
+		app.POST("/api/v1/screencast/add", screencastAddHook(githubCl))
 	}
 
 	return app

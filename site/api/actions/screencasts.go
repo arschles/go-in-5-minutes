@@ -1,6 +1,7 @@
 package actions
 
 import (
+	"errors"
 	"fmt"
 	"log"
 	"strings"
@@ -47,6 +48,9 @@ func screencastAddHook(ghClient *github.Client) func(buffalo.Context) error {
 			Date: time.Now(),
 		}
 		episodeID := c.Param("episode_id")
+		if episodeID == "" {
+			return c.Error(400, errors.New("episode number is required"))
+		}
 		readmePath := fmt.Sprintf("episode%s/README.md", episodeID)
 		readmeMD, err := getFileFromGH(c, ghClient, readmePath)
 		if err != nil {
