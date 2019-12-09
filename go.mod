@@ -4,6 +4,7 @@ go 1.13
 
 require (
 	github.com/arschles/gifm-site v0.0.0-20191014021333-9d27f62d3497
+	github.com/go-redis/redis v6.15.6+incompatible
 	github.com/gobuffalo/buffalo v0.14.10
 	github.com/gobuffalo/buffalo-pop v1.22.0
 	github.com/gobuffalo/envy v1.7.0
