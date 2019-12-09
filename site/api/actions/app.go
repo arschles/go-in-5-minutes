@@ -1,15 +1,18 @@
 package actions
 
 import (
+	"log"
+
+	"github.com/arschles/go-in-5-minutes/site/api/models"
 	"github.com/gobuffalo/buffalo"
+	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	"github.com/gobuffalo/envy"
 	forcessl "github.com/gobuffalo/mw-forcessl"
 	paramlogger "github.com/gobuffalo/mw-paramlogger"
-	"github.com/unrolled/secure"
-	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	"github.com/gobuffalo/x/sessions"
+	"github.com/google/go-github/github"
 	"github.com/rs/cors"
-	"github.com/arschles/go-in-5-minutes/site/api/models"
+	"github.com/unrolled/secure"
 )
 
 // ENV is used to help switch settings based on where the
@@ -58,7 +61,26 @@ func App() *buffalo.App {
 		app.GET("/", HomeHandler)
 		app.GET("/api/v1/screencasts/summary_list", screencastSummaryListHandler)
 		app.GET("/api/v1/screencasts/{id}", getScreencast)
-		app.POST("/api/new_hook", screencastAddHook)
+
+		var githubCl *github.Client
+		if ENV == "development" {
+			githubCl = github.NewClient(nil)
+		} else {
+			clientID, err := envy.MustGet("GITHUB_CLIENT_ID")
+			if err != nil {
+				log.Fatalf("(app) GITHUB_CLIENT_ID missing\n%s", err)
+			}
+			clientSecret, err := envy.MustGet("GITHUB_CLIENT_SECRET")
+			if err != nil {
+				log.Fatalf("(app) GITHUB_CLIENT_SECRET missing\n%s", err)
+			}
+			t := &github.UnauthenticatedRateLimitedTransport{
+				ClientID:     clientID,
+				ClientSecret: clientSecret,
+			}
+			githubCl = github.NewClient(t.Client())
+		}
+		app.POST("/api/screencast/add", screencastAddHook(githubCl))
 	}
 
 	return app
