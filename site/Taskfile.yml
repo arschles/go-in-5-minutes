@@ -10,6 +10,7 @@ tasks:
             - hugo
             - elm
             - caddy
+            - dbmigrate
             - postgres
     api:
         dir: api
@@ -17,7 +18,11 @@ tasks:
             - buffalo dev
     dbmigrate:
         dir: api
-        cmds: [buffalo db migrate up]
+        cmds:
+            # when the postgres target runs, the container starts the DB and then immediately
+            # restarts it, so we need to wait a little bit for that to finish up
+            - sleep 5
+            - buffalo db migrate up
     postgres:
         cmds:
             - |
@@ -27,6 +32,9 @@ tasks:
                     -e POSTGRES_DB=api_development \
                     -p 5432:5432 \
                     --rm postgres:9.6.9-alpine
+        sources:
+            - api/migrations/**/*.fizz
+            - api/models/**/*.go
     hugo:
         dir: static
         cmds:
