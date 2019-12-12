@@ -8,6 +8,15 @@ jobs:
     env:
       GO111MODULE: on
       GOPROXY: https://proxy.golang.org
+    services:
+      postgres:
+        image: postgres:9.6.9-alpine
+        env:
+          - POSTGRES_PASSWORD=postgres
+          - POSTGRES_USER=postgres
+          - POSTGRES_DB=api_development
+        ports:
+          - 5432:5432
 
     steps:
 
@@ -27,9 +36,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Run API unit tests
-      run: make api-test
-
-    - name: Build the API
-      run: buffalo build -o api ./site/api
-    
+      run: |
+        cd site/api
+        buffalo test    
     

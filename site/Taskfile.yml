@@ -16,6 +16,10 @@ tasks:
         dir: api
         cmds:
             - buffalo dev
+    apitest:
+        dir: api
+        cmds:
+            - buffalo test
     dbmigrate:
         dir: api
         cmds:
