@@ -4,7 +4,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu:18.04
     steps:
 
     - name: Set up Go 1.13
@@ -14,7 +14,6 @@ jobs:
       id: go
     
     - name: Install Buffalo
-      uses: ubuntu:18.04
       run: |
         wget https://github.com/gobuffalo/buffalo/releases/download/v0.15.2/buffalo_0.15.2_linux_amd64.tar.gz
         tar -xvzf buffalo_0.15.2_linux_amd64.tar.gz
@@ -23,8 +22,10 @@ jobs:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v1
 
-    - name: Build the API
-      run: make api-build
-    
     - name: Run API unit tests
       run: make api-test
+      
+    - name: Build the API
+      run: buffalo build -o api ./site/api
+    
+    
