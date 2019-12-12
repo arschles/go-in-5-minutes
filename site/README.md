@@ -22,21 +22,15 @@ I want to note that the site is not a single page app at the moment. Navigations
 
 # Development
 
-Setting up a local development environment is kinda clunky at the moment. You'll end up needing 4 terminal windows open. Here are the programs of note that you'll need to have installed before you start:
+Setting up a local development environment is kinda clunky at the moment. You have to install these tools:
 
-- Hugo (to build the site)
-- Caddy (to run the proxy server). You can run `make install-caddy` from inside the `site/` directory to install this
-- Buffalo (to run the API server)
-- Elm (to compile the Javascript)
+- Hugo
+- Buffalo
+- Caddy
+- Elm
+- [`task`](https://taskfile.dev)
 
-When you have those, run the following commands from inside the `site/` directory, each in a separate terminal window:
-
-- `make proxy`
-- `make hugo`
-- `make api`
-- `make elm-compile`
-
-The first three commands will run forever and watch for file changes. You'll need to re-run the last one each time you change any Elm files. I haven't gotten to making that one watch for changes yet.
+When you have all these installed, run `task -w` from this directory and you'll have an environment that re-builds everything when anything is changed.
 
 # Old: create a New Screencast Page
 

@@ -1,13 +1,14 @@
+<%= for (screencast) in screencasts { %>
 <div class="row media">
-    <div class="date col-sm-1">Monday, Jan 2, 2006</div>
+    <div class="date col-sm-1"><%= screencast.HumanTime() %></div>
     <div class="col-sm-10">
-      <h2><a class="screencast-title" href="/">Sample Screencast</a></h2>
+      <h2><a class="screencast-title" href="/"><%= screencast.Title %></a></h2>
       <p>
-        This is a sample screencast!
+        <%= screencast.Summary %>
       </p>
       <div>
-        <a class="btn btn-info" href="/">View Video</a>
+        <a class="btn btn-info" href="/">Watch Now</a>
       </div>
     </div>
 </div>
-
+<% } %>
