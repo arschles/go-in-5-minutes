@@ -8,7 +8,7 @@ jobs:
     env:
       GO111MODULE: on
       GOPROXY: https://proxy.golang.org
-      
+
     steps:
 
     - name: Set up Go 1.13
@@ -19,8 +19,8 @@ jobs:
     
     - name: Install Buffalo
       run: |
-        wget https://github.com/gobuffalo/buffalo/releases/download/v0.15.2/buffalo_0.15.2_linux_amd64.tar.gz
-        tar -xvzf buffalo_0.15.2_linux_amd64.tar.gz
+        curl -L -o buffalo.tgz https://github.com/gobuffalo/buffalo/releases/download/v0.15.3/buffalo_0.15.3_Linux_x86_64.tar.gz
+        tar -xvzf buffalo.tgz
         sudo mv buffalo /usr/local/bin/buffalo
 
     - name: Check out code into the Go module directory
