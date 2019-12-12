@@ -1,4 +1,4 @@
-name: Build Episodes with Module Code
+name: Episodes
 on: [push]
 jobs:
 

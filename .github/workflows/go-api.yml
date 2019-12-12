@@ -1,10 +1,14 @@
-name: Build the Go API
+name: Go API
 on: [push]
 jobs:
 
   build:
     name: Build
-    runs-on: ubuntu:18.04
+    runs-on: ubuntu-latest
+    env:
+      GO111MODULE: on
+      GOPROXY: https://proxy.golang.org
+      
     steps:
 
     - name: Set up Go 1.13
@@ -24,7 +28,7 @@ jobs:
 
     - name: Run API unit tests
       run: make api-test
-      
+
     - name: Build the API
       run: buffalo build -o api ./site/api
     
