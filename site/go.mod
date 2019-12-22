@@ -1,4 +1,4 @@
-module github.com/arschles/go-in-5-minutes/site/api
+module github.com/arschles/go-in-5-minutes/site
 
 go 1.13
 
