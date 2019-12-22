@@ -10,7 +10,7 @@ tasks:
             - hugo
             - elm
             - caddy
-            - postgres
+            - dbmigrate
     test:
         dir: api
         cmds:
