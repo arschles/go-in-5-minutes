@@ -1,1 +1,4 @@
 static/public
+*.tfstate.backup
+*.tfstate
+tf/.terraform
