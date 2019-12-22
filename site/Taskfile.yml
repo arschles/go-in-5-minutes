@@ -11,6 +11,10 @@ tasks:
             - elm
             - caddy
             - postgres
+    test:
+        dir: api
+        cmds:
+            - buffalo test
     api:
         dir: api
         cmds:
