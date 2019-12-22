@@ -37,15 +37,17 @@ jobs:
 
     - name: Run API unit tests
       run: |
-        cd site/api
+        cd site
         buffalo test
 
-    - name: Build & push api docker image
+    - name: Build & push site docker image
       run: |
-        docker login docker.pkg.github.com/arschles
-        cd site/api
-        docker build -f ../Dockerfile.api -t docker.pkg.github.com/arschles/gifm/site:actionstest .
+        cat ${GITHUB_TOKEN} | docker login -u arschles --password-stdin docker.pkg.github.com/arschles
+        cd site
+        docker build -t docker.pkg.github.com/arschles/go-in-5-minutes/site:actionstest .
         docker push docker.pkg.github.com/arschles/gifm/site:actionstest
+
+
 
       
     

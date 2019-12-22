@@ -1,0 +1,8 @@
+node_modules/
+*.log
+bin/
+tf/
+Caddyfile
+README.md
+Taskfile.yml
+static

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/arschles/go-in-5-minutes/site/api/models"
+	"github.com/arschles/go-in-5-minutes/site/models"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/google/go-github/github"

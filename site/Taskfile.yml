@@ -6,25 +6,18 @@ output: prefixed
 tasks:
     default:
         deps:
-            - api
+            - dev
             - hugo
             - elm
             - caddy
             - dbmigrate
     test:
-        dir: api
         cmds:
             - buffalo test
-    api:
-        dir: api
+    dev:
         cmds:
             - buffalo dev
-    apitest:
-        dir: api
-        cmds:
-            - buffalo test
     dbmigrate:
-        dir: api
         cmds:
             # when the postgres target runs, the container starts the DB and then immediately
             # restarts it, so we need to wait a little bit for that to finish up
@@ -39,21 +32,21 @@ tasks:
                     -p 5432:5432 \
                     --rm postgres:9.6.9-alpine
         sources:
-            - api/migrations/**/*.fizz
-            - api/models/**/*.go
+            - migrations/**/*.fizz
+            - models/**/*.go
     hugo:
-        dir: static
+        dir: hugo
         cmds:
             - hugo server
     elm:
-        dir: static
+        dir: hugo
         cmds:
             # - ./elm-build.sh
             - elm make elm/Screencasts.elm --output=static/js/screencasts.elm.js
         sources:
-            - static/elm/Screencasts.elm
+            - hugo/static/elm/Screencasts.elm
         generates:
-            - static/static/js/screencasts.elm.js
+            - hugo/static/js/screencasts.elm.js
     caddy:
         cmds: ['caddy']
     install-caddy:

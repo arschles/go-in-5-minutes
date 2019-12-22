@@ -3,7 +3,7 @@ package actions
 import (
 	"log"
 
-	"github.com/arschles/go-in-5-minutes/site/api/models"
+	"github.com/arschles/go-in-5-minutes/site/models"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	"github.com/gobuffalo/envy"

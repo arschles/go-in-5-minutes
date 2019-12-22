@@ -2,12 +2,13 @@
 # https://docs.docker.com/engine/userguide/eng-image/multistage-build/
 FROM gobuffalo/buffalo:v0.14.10 as builder
 
-RUN mkdir -p $GOPATH/src/github.com/arschles/go-in-5-minutes
-WORKDIR $GOPATH/src/github.com/arschles/go-in-5-minutes
+RUN mkdir -p /build
+WORKDIR /build
 
 ADD . .
 ENV GO111MODULES=on
 RUN go get ./...
+WORKDIR /build/api
 RUN buffalo build --static -o /bin/app
 
 FROM alpine
