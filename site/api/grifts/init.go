@@ -1,7 +1,7 @@
 package grifts
 
 import (
-	"github.com/arschles/go-in-5-minutes/api/actions"
+	"github.com/arschles/go-in-5-minutes/site/api/actions"
 	"github.com/gobuffalo/buffalo"
 )
 
