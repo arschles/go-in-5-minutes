@@ -10,7 +10,6 @@ tasks:
             - hugo
             - elm
             - caddy
-            - dbmigrate
             - postgres
     api:
         dir: api
@@ -25,7 +24,6 @@ tasks:
         cmds:
             # when the postgres target runs, the container starts the DB and then immediately
             # restarts it, so we need to wait a little bit for that to finish up
-            - sleep 5
             - buffalo db migrate up
     postgres:
         cmds:
