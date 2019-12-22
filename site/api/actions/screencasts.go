@@ -33,7 +33,7 @@ func getScreencast(c buffalo.Context) error {
 	id := c.Param("id")
 	cast := &models.Screencast{}
 	if err := tx.Find(cast, id); err != nil {
-		log.Printf("(getScreencast) Error getting screencast %s\n%s", id)
+		log.Printf("(getScreencast) Error getting screencast %s\n%s", id, err)
 		return err
 	}
 	c.Set("screencast", cast)
