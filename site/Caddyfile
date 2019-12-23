@@ -1,4 +1,0 @@
-localhost:8080
-
-proxy / localhost:1313
-proxy /api localhost:3000

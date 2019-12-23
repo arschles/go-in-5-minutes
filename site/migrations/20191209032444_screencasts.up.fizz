@@ -1,8 +1,0 @@
-create_table("screencasts") {
-	t.Column("id", "uuid", {"primary": true})
-    t.Column("title", "text", {})
-    t.Column("date", "datetime", {})
-    t.Column("summary", "text", {})
-    t.Column("complete", "text", {})
-    t.Column("youtube_embed_url", "text", {})
-}
