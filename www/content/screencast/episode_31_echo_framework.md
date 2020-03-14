@@ -6,7 +6,7 @@ author = "Aaron Schlesinger"
 date = "2019-09-04T15:22:28-07:00"
 +++
 
-_Episode 13_
+_Episode 31_
 
 Learn how to use the [Echo](https://echo.labstack.com/) framework to write quick and high-quality web services.
 
