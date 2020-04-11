@@ -8,14 +8,11 @@ The concepts I've covered have helped developers get involved in the community, 
 Go job, or just learn something new. Over 3000 Gophers have benefitted from the content
 so far.
 
-Financial contributions help pay for development of new material and production of
-new screencasts.
+Financial contributions help pay for development of new material and production of new screencasts.
 
-If you or your company has benefitted from the lessons that Go in 5 Minutes teaches,
-please consider supporting the screencast to help Gophers all over the world learn
-Go and level up their skills.
+If you or your company has benefitted from the lessons that Go in 5 Minutes teaches, please consider financially supporting the screencast by subscribing to my course on building web apps in Go:
 
-[https://www.patreon.com/goin5minutes](https://www.patreon.com/goin5minutes)
+[The Ultimate Guide to Web Apps in Go](https://gum.co/hgHhj?wanted=true)
 
 # Sponsors
 
