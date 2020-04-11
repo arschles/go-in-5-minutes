@@ -36,12 +36,10 @@ Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels
 Go in 5 Minutes has some folks who generously provide financial backing to help pay
 for development costs. See [BACKERS.md](./BACKERS.md) for the list of those folks.
 
-If you'd like to sponsor the screencast (and get your logo up on that page!), go to
-[https://patreon.com/goin5minutes](https://patreon.com/goin5minutes).
+If you'd like to financially support the screencast, please consider buying my lessons:
 
-# Bundle
-
-If you're just getting started with the series, want to download the screencasts, or otherwise would like to have DRM-free, HD versions of the screencasts, I encourage you to buy the bundle of episodes 0-9 at https://gum.co/gifm-1-10.
+- [The Ultimate Guide to Web Apps in Go](https://gum.co/hgHhj?wanted=true) - A subscription series that dives deep into the nuts and bolts of building full-stack web apps in Go. Since this is a subscription, you'll always be up to date on the latest in the fast moving world of Go web apps
+- [The bundle of the first 10 episodes](https://gumroad.com/l/gifm-1-10?wanted=true) - A bundle of the first 10 episodes. All are DRM-free, HD, and you can download them and watch them anywhere. If you're just getting started with Go, I recommend this!
 
 # Email Newsletter
 

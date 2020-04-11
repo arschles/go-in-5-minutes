@@ -10,9 +10,10 @@ so far.
 
 Financial contributions help pay for development of new material and production of new screencasts.
 
-If you or your company has benefitted from the lessons that Go in 5 Minutes teaches, please consider financially supporting the screencast by subscribing to my course on building web apps in Go:
+If you or your company has benefitted from the lessons that Go in 5 Minutes teaches, please consider financially supporting the screencast by buying my lessons:
 
-[The Ultimate Guide to Web Apps in Go](https://gum.co/hgHhj?wanted=true)
+- [The Ultimate Guide to Web Apps in Go](https://gum.co/hgHhj?wanted=true) - A subscription series that dives deep into the nuts and bolts of building full-stack web apps in Go. Since this is a subscription, you'll always be up to date on the latest in the fast moving world of Go web apps
+- [The bundle of the first 10 episodes](https://gumroad.com/l/gifm-1-10?wanted=true) - A bundle of the first 10 episodes. All are DRM-free, HD, and you can download them and watch them anywhere. If you're just getting started with Go, I recommend this!
 
 # Sponsors
 
