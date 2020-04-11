@@ -31,15 +31,21 @@ Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels
 
 **I'd love to hear from you!**
 
-# Sponsors
+# Get The Ultimate Guide to Webapps in Go
 
-Go in 5 Minutes has some folks who generously provide financial backing to help pay
-for development costs. See [BACKERS.md](./BACKERS.md) for the list of those folks.
+[The Ultimate Guide to Web Apps in Go](https://gum.co/hgHhj?wanted=true) is a subscription series that dives deep into the nuts and bolts of building full-stack web apps in Go.
 
-If you'd like to financially support the screencast, please consider buying my lessons:
+In this series, I'll always keep you up to date on the latest and greatest libaries and techiques in the fast moving world of Go web apps.
 
-- [The Ultimate Guide to Web Apps in Go](https://gum.co/hgHhj?wanted=true) - A subscription series that dives deep into the nuts and bolts of building full-stack web apps in Go. Since this is a subscription, you'll always be up to date on the latest in the fast moving world of Go web apps
-- [The bundle of the first 10 episodes](https://gumroad.com/l/gifm-1-10?wanted=true) - A bundle of the first 10 episodes. All are DRM-free, HD, and you can download them and watch them anywhere. If you're just getting started with Go, I recommend this!
+[Buy the subscription here](https://gum.co/hgHhj?wanted=true)
+
+# Get the Bundle of the First 10 Episodes
+
+The bundle is a downloadable, DRM-free, HD set of the first 10 episodes of Go in 5 Minutes. 
+
+If you're just getting started with Go, This is a great resource.
+
+[Buy the bundle here](https://gumroad.com/l/gifm-1-10?wanted=true)
 
 # Email Newsletter
 
