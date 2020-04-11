@@ -33,9 +33,9 @@ Here are some example issues: https://github.com/arschles/go-in-5-minutes/labels
 
 # Get The Ultimate Guide to Webapps in Go
 
-[The Ultimate Guide to Web Apps in Go](https://gum.co/hgHhj?wanted=true) is a subscription series that dives deep into the nuts and bolts of building full-stack web apps in Go.
+I've built [The Ultimate Guide to Web Apps in Go](https://gum.co/hgHhj?wanted=true) for those who want to easily maintain or build production-quality webapps in Go.
 
-In this series, I'll always keep you up to date on the latest and greatest libaries and techiques in the fast moving world of Go web apps.
+I'll dive deep into the nuts and bolts of building full-stack web apps in Go. You'll get consistent updates (about 2x/month) on current technology and best practices.
 
 [Buy the subscription here](https://gum.co/hgHhj?wanted=true)
 
