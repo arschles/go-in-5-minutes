@@ -21,10 +21,6 @@ If you or your company has benefitted from the lessons that Go in 5 Minutes teac
 
 ![Light Code Labs](./www/static/img/light-code-labs.png)
 
-### [Care Anywhere](https://careanywhereapp.com)
-
-![Care Anywhere](./www/static/img/care-anywhere.jpg)
-
 ## [Your Company Here](https://patreon.com/goin5minutes)
 
 # Backers
