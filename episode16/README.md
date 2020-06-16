@@ -7,7 +7,7 @@ Go in 5 Minutes, episode 16.
 This screencast overviews the new "Subtests" feature in Go 1.7's `testing` package (https://godoc.org/testing), and how to better organize your tests using them.
 
 Screencast video:
-https://www.goin5minutes.com/screencast/episode_16_nested_tests/)
+https://www.goin5minutes.com/screencast/episode_16_nested_tests/
 
 
 # New Developments!

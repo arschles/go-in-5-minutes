@@ -4,6 +4,8 @@ Go in 5 Minutes, episode 17.
 
 This screencast talks about the `error` interface, and focuses specifically on why and how you should create your own implementations.
 
+Screencast Video: https://www.goin5minutes.com/screencast/episode_17_the_error_interface/
+
 # Outline
 
 1. The `error` interface

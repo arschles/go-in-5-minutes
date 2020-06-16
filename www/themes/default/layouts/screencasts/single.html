@@ -8,13 +8,14 @@
   {{partial "nav.html"}}
   <div class="row">
     <div class="container">
-      <div class="row">
+      <div>
         <h1 class="page-title">
           All Screencasts
           <small>Newest on top</small>
         </h1>
       </div>
-      <div class="row">
+
+      <div>
         <p>
           <a
             class="btn btn-success btn-lg btn-inline"
@@ -26,13 +27,16 @@
           </a>
         </p>
       </div>
+
+      <hr />
+
       {{range $p := (where .Site.Pages "Type" "screencast")}}
       <div class="row media">
         <div class="date col-sm-1">
           {{dateFormat "Monday, Jan 2, 2006" $p.Date}}
         </div>
         <div class="col-sm-10">
-          <h2>{{$p.Title}}</h2>
+          <h2><a class="screencast-title" href="{{$p.RelPermalink}}">{{$p.Title}}</a></h2>
           <p>
             {{$p.Summary}}
           </p>
@@ -44,7 +48,6 @@
       {{end}}
     </div>
   </div>
-
   <div class="row text-center footer">
     {{partial "footer.html"}}
   </div>

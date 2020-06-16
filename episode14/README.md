@@ -9,7 +9,7 @@ This screencast shows the basics of using the `html/template` package to build c
 Screencast video:
 https://www.goin5minutes.com/screencast/episode_14_using_templates/index.html
 
-Complementary extended screencast:
+Extended screencast:
 https://gum.co/gifm-x-14
 
 # Outline

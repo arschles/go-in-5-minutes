@@ -1,0 +1,6 @@
+- id: "gifm.created.success"
+  translation: "Gifm was successfully created."
+- id: "gifm.updated.success"
+  translation: "Gifm was successfully updated."
+- id: "gifm.destroyed.success"
+  translation: "Gifm was successfully destroyed."

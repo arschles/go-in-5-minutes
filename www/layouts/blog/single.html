@@ -19,16 +19,16 @@
         </h1>
       </div>
     </div>
-    <div class="row text-center">
-      <div class="col-sm-8 col-sm-offset-2 subscribe-form">
-        <h4>Subscribe to the Newsletter <small>Emails with new posts. No spam, ever</small></h4>
-        <div>
-          {{ partial "subscribe_form.html" }}
-        </div>
-      </div>
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+        <i>
+          The Go in 5 minutes blog has a new home! 
+          Head over to 
+          <a href="https://medium.com/go-in-5-minutes">https://medium.com/go-in-5-minutes</a>
+          to stay up to date. And give us a follow if you can, I'd really appreciate it!
+        </i>
     </div>
     <div class="row text-center">
-      <div class="col-sm-8 col-sm-offset-2 blog-content text-left">
+      <div class="col-sm-8 col-sm-offset-2 blog-content text-left top-sm-1">
         {{ .Content }}
       </div>
     </div>
@@ -36,12 +36,12 @@
       <div class="col-sm-4 col-sm-offset-4">
         Thanks for reading! Ready for more?
         <a class="btn-lg btn-success btn-block" type="button" href="/screencasts">
-          Check out the Free Screencasts
+          Check out the Screencasts
         </a>
       </div>
     </div>
     <div class="row text-center footer">
-    {{partial "footer.html"}}
+      {{partial "footer.html"}}
     </div>
   </div>
   {{partial "js.html"}}
