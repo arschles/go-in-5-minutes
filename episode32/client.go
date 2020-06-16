@@ -1,15 +1,13 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"io"
 	"log"
 	"net/http"
 	"strconv"
 	"time"
-
-	"golang.org/x/net/context"
-	"golang.org/x/net/context/ctxhttp"
 )
 
 const (
@@ -36,21 +34,22 @@ func client(ctx context.Context, cl *http.Client) http.Handler {
 		timeout := getTimeout(defaultTimeoutSec, r)
 		log.Printf("using timeout %s to request %s", timeout, urlStr)
 
+		// create a new context for use with the http request
+		// create the new context.Context with the timeout we fetched
+		timeoutCtx, cancelFn := context.WithTimeout(ctx, timeout)
+		// make sure to cancel the context when we're done. this is a good practice, EVEN IF IT HAS TIMED OUT
+		defer cancelFn()
+
 		// construct the http Request
-		req, err := http.NewRequest("GET", urlStr, nil)
+		req, err := http.NewRequestWithContext(timeoutCtx, "GET", urlStr, nil)
 		if err != nil {
 			log.Printf("error creating request for %s (%s)", urlStr, err)
 			http.Error(w, "error creating request", http.StatusInternalServerError)
 			return
 		}
 
-		// create the new context.Context with the timeout we fetched
-		timeoutCtx, cancelFn := context.WithTimeout(ctx, timeout)
-		// make sure to cancel the context when we're done. this is a good practice, EVEN IF IT HAS TIMED OUT
-		defer cancelFn()
-
 		// execute the request. the request will be cancelled after timeout, even if the client's transport timeout has not been exceeded.
-		resp, err := ctxhttp.Do(timeoutCtx, cl, req)
+		resp, err := cl.Do(req)
 		if err != nil {
 			errStr := fmt.Sprintf("error making request for %s (%s)", urlStr, err)
 			log.Println(errStr)

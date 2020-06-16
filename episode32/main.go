@@ -1,10 +1,9 @@
 package main
 
 import (
+	"context"
 	"log"
 	"net/http"
-
-	"golang.org/x/net/context"
 )
 
 func main() {
