@@ -1,7 +1,7 @@
 +++
 type = "screencast"
-title = "Building Fast Web Apps with the Echo Framework!"
-teaser = "Learn how to use the Echo framework to quickly write highquality web services."
+title = "Building Fast Web Apps with the Echo Framework"
+teaser = "Learn how to use the Echo framework to quickly write high quality web services."
 author = "Aaron Schlesinger"
 date = "2019-09-04T15:22:28-07:00"
 +++
