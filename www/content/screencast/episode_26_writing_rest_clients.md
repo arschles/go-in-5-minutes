@@ -14,9 +14,5 @@ Let's take a break from the [Buffalo series](/screencast/episode_25_buffalo_temp
 
 In this episode, we're going to use the [cobra library](https://github.com/spf13/cobra) to write a CLI for the [DarkSky API](https://darksky.net/dev). But we won't take a standard DarkSky API client off the shelf this time! We're going to build one from scratch, using [gorequest](https://github.com/parnurzeal/gorequest), so we can see what goes into the process end to end.
 
-Keep on rockin', Gophers!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yJbrjz00COk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode26).
+{{< screencast_bottom youtube_id="yJbrjz00COk" github_episode="epsode26">}}
 

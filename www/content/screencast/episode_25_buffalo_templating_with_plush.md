@@ -16,11 +16,5 @@ To write frontend code, you need to learn its templating language, called plush 
 
 Plush is really important to learn about, because you'll need it for any web application you build.
 
-All code is open source at https://github.com/arschles/go-in-5-minutes
-
-Keep on rockin, Gophers!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VMi0mDtLCq4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode25).
+{{< screencast_bottom youtube_id="VMi0mDtLCq4" github_episode="epsode25">}}
 

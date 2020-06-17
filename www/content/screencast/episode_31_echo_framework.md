@@ -16,9 +16,5 @@ Learn how to use the [Echo](https://echo.labstack.com/) framework to write quick
 
 Check out the screencast to learn how to take advantage of Echo to write your next web service.
 
-Keep on rockin', Gophers!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aCMcKq5G_xM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode31).
+{{< screencast_bottom youtube_id="aCMcKq5G_xM" github_episode="epsode31">}}
 

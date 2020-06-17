@@ -16,9 +16,5 @@ in the Buffalo request router to build more powerful websites.
 If you have a Buffalo site, check this screencast out. Path variables and API groups can
 totally make your life easier and reduce boilerplate!
 
-Keep on rockin', Gophers!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HOSDxHMiHLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode22).
+{{< screencast_bottom youtube_id="HOSDxHMiHLk" github_episode="epsode22">}}
 

@@ -23,9 +23,4 @@ and replace with some of these things.
 
 After all, the best code you can write is no code!
 
-Keep on rockin', Gophers!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nO2JtrMvTQE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode23).
-
+{{< screencast_bottom youtube_id="nO2JtrMvTQE" github_episode="epsode23">}}

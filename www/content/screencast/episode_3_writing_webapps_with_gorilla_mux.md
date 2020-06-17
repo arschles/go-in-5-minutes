@@ -15,13 +15,7 @@ This screencast expands on concepts in [episode 1](/screencast/episode_1_buildin
 watch that screencast to understand this one.
 <!--more-->
 
-<iframe
-  class="ytplayer"
-  type="text/html"
-  width="640"
-  height="390"
-  src="https://www.youtube.com/embed/6Pl5Xrrne2c?autoplay=0&origin=https://www.goin5minutes.com"
-  frameborder="0"
-></iframe>
+{{< youtube id="6Pl5Xrrne2c" autoplay="false" >}}
+
 
 Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode3).
