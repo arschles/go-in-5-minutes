@@ -5,4 +5,4 @@
     base = "www/"
     publish = "www/public/"
     command = "hugo -v"
-    environment = { HUGO_VERSION = "0.62.2" }
+    environment = { HUGO_VERSION = "0.72.0" }
