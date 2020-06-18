@@ -15,4 +15,4 @@ We show how to write HTTP servers (using the [`net/http`](https://godoc.org/net/
 
 <!--more-->
 
-{{< screencast_bottom youtube_id="kbQApnjjYbU" github_episode="epsode32">}}
+{{< screencast_bottom youtube_id="kbQApnjjYbU" github_episode="episode32">}}
