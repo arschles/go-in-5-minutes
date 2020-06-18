@@ -8,6 +8,13 @@
 
 <link href="/css/bootstrap-3.3.5.min.css" rel="stylesheet"/>
 <link href="/css/bootstrap-theme-3.3.5.min.css" rel="stylesheet"/>
-<link href="/css/common.css" rel="stylesheet"/>
+{{ $css := resources.Get "css/common.css" }}
+{{ $style := $css | resources.Fingerprint }}
+<link
+    href="{{ $style.RelPermalink }}"
+    rel="stylesheet"
+    integrity="{{ $style.Data.Integrity }}"
+/>
+
 <link href='https://fonts.googleapis.com/css?family=Varela+Round|Cousine:400,700' rel='stylesheet' type='text/css'>
 <link rel="icon" type="image/jpeg" href="/img/gopher-student.jpg">
