@@ -1,39 +1,37 @@
 {{ $has_ad := .Get "show_ad" }}
 
 {{ if (or (eq $has_ad true) (eq $has_ad "")) }}
-<div class="gumroad_theres_more">
-    <h2>Learn More</h2>
-    <p>
-        <small>The screencast is below</small>
-    </p>
-
-    There's so much to know in web apps for Go, and things
-    change fast. 
-    <b>That's why I made a subscription series</b>. 
-
-    <a
-        role="button"
-        class="btn btn-default"
-        href="https://gum.co/hgHhj?wanted=true"
-        target="_blank">
-        Learn more
-    </a>
+<div
+    class="gumroad_theres_more panel panel-info">
+    <div class="panel-body">
+        This screencast only scratches the surface. 
+        Subscribe to my new screencast series on Go web apps to 
+        dive deeper.
+    </div>
+    <div class="panel-footer">
+        <a
+            role="button"
+            class="btn btn-primary"
+            href="https://gum.co/hgHhj?wanted=true"
+            target="_blank">
+            Learn more
+        </a>
+        <p>
+            <small>
+                *This subscription series is a related product.
+                Go in 5 Minutes screencasts will always be free.
+            </small>
+        </p>
+    </div>
 </div>
-<div><small>
-    *This subscription series is a related product.
-    Go in 5 Minutes screencasts wll always be free.
-</small></div>
 {{ end }}
-<br /><br />
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
     <iframe src='https://www.youtube.com/embed/{{ .Get "youtube_id"}}?autoplay=0' style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-  
-Check out the example code 
-<a href='https://github.com/arschles/go-in-5-minutes/tree/master/{{ .Get "github_episode" }}'>
-    on GitHub
-</a>
 
-<br /><br />
-
-Keep on rockin', Gophers
+<p class="top-sm-1">
+    Check out the example code 
+    <a href='https://github.com/arschles/go-in-5-minutes/tree/master/{{ .Get "github_episode" }}'>
+        on GitHub
+    </a> and keep on rockin', Gophers!
+</p>
