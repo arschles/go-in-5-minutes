@@ -30,13 +30,17 @@
 
       <hr />
 
-      {{range $p := (where .Site.Pages "Type" "screencast")}}
+      {{range $p := (where .Site.RegularPages "Type" "screencast")}}
       <div class="row media">
         <div class="date col-sm-1">
           {{dateFormat "Monday, Jan 2, 2006" $p.Date}}
         </div>
         <div class="col-sm-10">
-          <h2><a class="screencast-title" href="{{$p.RelPermalink}}">{{$p.Title}}</a></h2>
+          <h2>
+            <a class="screencast-title" href="{{$p.RelPermalink}}">
+              {{$p.Title}}
+            </a>
+          </h2>
           <p>
             {{$p.Summary}}
           </p>
