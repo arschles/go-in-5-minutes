@@ -3,7 +3,7 @@ on: [push]
 jobs:
 
   build:
-    name: Build
+    name: Build Go Code
     runs-on: ubuntu-latest
     env:
       GO111MODULE: on
