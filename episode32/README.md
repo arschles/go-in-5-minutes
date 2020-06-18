@@ -1,5 +1,8 @@
 # Advanced `net/http`
 
+[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://gifm.dev/screencast/episode_32_advanced_http/)
+
+
 Go in 5 Minutes, episode 32.
 
 This screencast shows some advanced uses of the [`net/http`](https://godoc.org/net/http) package. It covers some of the content requested in https://github.com/arschles/go-in-5-minutes/issues/26.
