@@ -51,9 +51,7 @@ a.screencast-title:link, a.screencast-title:visited {
 .gumroad_theres_more {
   margin-top: 1em;
   padding-left: 0.5em;
-  font-size: 0.9em;
   color: grey;
-  font-weight: bold;
 }
 
 .gumroad_theres_more .panel-footer small {
