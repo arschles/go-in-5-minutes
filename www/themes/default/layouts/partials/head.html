@@ -8,8 +8,8 @@
 
 <link href="/css/bootstrap-3.3.5.min.css" rel="stylesheet"/>
 <link href="/css/bootstrap-theme-3.3.5.min.css" rel="stylesheet"/>
-{{ $css := resources.Get "css/common.css" }}
-{{ $style := $css | resources.Fingerprint }}
+{{ $commonSass := resources.Get "sass/common.sass" }}
+{{ $style := $commonSass | resources.ToCSS | resources.Fingerprint }}
 <link
     href="{{ $style.RelPermalink }}"
     rel="stylesheet"

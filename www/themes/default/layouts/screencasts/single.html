@@ -2,13 +2,6 @@
 <html lang="en">
 <head>
   {{partial "head.html"}}
-  {{ $css := resources.Get "css/common.css" }}
-  {{ $style := $css | resources.Fingerprint }}
-
-  <link
-    rel="stylesheet"
-    href="{{ $style.RelPermalink }}"
-  />
 </head>
 <body class="container-fluid">
   {{partial "nav.html"}}
