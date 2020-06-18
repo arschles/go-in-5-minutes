@@ -14,6 +14,4 @@ using the [`gorilla/websocket`](https://godoc.org/github.com/gorilla/websocket) 
 The example and sample code shows a complete browser-based chat application.
 <!--more-->
 
-{{< youtube id="DJiOrGRsIKo" autoplay="false" >}}
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode4).
+{{< screencast_bottom youtube_id="DJiOrGRsIKo" github_episode="episode4">}}

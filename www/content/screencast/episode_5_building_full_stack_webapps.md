@@ -12,6 +12,4 @@ of topics. We focus on database communication, rendering templates, and client-s
 communication via APIs.
 <!--more-->
 
-{{< youtube id="QvWUCYwmExE" autoplay="false" >}}
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode5).
+{{< screencast_bottom youtube_id="QvWUCYwmExE" github_episode="episode5">}}

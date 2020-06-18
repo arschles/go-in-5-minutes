@@ -13,9 +13,4 @@ our own. Not anymore! Now we have [Buffalo](https://gobuffalo.io)!
 
 <!--more--> 
 
-Keep on rockin', Gophers!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZIVt9nghY3Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode21).
-
+{{< screencast_bottom youtube_id="ZIVt9nghY3Y" github_episode="epsode21">}}

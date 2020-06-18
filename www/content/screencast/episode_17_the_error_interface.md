@@ -13,17 +13,4 @@ We also talk about some best practices in exposing and describing your custom ty
 
 <!--more-->
 
-# Sponsor
-
-Sponsored by Minio - Minio is an open source object storage server, compatible with Amazon S3 and written in Go. It is light enough to be bundled along the application stack, similar to Node.js and MongoDB. Check them out at https://github.com/minio or hangout with them at https://gitter.im/minio/minio
-
-<iframe
-  class="ytplayer"
-  type="text/html"
-  width="640"
-  height="390"
-  src="https://www.youtube.com/embed/R3Dp2x7BrtE?autoplay=0&origin=https://www.goin5minutes.com"
-  frameborder="0"
-></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode17).
+{{< screencast_bottom youtube_id="R3Dp2x7BrtE" github_episode="epsode17">}}

@@ -15,7 +15,4 @@ This screencast expands on concepts in [episode 1](/screencast/episode_1_buildin
 watch that screencast to understand this one.
 <!--more-->
 
-{{< youtube id="6Pl5Xrrne2c" autoplay="false" >}}
-
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode3).
+{{< screencast_bottom youtube_id="6Pl5Xrrne2c" github_episode="episode3">}}

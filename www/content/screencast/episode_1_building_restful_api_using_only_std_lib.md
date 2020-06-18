@@ -11,7 +11,4 @@ We show how to write a feature-rich [REST](https://en.wikipedia.org/wiki/Represe
 
 <!--more-->
 
-{{< youtube id="eTjNtNnVOGY" autoplay="false" >}}
-
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode1).
+{{< screencast_bottom youtube_id="eTjNtNnVOGY" github_episode="episode1">}}

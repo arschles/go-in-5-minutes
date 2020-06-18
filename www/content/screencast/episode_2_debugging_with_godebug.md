@@ -12,6 +12,4 @@ We show a semi-complex concurrent program with a bug in it, and then use [godebu
 We also show a few other examples of bugs and show how to find and fix those.
 <!--more-->
 
-{{< youtube id="LQi0N0nA5RA" autoplay="false" >}}
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode2).
+{{< screencast_bottom youtube_id="LQi0N0nA5RA" github_episode="episode2">}}

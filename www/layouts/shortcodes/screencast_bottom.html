@@ -1,3 +1,6 @@
+{{ $has_ad := .Get "show_ad" }}
+
+{{ if (or (eq $has_ad true) (eq $has_ad "")) }}
 <div class="gumroad_theres_more">
     <h2>There's More</h2>
 
@@ -9,6 +12,11 @@
         Come check it out!
     </a>
 </div>
+<div><small>
+    (This subscription series is a related product.
+    Go in 5 Minutes screencasts wll always be free.)
+</small></div>
+{{ end }}
 <br /><br />
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
     <iframe src='https://www.youtube.com/embed/{{ .Get "youtube_id"}}?autoplay=0' style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>

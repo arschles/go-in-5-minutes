@@ -19,13 +19,4 @@ Note that the second method is not strictly unit testing because it tests the ro
 
 Note also that I wrote the [testsrv](https://godoc.org/github.com/arschles/testsrv) library. It is a convenience wrapper on top of [`net/http/httptest.Server`](https://godoc.org/net/http/httptest#Server) and example code shows how to use it. [Pull requests](https://github.com/arschles/testsrv/pulls) and [issues](https://github.com/arschles/testsrv/issues) are welcome on `testsrv`.
 
-<iframe
-  class="ytplayer"
-  type="text/html"
-  width="640"
-  height="390"
-  src="https://www.youtube.com/embed/YmbbmyxSlcg?autoplay=0&origin=https://www.goin5minutes.com"
-  frameborder="0"
-></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode6).
+{{< screencast_bottom youtube_id="YmbbmyxSlcg" github_episode="episode6">}}

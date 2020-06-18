@@ -1,6 +1,6 @@
 # Consuming Unknown JSON Input
 
-Go in 5 Minutes, episode 19, as requested by [@tmcarr](https://github.com/tmcarr)!
+Go in 5 Minutes, episode 19.
 
 This screencast teaches how to consume some unknown JSON. We don't know what it looks like
 ahead of time, and we have to handle anything that comes our way.

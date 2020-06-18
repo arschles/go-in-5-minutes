@@ -10,13 +10,4 @@ _Episode 8_
 We explain why you should profile your programs, how to do it, and (briefly) how you can improve your code based on your profile results.
 <!--more-->
 
-<iframe
-  class="ytplayer"
-  type="text/html"
-  width="640"
-  height="390"
-  src="https://www.youtube.com/embed/7LCgsfHlMv4?autoplay=0&origin=https://www.goin5minutes.com"
-  frameborder="0"
-></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode8).
+{{< screencast_bottom youtube_id="7LCgsfHlMv4" github_episode="episode8">}}

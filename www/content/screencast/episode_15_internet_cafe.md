@@ -13,13 +13,4 @@ See [https://gum.co/gifm-x-15](https://gum.co/gifm-x-15) for more details.
 
 <!--more-->
 
-<iframe
-  class="ytplayer"
-  type="text/html"
-  width="640"
-  height="390"
-  src="https://www.youtube.com/embed/vs7zHj4rhy8?autoplay=0&origin=https://www.goin5minutes.com"
-  frameborder="0"
-></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode15).
+{{< screencast_bottom youtube_id="vs7zHj4rhy8" github_episode="epsode15">}}
