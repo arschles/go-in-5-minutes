@@ -11,21 +11,4 @@ This screencast shows you how to use Go's Subtests feature. Subtests are new in 
 
 <!--more-->
 
-# Sponsor
-
-Sponsored by Minio - Minio is an open source object storage server, compatible with Amazon S3 and written in Go. It is light enough to be bundled along the application stack, similar to Node.js and MongoDB. Check them out at https://github.com/minio or hangout with them at https://gitter.im/minio/minio
-
-# Reminder
-
-Don't forget to follow [follow on Twitter](https://twitter.com/goin5minutes) and [subscribe to the mailing list](https://www.goin5minutes.com/subscribe/)!
-
-<iframe
-  class="ytplayer"
-  type="text/html"
-  width="640"
-  height="390"
-  src="https://www.youtube.com/embed/vwPPuEjXY-A?autoplay=0&origin=https://www.goin5minutes.com"
-  frameborder="0"
-></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode16).
+{{< screencast_bottom youtube_id="vwPPuEjXY-A" github_episode="epsode16">}}

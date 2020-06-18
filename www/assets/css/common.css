@@ -47,3 +47,14 @@ h1.page-title {
 a.screencast-title:link, a.screencast-title:visited {
   color: #000;
 }
+
+.gumroad_theres_more {
+  margin-top: 1em;
+  padding-left: 0.5em;
+  color: grey;
+}
+
+.gumroad_theres_more .panel-footer small {
+  color: #444444;
+  font-weight: 400;
+}

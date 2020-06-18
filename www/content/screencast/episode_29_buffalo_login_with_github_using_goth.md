@@ -14,8 +14,4 @@ We're continuing the [Buffalo](https://gobuffalo.io) series! Lots of web apps ha
 
 We'll be using [the Goth library](https://github.com/markbates/goth) and the - [`buffalo-goth` code generator](https://github.com/gobuffalo/buffalo-goth) together to allow us to implement GitHub login in our app without writing much code ourselves. Code generation does a _ton_ of the work for us (and that's one of the many magical parts of Buffalo).
 
-Enjoy, and keep on rockin', Gophers!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ov_8LXZmX6A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode29).
+{{< screencast_bottom youtube_id="Ov_8LXZmX6A" github_episode="epsode29">}}

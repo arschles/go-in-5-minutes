@@ -16,9 +16,5 @@ Go Modules was introduced in Go version 1.11, and it's going to be the default w
 
 This episode gives you a taste of how they work and how to use them (hint: it's simpler than you think!). After you watch this one, you'll be able to go get started converting your codebase over to modules, or just experimenting with it if you like. Either way, I hope you enjoy!
 
-Keep on rockin', Gophers!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/71hgdExuCbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode27).
-
+{{< screencast_bottom youtube_id="71hgdExuCbg" github_episode="epsode27">}}

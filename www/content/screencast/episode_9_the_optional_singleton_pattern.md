@@ -10,13 +10,4 @@ _Episode 9_
 We explain what the optional singleton pattern is, how it can make libraries easier to use, and walk through the code for a simple library that uses this pattern.
 <!--more-->
 
-<iframe
-  class="ytplayer"
-  type="text/html"
-  width="640"
-  height="390"
-  src="https://www.youtube.com/embed/kZ1YwEH-OdQ?autoplay=0&origin=https://www.goin5minutes.com"
-  frameborder="0"
-></iframe>
-
-Check out the example code [on Github](https://github.com/arschles/go-in-5-minutes/tree/master/episode9).
+{{< screencast_bottom youtube_id="kZ1YwEH-OdQ" github_episode="epsode9">}}
