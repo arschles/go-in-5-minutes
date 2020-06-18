@@ -2,19 +2,26 @@
 
 {{ if (or (eq $has_ad true) (eq $has_ad "")) }}
 <div class="gumroad_theres_more">
-    <h2>There's More</h2>
+    <h2>Learn More</h2>
+    <p>
+        <small>The screencast is below</small>
+    </p>
 
-    I do a lot of HTTP and web app related screencasts because 
-    there's so much to know in that area, and things change fast. 
+    There's so much to know in web apps for Go, and things
+    change fast. 
     <b>That's why I made a subscription series</b>. 
 
-    <a href="https://gum.co/hgHhj?wanted=true" target="_blank">
-        Come check it out!
+    <a
+        role="button"
+        class="btn btn-default"
+        href="https://gum.co/hgHhj?wanted=true"
+        target="_blank">
+        Learn more
     </a>
 </div>
 <div><small>
-    (This subscription series is a related product.
-    Go in 5 Minutes screencasts wll always be free.)
+    *This subscription series is a related product.
+    Go in 5 Minutes screencasts wll always be free.
 </small></div>
 {{ end }}
 <br /><br />
