@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy Frontend to Firebase
 on:
   push:
     branches:
