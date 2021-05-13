@@ -17,7 +17,7 @@ jobs:
           hugo-version: '0.81.0'
           # extended: true
       - name: Build
-        run: hugo --minify
+        run: cd www && hugo --minify
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
