@@ -11,6 +11,13 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'v0.7.2'
+          # extended: true
+      - name: Build
+        run: hugo --minify
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
