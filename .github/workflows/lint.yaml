@@ -1,0 +1,16 @@
+name: Lint
+on: [push]
+jobs:
+
+  build:
+    name: Lint Code
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v1
+    
+    - name: Lint
+      uses: github/super-linter@v2.0.0
+    
