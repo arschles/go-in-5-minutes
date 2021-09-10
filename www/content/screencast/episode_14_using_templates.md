@@ -23,4 +23,4 @@ Go In 5 Minutes screencasts will always be free, while extended screencasts will
 
 See [https://gum.co/gifm-x-14](https://gum.co/gifm-x-14) for more details.
 
-{{< screencast_bottom youtube_id="Fr5cdsOZfGw" show_ad=false github_episode="epsode14">}}
+{{< screencast_bottom youtube_id="Fr5cdsOZfGw" github_episode="epsode14">}}
