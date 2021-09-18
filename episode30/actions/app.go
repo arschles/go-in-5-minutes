@@ -9,7 +9,7 @@ import (
 
 	"github.com/arschles/go-in-5-minutes/episode30/models"
 
-	"github.com/gobuffalo/buffalo-pop/pop/popmw"
+	"github.com/gobuffalo/buffalo-pop/pop/v2/popmw"
 	csrf "github.com/gobuffalo/mw-csrf"
 	i18n "github.com/gobuffalo/mw-i18n"
 	"github.com/gobuffalo/packr/v2"
