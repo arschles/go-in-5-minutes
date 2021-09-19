@@ -20,5 +20,8 @@ jobs:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v1
 
-    - name: Test all code
-      run: go test ./...
+    - name: Build all code
+      uses: magefile/mage-action@v1
+      with:
+        version: v1.5.0
+        args: buildall

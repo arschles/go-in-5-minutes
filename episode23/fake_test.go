@@ -1,4 +1,4 @@
-package episode23
+package main
 
 import "testing"
 

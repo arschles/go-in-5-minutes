@@ -11,9 +11,9 @@ import (
 	"golang.org/x/sync/errgroup"
 )
 
-func Build(ctx context.Context) error {
-	skips := map[int]struct{}{
-		23: struct{}{},
+func BuildAll(ctx context.Context) error {
+	skips := map[int]bool{
+		// 23: false,
 	}
 	const lastEpisode = 32
 	g, ctx := errgroup.WithContext(ctx)
