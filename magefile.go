@@ -12,9 +12,15 @@ import (
 )
 
 func Build(ctx context.Context) error {
+	skips := map[int]struct{}{
+		23: struct{}{},
+	}
 	const lastEpisode = 32
 	g, ctx := errgroup.WithContext(ctx)
 	for i := 0; i <= lastEpisode; i++ {
+		if _, ok := skips[i]; ok {
+			continue
+		}
 		idx := i
 		g.Go(func() error {
 			return sh.RunV(
@@ -27,6 +33,14 @@ func Build(ctx context.Context) error {
 		})
 	}
 	return g.Wait()
+}
+
+func TestOne(ctx context.Context, episodeNum int) error {
+	return sh.RunV(
+		"go",
+		"test",
+		fmt.Sprintf("./episode%d", episodeNum),
+	)
 }
 
 func BuildOne(ctx context.Context, episodeNum int) error {
