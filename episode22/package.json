@@ -17,7 +17,7 @@
     "file-loader": "~1.1.6",
     "font-awesome": "~4.7.0",
     "gopherjs-loader": "^0.0.1",
-    "jquery": "~3.2.1",
+    "jquery": "~3.5.0",
     "jquery-ujs": "~1.2.2",
     "node-sass": "~4.7.2",
     "npm-install-webpack-plugin": "4.0.5",
