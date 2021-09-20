@@ -13,7 +13,7 @@ import (
 
 func BuildAll(ctx context.Context) error {
 	skips := map[int]bool{
-		// 23: false,
+		16: false,
 	}
 	const lastEpisode = 32
 	g, ctx := errgroup.WithContext(ctx)
