@@ -1,8 +1,0 @@
-hash: 0179a19f7765f312f8dd6239bfdab82a96f208d515f6c94bf7ddc13052e520aa
-updated: 2016-01-28T11:50:00.000698-08:00
-imports:
-- name: github.com/arschles/assert
-  version: 6882f85ccdc7c1822b146d1a6b0c2c48f91b5140
-- name: github.com/pborman/uuid
-  version: dee7705ef7b324f27ceb85a121c61f2c2e8ce988
-devImports: []

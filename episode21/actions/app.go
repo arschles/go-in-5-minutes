@@ -1,16 +1,16 @@
 package actions
 
 import (
-	"github.com/gobuffalo/buffalo"
-	"github.com/gobuffalo/buffalo/middleware"
-	"github.com/gobuffalo/buffalo/middleware/ssl"
-	"github.com/gobuffalo/envy"
-	"github.com/unrolled/secure"
-
 	"github.com/arschles/go-in-5-minutes/episode21/models"
-	"github.com/gobuffalo/buffalo/middleware/csrf"
-	"github.com/gobuffalo/buffalo/middleware/i18n"
-	"github.com/gobuffalo/packr"
+	"github.com/gobuffalo/buffalo"
+	"github.com/gobuffalo/buffalo-pop/pop/popmw"
+	"github.com/gobuffalo/envy"
+	csrf "github.com/gobuffalo/mw-csrf"
+	ssl "github.com/gobuffalo/mw-forcessl"
+	i18n "github.com/gobuffalo/mw-i18n"
+	plggr "github.com/gobuffalo/mw-paramlogger"
+	"github.com/gobuffalo/packr/v2"
+	"github.com/unrolled/secure"
 )
 
 // ENV is used to help switch settings based on where the
@@ -29,13 +29,13 @@ func App() *buffalo.App {
 			SessionName: "_episode21_session",
 		})
 		// Automatically redirect to SSL
-		app.Use(ssl.ForceSSL(secure.Options{
+		app.Use(ssl.Middleware(secure.Options{
 			SSLRedirect:     ENV == "production",
 			SSLProxyHeaders: map[string]string{"X-Forwarded-Proto": "https"},
 		}))
 
 		if ENV == "development" {
-			app.Use(middleware.ParameterLogger)
+			app.Use(plggr.ParameterLogger)
 		}
 
 		// Protect against CSRF attacks. https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
@@ -45,11 +45,12 @@ func App() *buffalo.App {
 		// Wraps each request in a transaction.
 		//  c.Value("tx").(*pop.PopTransaction)
 		// Remove to disable this.
-		app.Use(middleware.PopTransaction(models.DB))
+		app.Use(popmw.Transaction(models.DB))
 
 		// Setup and use translations:
 		var err error
-		if T, err = i18n.New(packr.NewBox("../locales"), "en-US"); err != nil {
+		const boxPath = "../locales"
+		if T, err = i18n.New(packr.New(boxPath, boxPath), "en-US"); err != nil {
 			app.Stop(err)
 		}
 		app.Use(T.Middleware())
