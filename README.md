@@ -1,7 +1,6 @@
 # Go In 5 Minutes
 
 [![Build Status](https://travis-ci.org/arschles/go-in-5-minutes.svg?branch=master)](https://travis-ci.org/arschles/go-in-5-minutes)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c650b3f9-e737-4c1a-bb57-f4c4db7230bd/deploy-status)](https://app.netlify.com/sites/goin5minutes/deploys)
 
 Welcome Gophers! First off, lots of :heart: from me to you. I hope you enjoy
 the screencasts, and as always, keep on rockin!
