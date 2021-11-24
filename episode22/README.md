@@ -2,7 +2,7 @@
 
 Go in 5 Minutes, episode 22.
 
-[Last episode](https://www.goin5minutes.com/screencast/episode_21_buffalo_intro/) we looked
+[Last episode](https://goin5minutes.com/screencast/episode_21_buffalo_intro/) we looked
 at the basics for getting started with Buffalo. This time we're going to talk about
 how to do more with the Buffalo request router:
 
@@ -17,6 +17,6 @@ Check out the screencast for more!
 1. Even quicker recap of last episode
 1. Advanced routing
 
-If you enjoy these screencasts, please consider 
+If you enjoy these screencasts, please consider
 [becoming a backer](https://www.patreon.com/goin5minutes)
 and supporting this project. Cool stickers and more await you if you do!

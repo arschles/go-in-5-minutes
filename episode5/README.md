@@ -1,13 +1,13 @@
 # Building Web Applications in Go
 
-[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_5_building_full_stack_webapps/)
+[![Watch The Screencast](https://goin5minutes.com/img/watch-screencast.svg)](https://goin5minutes.com/screencast/episode_5_building_full_stack_webapps/)
 
 Go in 5 Minutes, episode 5.
 
 This screencast shows the general layout and structure of a web application, as requested in [Issue # 24](https://github.com/arschles/go-in-5-minutes/issues/24).
 
 Screencast video:
-https://www.goin5minutes.com/screencast/episode_5_building_full_stack_webapps/
+https://goin5minutes.com/screencast/episode_5_building_full_stack_webapps/
 
 ## YouTube Subscriptions and Github stars
 

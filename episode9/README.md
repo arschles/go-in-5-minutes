@@ -1,13 +1,13 @@
 # The Optional Singleton Pattern
 
-[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_9_the_optional_singleton_pattern/)
+[![Watch The Screencast](https://goin5minutes.com/img/watch-screencast.svg)](https://goin5minutes.com/screencast/episode_9_the_optional_singleton_pattern/)
 
 Go in 5 Minutes, episode 9.
 
 This screencast talks about a simple pattern for writing convenient, usable libraries.
 
 Screencast video:
-https://www.goin5minutes.com/screencast/episode_9_the_optional_singleton_pattern/
+https://goin5minutes.com/screencast/episode_9_the_optional_singleton_pattern/
 
 ## Welcome Back!
 

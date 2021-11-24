@@ -8,7 +8,7 @@ date = "2019-08-09T13:10:24-07:00"
 
 _Episode 28_
 
-In [episode 27](https://www.goin5minutes.com/screencast/episode_27_intro_to_modules/), we talked about how to use [Go Modules](https://github.com/golang/go/wiki/Modules) to manage dependencies, but there's more to the story!
+In [episode 27](https://goin5minutes.com/screencast/episode_27_intro_to_modules/), we talked about how to use [Go Modules](https://github.com/golang/go/wiki/Modules) to manage dependencies, but there's more to the story!
 
 Check out how module servers and Athens fit into the dependencies ecosystem.
 
