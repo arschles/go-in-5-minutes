@@ -2,7 +2,7 @@
 
 Go in 5 Minutes, episode 29.
 
-Welcome back to the Buffalo series! The last Buffalo episode we did was [episode 25](https://www.goin5minutes.com/screencast/episode_25_buffalo_templating_with_plush/), where we talked about templating with [templating with Plush](https://gobuffalo.io/en/docs/templating/).
+Welcome back to the Buffalo series! The last Buffalo episode we did was [episode 25](https://goin5minutes.com/screencast/episode_25_buffalo_templating_with_plush/), where we talked about templating with [templating with Plush](https://gobuffalo.io/en/docs/templating/).
 
 Today, we're going to continue talking about frontend technologies and look at how to let your users log into your webapp with GitHub
 

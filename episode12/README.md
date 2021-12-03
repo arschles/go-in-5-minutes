@@ -1,6 +1,6 @@
 # Concurrency Series: Eating Tapas
 
-[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/)
+[![Watch The Screencast](https://goin5minutes.com/img/watch-screencast.svg)](https://goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/)
 
 Go in 5 Minutes, episode 12.
 
@@ -8,7 +8,7 @@ This screencast overviews the "Eating Tapas" problem on [Trivial Concurrency Exe
 
 We're continuing the concurrency series - see [github.com/arschles/go-in-5-minutes/issues/14](https://github.com/arschles/go-in-5-minutes/issues/14) for progress.
 
-Screencast video: [goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/](https://www.goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/)
+Screencast video: [goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/](https://goin5minutes.com/screencast/episode_12_concurrency_eating_tapas/)
 
 ## Outline
 

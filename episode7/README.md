@@ -1,6 +1,6 @@
 # Vendoring Dependencies in Go
 
-[![Watch The Screencast](https://www.goin5minutes.com/img/watch-screencast.svg)](https://www.goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/)
+[![Watch The Screencast](https://goin5minutes.com/img/watch-screencast.svg)](https://goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/)
 
 Go in 5 Minutes, episode 7.
 
@@ -9,11 +9,11 @@ This screencast shows how to vendor your dependencies in Go, the modern way.
 >NOTE: This screencast is no longer relevant, with the advent of [Go Modules](https://golang.org/ref/mod). It is left here for historical reference only. Please use modules to handle (and vendor, if necessary) your dependencies.
 
 Screencast video:
-https://www.goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/
+https://goin5minutes.com/screencast/episode_7_vendoring_your_dependencies_in_go/
 
 ## Email Newsletter
 
-Quick reminder to sign up at https://www.goin5minutes.com/subscribe
+Quick reminder to sign up at https://goin5minutes.com/subscribe
 
 The first email will go out this week!
 

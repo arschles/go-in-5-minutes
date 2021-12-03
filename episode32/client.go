@@ -12,7 +12,7 @@ import (
 
 const (
 	urlKey            = "url"
-	defaultURLString  = "https://www.goin5minutes.com"
+	defaultURLString  = "https://goin5minutes.com"
 	timeoutKey        = "timeout"
 	defaultTimeoutSec = 0
 )

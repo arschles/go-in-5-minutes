@@ -2,7 +2,7 @@
 
 Go in 5 Minutes, episode 28.
 
-In [episode 27](https://www.goin5minutes.com/screencast/episode_27_intro_to_modules/), we talked about how to use [Go Modules](https://github.com/golang/go/wiki/Modules) to manage dependencies, but there's more to the story!
+In [episode 27](https://goin5minutes.com/screencast/episode_27_intro_to_modules/), we talked about how to use [Go Modules](https://github.com/golang/go/wiki/Modules) to manage dependencies, but there's more to the story!
 
 Go modules come with module servers that you can download your dependencies from too! The servers themselves are pretty cool, but here's why you should consider using one:
 
