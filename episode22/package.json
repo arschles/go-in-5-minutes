@@ -19,7 +19,7 @@
     "gopherjs-loader": "^0.0.1",
     "jquery": "~3.5.0",
     "jquery-ujs": "~1.2.2",
-    "node-sass": "~4.13.1",
+    "node-sass": "~7.0.0",
     "npm-install-webpack-plugin": "4.0.5",
     "path": "~0.12.7",
     "sass-loader": "~6.0.6",
