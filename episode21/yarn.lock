@@ -817,9 +817,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap-sass@~3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/bootstrap-sass/-/bootstrap-sass-3.4.1.tgz#6843c73b1c258a0ac5cb2cc6f6f5285b664a8e9a"
+bootstrap-sass@~3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/bootstrap-sass/-/bootstrap-sass-3.4.2.tgz#c223aa5e0b3806e78f7d6c11993a94e950539cd7"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
